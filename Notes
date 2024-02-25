@@ -1,0 +1,54 @@
+
+#Abstraction
+
+- If method in a class don't have body it then must be declared as abstract'
+
+      abstract void start();
+
+ - A method without body (No implementation) is known as Abstract methods.
+
+ - If class have any abstract method then class should be mark as abstract method.
+
+ - Abstract classes can not be instantiated, we can not create object of an abstract class.
+
+#Interface
+- We can not create object of interface.
+-Interface is used to achieve abstraction.
+-Interface supports multiple inheritance/ Interface used multiple inheritance
+-Interface used to achieve loose coupling.
+-Interface is the blue print of the class which tells class what to do, but it does not show/tell class how to implement a particular task
+-All the methods in abstract class are abstract methods
+
+- We can not create concerte methods in interface
+- All the methods in interface are public abstract types
+
+-All the fields/variables in interface are by default public static final;
+
+--->>>> In java 8 version
+
+- We can create default conerate methods
+
+     default display() {
+        System.out.println("Display");
+     }
+
+  - We can create static methods inside interface.
+
+     static void run(){
+     System.out.println("I am running");
+     }
+
+--->>>> In java 9 version
+
+ -In java 9 version we can use
+ private void run() {
+
+ }
+# Syntax
+
+interface InterfaceName {
+
+  public abstract method();
+
+  fileds;
+}
