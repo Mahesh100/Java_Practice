@@ -52,3 +52,23 @@ interface InterfaceName {
 
   fileds;
 }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Difference between ArrayList and LinkedList
+
+--> ArrayList:
+1) Arraylist class inherit the features of the list interface as it implements list interface.
+2) The underlying data structure of the arraylist class is resizable or growable array.
+3) Arraylist class provide better performance for the add and search operations
+4) Arraylist class has default capacity of 10
+5) Arraylist class implements RandomAccess interface.
+
+--> LinkedList:
+1) Linked-list class inherit the features of list ans queue as it implements list and dequeue interface.
+2) The underlying datastructures of linked-list is doubly liked list.
+3) Linked-list class provide better better performance of insertion and deletion operation from middle.
+4) There is no default size of linked-list class.
+5) Linked list class does not implements RandomAccess interface.
+
