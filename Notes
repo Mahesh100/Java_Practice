@@ -1,3 +1,4 @@
+## Object class is the parent class of all the classes in java.
 
 #Abstraction
 
@@ -78,5 +79,27 @@ interface InterfaceName {
 # Exception in java
 
 1) Any unwanted or unexpected event which disturbs the normal flow and execution of program is called Exception.
+-Exception occurs because of program
+-Exceptions are recoverable / We can handle the exception.
+-Error occurs because of lack of resources.(System ram)
+-Errors are not recoverable / Errors can not be handled
 
-2)
+2) Exception hierarchy
+
+                                                                Object  (Super class of all the classes in java)
+                                                                  |
+                                                                  |
+                                                              Throwable
+                                                                  |
+                                                                  |
+                                              -------------------------------------------------------
+                                              |                                                     |
+                                              |                                                     |
+                                          Exception                                               Error
+                                      (Because of program)                                 (Because of System Resources)
+                                             |
+                                             |
+                      -------------------------------------------------------
+                      |                                                     |
+                      |                                                     |
+                Checked Exception                                    Unchecked Exception
