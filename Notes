@@ -79,14 +79,46 @@ interface InterfaceName {
 # Exception in java
 
 1) Any unwanted or unexpected event which disturbs the normal flow and execution of program is called Exception.
+
+    -At compile time exception never occurs, all the exception occurs at the runtime.
+
+ #Exception :
 -Exception occurs because of program
 -Exceptions are recoverable / We can handle the exception.
+-Exception are of two types :
+   i) Compiletime exception (Checked exception )      //Remember both starts with C
+   ii)Runtime exception     (Unchecked exception)
+
+ #Error
 -Error occurs because of lack of resources.(System ram)
 -Errors are not recoverable / Errors can not be handled
+-Error is only of single type -Runtime exception (Unchecked exception)
+
+2) Difference between Checked exception and Unchecked exception
+
+   i)  Checked Exception : (Compile time exception)
+       -Checked exception are the exception which are checked and handle at the compile time.
+       - Checked exception must be caught or declared using throws keyword
+       - Checked exception handle using try-catch block or throws keyword.
+       - When checked exception occurs, program flow is interrupted and transfer to catch block.
+       - Examples :
+           -ClassNotFoundException
+           -IoException
+
+
+   ii) Unchecked Exception : (Runtime exception)
+       -Unchecked exception are the exception which are not handle at compile time.
+       - Unchecked exception not required to handle explicitly.
+       - When unchecked exception occurs program flow is halted with an error message.
+       - Examples:
+            -ArrayIndexOutOfBoundException
+            -NullPointerException
+
+
 
 2) Exception hierarchy
 
-                                                                Object  (Super class of all the classes in java)
+                                                                Object  (Object is parent class of all classes in java)
                                                                   |
                                                                   |
                                                               Throwable
@@ -97,9 +129,10 @@ interface InterfaceName {
                                               |                                                     |
                                           Exception                                               Error
                                       (Because of program)                                 (Because of System Resources)
-                                             |
-                                             |
+                                             |                                                      |
+                                             |                                                  Unchecked exception (Runtime exception)
                       -------------------------------------------------------
                       |                                                     |
                       |                                                     |
-                Checked Exception                                    Unchecked Exception
+                Checked Exception                                   Unchecked Exception
+                (Compile Time exception)                            (Runtime Exception)
