@@ -72,3 +72,11 @@ interface InterfaceName {
 4) There is no default size of linked-list class.
 5) Linked list class does not implements RandomAccess interface.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Exception in java
+
+1) Any unwanted or unexpected event which disturbs the normal flow and execution of program is called Exception.
+
+2)
