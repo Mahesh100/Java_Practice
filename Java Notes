@@ -1,0 +1,169 @@
+## Object class is the parent class of all the classes in java.
+
+# Abstraction
+
+- If method in a class don't have body it then must be declared as abstract
+
+      abstract void start();
+
+ - A method without body (No implementation) is known as Abstract methods.
+
+ - If class have any abstract method then class should be mark with  abstract Keyword.
+
+ - Abstract classes can not be instantiated, we can not create object of an abstract class.
+
+# Interface
+- We can not create object of interface.
+-Interface is used to achieve abstraction.
+-Interface supports multiple inheritance/ Interface used multiple inheritance
+-Interface used to achieve loose coupling.
+-Interface is the blue print of the class which tells class what to do, but it does not show/tell class how to implement a particular task
+-All the methods in interface class are abstract methods
+
+- We can not create concerte methods in interface
+- All the methods in interface are public abstract types
+
+-All the fields/variables in interface are by default public static final;
+
+--->>>> In java 8 version
+
+- We can create default conerate methods
+
+     default display() {
+        System.out.println("Display");
+     }
+
+  - We can create static methods inside interface.
+
+     static void run(){
+     System.out.println("I am running");
+     }
+
+--->>>> In java 9 version
+
+ -In java 9 version we can use
+ private void run() {
+
+ }
+# Syntax
+
+interface InterfaceName {
+
+  public abstract method();
+
+  public static final filedName;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Difference between ArrayList and LinkedList
+
+--> ArrayList:
+1) Arraylist class inherit the features of the list interface as it implements list interface.
+2) The underlying data structure of the arraylist class is resizable or growable array.
+3) Arraylist class provide better performance for the add and search operations
+4) Arraylist class has default capacity of 10
+5) Arraylist class implements RandomAccess interface.
+
+--> LinkedList:
+1) Linked-list class inherit the features of list and queue as it implements list and dequeue interface.
+2) The underlying datastructures of linked-list is doubly liked list.
+3) Linked-list class provide better better performance of insertion and deletion operation from middle.
+4) There is no default size of linked-list class.
+5) Linked list class does not implements RandomAccess interface.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Exception in java
+
+1) Any unwanted or unexpected event which disturbs the normal flow and execution of program is called Exception.
+
+    -At compile time exception never occurs, all the exception occurs at the runtime.
+
+ # Exception :
+-Exception occurs because of program
+-Exceptions are recoverable / We can handle the exception.
+-Exception are of two types :
+   i)  Compiletime exception (Checked exception )      //Remember both starts with C
+   ii) Runtime exception     (Unchecked exception)
+
+ # Error
+-Error occurs because of lack of resources.(System ram)
+-Errors are not recoverable / Errors can not be handled
+-Error is only of single type -Runtime exception (Unchecked exception)
+
+2) Difference between Checked exception and Unchecked exception
+
+   i)  Checked Exception : (Compile time exception)
+       -Checked exception are the exception which are checked and handle at the compile time.
+       - Checked exception must be caught or declared using throws keyword
+       - Checked exception handle using try-catch block or throws keyword.
+       - When checked exception occurs, program flow is interrupted and transfer to catch block.
+       - Examples :
+           -ClassNotFoundException
+           -IoException
+
+
+   ii) Unchecked Exception : (Runtime exception)
+       - Unchecked exception are the exception which are not handle at compile time.
+       - Unchecked exception do need to required  handle explicitly.
+       - When unchecked exception occurs program flow is halted with an error message.
+       - Examples:
+            -ArrayIndexOutOfBoundException
+            -NullPointerException
+
+
+
+2) Exception hierarchy
+
+                                                                Object  (Object is parent class of all classes in java)
+                                                                  |
+                                                                  |
+                                                              Throwable
+                                                                  |
+                                                                  |
+                                              -------------------------------------------------------
+                                              |                                                     |
+                                              |                                                     |
+                                          Exception                                               Error
+                                      (Because of program)                                 (Because of System Resources)
+                                             |                                                      |
+                                             |                                                  Unchecked exception (Runtime exception)
+                      -------------------------------------------------------
+                      |                                                     |
+                      |                                                     |
+                Checked Exception                                   Unchecked Exception
+                (Compile Time exception)                            (Runtime Exception)
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ # Difference between Final , Finally and Finalize in java
+
+   # Final
+   - Final is key word in java.
+   - Final keyword can be used with
+       - Variables
+       - Methods
+       - Classes
+
+
+   # Finally
+   - Finally is block in java.
+   - Finally block is used along with try-Catch blocks
+   - Finally block always executed irrerespective of the exception will occurs in try block or not
+   - In finally block we always write cleanup code.
+      - Closing DB connections
+      - Closing open files
+
+
+
+   # Finalize
+   - Finalize is method in java.
+   - Finalize method is called by garbage collector to destroy un used objects.
+   - Finalize method is used to write clean up codes.
