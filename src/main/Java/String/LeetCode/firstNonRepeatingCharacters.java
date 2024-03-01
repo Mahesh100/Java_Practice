@@ -17,7 +17,7 @@ class Solution{
 
         HashMap<Character,Integer> map = new HashMap<Character,Integer>();
 
-        //This hashmap is goin to map a alphabitcal characters to its index within a string
+        //This hashmap is going to map a alphabitcal characters to its index within a string
 
         //so we are iterating through a string using for loop.
 
