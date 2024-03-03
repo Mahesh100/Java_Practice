@@ -1,0 +1,36 @@
+ # Spring Boot Interview questions
+
+ 1) Why you will choose the Spring boot over spring framework?
+ 2) What all spring boot starter you have used ? what all module you have worked on?
+ 3) What is purpose of @SpringBootApplication annotation ?
+ 4) What us Autoconfiguration in Spring Boot?
+ 5) How can you disable specific autoconfiguration class in spring boot?
+ 6) How can you customize default configuration in spring boot?  (server.port = 9090
+ 7) How spring boot run() method works internally?
+ 8) What is command line runner in spring boot?
+ 9)
+
+ # Annotations
+
+ 1) @SpringBootApplication
+   - This annotation is present in the main class of Spring boot application.
+   - This annotation is combination of three annotations
+
+         -@EnabaleAutoConfiguration
+         -@CompantantScan
+         -@SpringBootConfguration
+
+
+
+      -EnableAutoConfiguration will configure various component fo springBoot application by just scanning your dependency and class path.
+       Whatever the dependency we have added in POM.xml file this particular annotation will scan these dependencies and will load all the required jar
+       for you
+
+
+ 2) @Component annotation:
+    - @Component annotation indicates that the annotated class is Spring bean/ component
+    - @Component annotation tell spring container to automatically create spring bean.
+
+
+ 3) @Qalifier annotation
+  -This annotation is used to resolve the ambiguity happened during injection of spring bean.

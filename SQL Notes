@@ -1,0 +1,23 @@
+
+
+# Interview questions
+
+ 1) How to find the third highest Employee salary from given Employee table?
+
+ 2) What are indexes in DB ?
+
+
+ # Find Nth highest salary from the employee table.
+
+   In MySql we can use
+       Select salary from employee order by salary desc limit 2,1;
+
+       here 2 is number of index and 1 is number of rows to be fetched.
+
+       Select salary from employee order by salary desc (N-1),1;
+
+   In PostgresSql we can use offset and fetch clause :
+
+      Select salary from employee order by salary desc offset 2 fetch first 1 row only
+
+      Select salary from employee order by salary desc offset (N-1) fetch 1 row only;
