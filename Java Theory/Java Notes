@@ -119,7 +119,7 @@ interface InterfaceName {
 2) Difference between Checked exception and Unchecked exception
 
    i)  Checked Exception : (Compile time exception)
-       -Checked exception are the exception which are checked and handle at the compile time.
+       - Checked exception are the exception which are checked and handle at the compile time.
        - Checked exception must be caught or declared using throws keyword
        - Checked exception handle using try-catch block or throws keyword.
        - When checked exception occurs, program flow is interrupted and transfer to catch block.
@@ -178,7 +178,7 @@ interface InterfaceName {
    # Finally
    - Finally is block in java.
    - Finally block is used along with try-Catch blocks
-   - Finally block always executed irrerespective of the exception will occurs in try block or not
+   - Finally block always executed irrespective of the exception will occurs in try block or not
    - In finally block we always write cleanup code.
       - Closing DB connections
       - Closing open files
@@ -187,5 +187,5 @@ interface InterfaceName {
 
    # Finalize
    - Finalize is method in java.
-   - Finalize method is called by garbage collector to destroy un used objects.
+   - Finalize method is called by garbage collector to destroy unused objects.
    - Finalize method is used to write clean up codes.

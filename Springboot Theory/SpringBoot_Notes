@@ -1,14 +1,4 @@
- # Spring Boot Interview questions
 
- 1) Why you will choose the Spring boot over spring framework?
- 2) What all spring boot starter you have used ? what all module you have worked on?
- 3) What is purpose of @SpringBootApplication annotation ?
- 4) What us Autoconfiguration in Spring Boot?
- 5) How can you disable specific autoconfiguration class in spring boot?
- 6) How can you customize default configuration in spring boot?  (server.port = 9090
- 7) How spring boot run() method works internally?
- 8) What is command line runner in spring boot?
- 9)
 
  # Annotations
 
