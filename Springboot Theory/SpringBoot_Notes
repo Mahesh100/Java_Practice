@@ -12,7 +12,7 @@
 
 
 
-      -EnableAutoConfiguration will configure various component fo springBoot application by just scanning your dependency and class path.
+      -EnableAutoConfiguration will configure various component of springBoot application by just scanning your dependency and class path.
        Whatever the dependency we have added in POM.xml file this particular annotation will scan these dependencies and will load all the required jar
        for you
 
@@ -22,5 +22,5 @@
     - @Component annotation tell spring container to automatically create spring bean.
 
 
- 3) @Qalifier annotation
+ 3) @Qualifier annotation
   -This annotation is used to resolve the ambiguity happened during injection of spring bean.
