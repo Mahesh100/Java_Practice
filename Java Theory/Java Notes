@@ -1,5 +1,7 @@
 ## Object class is the parent class of all the classes in java.
 
+
+
 # Abstraction
 
 - If method in a class don't have body it then must be declared as abstract
@@ -53,6 +55,26 @@ interface InterfaceName {
 
   public static final filedName;
 }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Difference between Abstract class and Interface
+
+ 1) Abstract class can have Abstract and non abstract methods.
+ 2) Abstract class doesn't support multiple inheritance.
+ 3) Abstract class can have final, non-final , static and non-static variables.
+ 4) Abstract class can provide implementation of interface.
+ 5) Abstract class can be declared using 'Abstract' keyword.
+ 6) Abstract class can be extended using 'extend' keyword.
+
+
+ 1) Interface can only have abstract methods. From java 8 we can use default and static methods and from
+    Java 9 we can use private methods in interface
+ 2) Interface supports multiple inheritance.
+ 3) Interface only have static and final variables.
+ 4) Interface can not provide implementation of interface
+ 5) Interface can be declared using 'Interface' keyword.
+ 6) Interface can be implemented using 'Implement' keyword.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
