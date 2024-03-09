@@ -1,0 +1,15 @@
+
+-REST : Representational State Transfer
+
+-REST is architectural constraints which are provided by REST that developer should follow for creating REST API'S
+
+- REST API work over HTTP protocol
+
+- REST Deliver information using different formats like :
+
+  JSON, TEXT,HTML, XML, Javascript etc
+
+
+
+
+
