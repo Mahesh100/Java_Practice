@@ -11,6 +11,19 @@
 
 6) What is Multi-threading in java?
 
-7)
-8)
-10)
+7) Can we start Thread twice?
+
+8) How threads will communicate with each other?
+
+10)  What is output of following program ?
+
+      class demo{
+      public static void main(String [] args){
+      System.out.println('J'+'a'+'v'+'a');                 //sum of ASCII values
+         }
+        }
+      }
+ 11) Can you pass the List<String> to a method which accept List<Object>  ?
+    -No you can not pass the Lis<String> to a method which accept List<Object> ?
+
+ 12) What is Generics in java?

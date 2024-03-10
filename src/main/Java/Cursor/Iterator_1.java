@@ -13,5 +13,15 @@ public class Iterator_1 {
         l.add(10);
         l.add("Deepak");
         l.add("Rahul");
+
+
+        //Getting iterator
+
+        Iterator it = l.iterator();
+
+        while (it.hasNext()){
+
+            System.out.println(it.next());
+        }
     }
 }
