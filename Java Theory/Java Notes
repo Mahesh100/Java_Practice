@@ -243,9 +243,55 @@ interface InterfaceName {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Cursors
+ -If we want to print element in collection one by one then we have to use Cursors
+
+ Types of Cursors :
+
+ 1] Iterator
+ 2] ListIterator
+ 3] Enumeration
 
  # Iterator in Java
 
- - The object which is used to loop through a collection is called Iterator.
+ - The object which is used to loop through a collection like ArrayList and HashMap is called Iterator
+
+ - The iterator() method is used to get iterator for any collection.
 
  -
+
+
+ Difference between Iterator and ListIterator
+
+  List l = new ArrayList();
+
+  # Iterator
+       Iterator it = l.iterator();
+
+  1] We can get the Iterator cursor using .iterator() method.
+  2] Iterator cursor can be used with any collection objects
+  3] In iterator method we have methods like
+         next()
+         hasNext()
+         remove()    methods
+  4] Using Iterator cursor we can retrive elements using only forward direction.
+  5] By using Iterator cursor we can only retrieve and remove elements.
+
+
+
+
+
+  # ListIterator
+
+  1] We can get ListIterator cursor  using .listIterator() method
+  2] ListIterator can be used only with list implemented classes.  i.e ArrayList, LinkedList, Vector, Stack.
+  3] In ListIterator we have methods as :  (total 6)
+                next()
+                hasNext()
+                hasPrevious()
+                previous()
+                remove()
+                set()
+
+  4] Using ListIterator cursor we can retrieve collection elements in both forward and backward direction.
+  5] By using listIterator cursor we can retrieve, remove, replace and add collection elements.
