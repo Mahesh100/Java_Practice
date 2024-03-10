@@ -274,7 +274,7 @@ interface InterfaceName {
  -
 
 
- Difference between Iterator and ListIterator
+  * Difference between Iterator and ListIterator
 
   List l = new ArrayList();
 

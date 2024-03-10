@@ -27,3 +27,11 @@
     -No you can not pass the Lis<String> to a method which accept List<Object> ?
 
  12) What is Generics in java?
+
+ 13) What is idempotent method according to HTTP specification?     //GET is the idempotent method
+
+ 14) What is feature branch in Git?
+
+ 15) How to call REST api from your spring boot application?
+
+ 16) 

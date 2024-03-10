@@ -24,3 +24,33 @@
 
  3) @Qualifier annotation
   -This annotation is used to resolve the ambiguity happened during injection of spring bean.
+
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  # Starter Dependency in Spring Boot
+
+  - Starter dependency are the convenient method to add dependency to your application and it brings in all the
+    required transitive dependency from the maven.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Connect Spring Boot Application to the Database (MySql)
+
+ - First step is we have to add Maven dependency in pom.xml file
+
+    <dependency>
+
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java </artifactId>
+
+    </dependency>
+
+    Add properties to application.properties file.
+
+    spring.datasource.url: jdbc:mysql://localhost:3306/employee
+    spring.datasource.username: root
+    spring.datasource.password: root
