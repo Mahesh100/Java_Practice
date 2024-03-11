@@ -4,24 +4,15 @@ public class ReverseString {
 
     public static void main(String [] args) {
 
-        //First way is to use con-carnation operation in java.
+        String str = "ABCD";
 
-        String s = "ABCD";
-        String revers = null;
 
-        s.length();
+        System.out.println(str.length());
 
-        System.out.println(s.length());
-
-        for(int i = 0; i<s.length(); i++){
-            System.out.print( s.charAt(i));
-
+        for(int i=str.length()-1; i>=0; i--){        //str.lenght() -1 is taken to find the index of lost character
+            System.out.print(str.charAt(i));
         }
 
-
-    /*
-    -We need to find out length of string
-     */
     }
 
 }
