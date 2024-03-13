@@ -1,6 +1,20 @@
 ## Object class is the parent class of all the classes in java.
 
 
+# Static Blocks in java
+
+- Static blocks or static initialise blocks are used to initialise static fields in java
+
+- Static blocks are get executed exactly once when the class is loaded
+- Whenever the JVM loads the class, static blocks get executed.
+- Class can have any number of static blocks.
+- The order of execution of the static blocks depends on the order of static block
+  placed in given code.
+- Static block get executed even before the constructor of the class get executed.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # Abstraction
 
@@ -77,24 +91,6 @@ interface InterfaceName {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Difference between ArrayList and LinkedList
-
---> ArrayList:
-1) Arraylist class inherit the features of the list interface as it implements list interface.
-2) The underlying data structure of the arraylist class is resizable or growable array.
-3) Arraylist class provide better performance for the add and search operations
-4) Arraylist class has default capacity of 10
-5) Arraylist class implements RandomAccess interface.
-
---> LinkedList:
-1) Linked-list class inherit the features of list and queue as it implements list and dequeue interface.
-2) The underlying datastructures of linked-list is doubly liked list.
-3) Linked-list class provide better better performance of insertion and deletion operation from middle.
-4) There is no default size of linked-list class.
-5) Linked list class does not implements RandomAccess interface.
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Exception in java
 
@@ -287,7 +283,7 @@ interface InterfaceName {
          next()
          hasNext()
          remove()    methods
-  4] Using Iterator cursor we can retrive elements using only forward direction.
+  4] Using Iterator cursor we can retrieve elements using only forward direction.
   5] By using Iterator cursor we can only retrieve and remove elements.
 
 
@@ -308,3 +304,24 @@ interface InterfaceName {
 
   4] Using ListIterator cursor we can retrieve collection elements in both forward and backward direction.
   5] By using listIterator cursor we can retrieve, remove, replace and add collection elements.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ # Lambada Expression
+
+ - Lambada Expression is the anonymous function. It is function without name and it does not belong to class
+   or object.
+
+ - Lambada Expression is mainly used for to implement Functional Interface.
+
+ # Functional Interface
+
+ - A interface which contains exactly one abstract method is called functional interface.
+
+ - Functional interface can contain any number of default and static methods.
+
+ # Stream API
+
+
