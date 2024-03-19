@@ -1,3 +1,15 @@
+
+# All the interfaces and class in collection framework are present in java.util package.
+
+# ArrayList stores data in the form of indexed based positions
+
+# Set store data in the form of hash code values
+
+# Map stores data in the form of objects as key and values pairs
+
+#
+
+
 # Difference between ArrayList and LinkedList
 
 --> ArrayList:
@@ -28,3 +40,54 @@
 
 
   readOnlyArrayList = Collections.unmodifiableList(ArrayList);
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  # Map in Java
+
+  - Map is interface which is present in java.util package
+  - Map does not inherit collection interface.
+  - Syntax of Map :
+
+     package java.util*;
+
+     public interface Map{
+       //methods
+     }
+
+  - Map was introduce in jdk 1.2 version
+  - Hierarchy of Map interface
+
+  Implemented classes of Map interface are :
+
+                                     Map (Interface)
+                                      |
+                                      |
+             --------------------------------------------------------------------------------------------------------
+             |                                                      |                                               |
+             |  (Implements)                                        |                                               |
+          HashMap class                                          SortedMap  (Interface)                          HashTable
+             |                                                      |
+             |    (Inherit)                               Navigable Map (Interface)
+       LinkedHashMap class                                          |
+                                                                    |  (Inherit)
+                                                                 TreeMap class
+
+
+  - Implemented classes of Map interface are HashMap class, LinkedHashMap class, TreeMap class and HashTable
+  - TreeMap class inherit the SortedMap and Navigable Map interfaces
+
+
+# Properties of Map interface
+
+- Map interface stores the data in Key value pairs
+- In map interface key is unique and value can be duplicate
+- If we have duplicate key in map then the previous key will be replace with new one.
+- In Map we store maximum 1 null key
+- In Map we can have multiple null values
+- In Map we insert both key values null at same time , null = null
+- Map does not follows sorting and insertion order.
+-
+
+

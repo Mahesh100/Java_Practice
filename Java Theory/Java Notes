@@ -31,19 +31,21 @@
 # Interface
 - The mechanism to achieve abstraction is known as interface.  (-Interface is used to achieve abstraction.)
 - We can not create object of interface.
--Interface supports multiple inheritance/ Interface used to implement multiple inheritance
--Interface used to achieve loose coupling.
--Interface is the blue print of the class which tells class what to do, but it does not show/tell class how to implement a particular task
+- Interface supports multiple inheritance/ Interface used to implement multiple inheritance
+- Interface used to achieve loose coupling.  (IMP)
+- Interface is the blue print of the class which tells class what to do, but it does not show/tell class how to implement a particular task
 - We can not create concerte methods in interface
-- All the methods in interface are public abstract types
+- All the methods in interface are  " public abstract " types
+- All the fields/variables in interface are by default "public static final" ;
 
--All the fields/variables in interface are by default public static final;
+
+- Interface supports multiple inheritance
 
 --->>>> In java 8 version
 
 - We can create default conerate methods
 
-     default display() {
+     default void display() {
         System.out.println("Display");
      }
 
