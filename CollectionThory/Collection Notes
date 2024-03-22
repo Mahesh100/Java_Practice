@@ -7,7 +7,14 @@
 
 # Map stores data in the form of objects as key and values pairs
 
-#
+# Lambada Expression are usually passed as a parameters to functions.
+
+# The main objective of introducing lambada expression in java is to bring functional programming feature in java.
+  As java is Object oriented programming language which doesn't supports functional programming features (But other languages already supports functional programming features)
+
+# To invoke Lambada expression we need functional interface.
+  To call the lambada expression we use only functional interface.
+
 
 
 # Difference between ArrayList and LinkedList
@@ -90,4 +97,49 @@
 - Map does not follows sorting and insertion order.
 -
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ # Lambada Expressions
+
+ - Lambada expression is anonymous function which doesn't have function name, return type, access modifier and which does not return any value.
+ - Lambada expression also called as nameless function.
+ - Lambada Expression is Short block of code which takes the parameter and returns the value.
+ - Lambada Expression are similar to methods but they do not need name and it can be implemented right in the body of method.
+ -
+ - Simple lambada expression contains single parameter and an expression :
+
+   parameter -> expression
+
+   -To use more than one parameter wrap them in parentheses:
+   (parameter1, parameter2) -> expression
+
+   - Expression are limited they have to immediately return the value.
+
+   - If the Lambada expression need to return the value then code block should have the return statement
+
+   (parameter1, parameter2)n -> { code block }
+
+  -In lambada expression no need to define data types of variables
+   Java  compiler automatically find the data types of variables based on context.
+
+
+     (a,b) -> System.out.println(a+b);
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ # Functional Interface In Java
+
+ - Functional Interface is used to invoke lambada expression in java.
+
+ - A interface which contains only one single abstract method called as functional interface.
+
+ - From java 7 we can declare default and static methods in interface.
+
+ - Default functional interfaces in java :
+
+     1) Runnable  having run() abstract method
+     2) Callable  having call() abstract method
+     3) Comparable having compareTo() abstract method.
+     4) ActionListener having actionPerformed() abstract method.
