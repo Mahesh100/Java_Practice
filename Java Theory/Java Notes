@@ -1,6 +1,37 @@
 ## Object class is the parent class of all the classes in java.
 
 
+# Constructor in Java
+
+- Constructor is block of code having same name as that of class name.
+- The main purpose of Constructor is to initialize the object in java
+- Every java class has a default constructor
+- A constructor is automatically called at the time of object creation
+- Constructor does not have any return type.
+
+- 4 Types of constructor in java
+
+ -private constructor
+ -default constructor
+ -parametrized constructor
+ -copy constructor
+
+ # We can call one constructor from another constructor by two ways
+
+ - this() keyword : Using this() keyword
+
+  -super() keyword : Using super() keyword
+
+-Syntax
+
+    class ClassName()
+    {
+    className();
+    }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Static Blocks in java
 
 - Static blocks or static initialise blocks are used to initialise static fields in java
@@ -207,6 +238,7 @@ interface InterfaceName {
 
   // Java code for thread creation by extending
   // the Thread class
+
   class MultithreadingDemo extends Thread {
   	public void run()
   	{
@@ -224,10 +256,12 @@ interface InterfaceName {
   }
 
   // Main Class
-  public class Multithread {
+
+  public class MultiThread {
   	public static void main(String[] args)
   	{
   		int n = 8; // Number of threads
+
   		for (int i = 0; i < n; i++) {
   			MultithreadingDemo object
   				= new MultithreadingDemo();
@@ -237,10 +271,20 @@ interface InterfaceName {
   }
 
 
--> We can start thread twice
+-> We can not start thread twice
 - This will throw illegalThreadStateException
 
  - Threads will use methods such as wait(), notify() and notifyAll() to communicate with each other
+
+ # Dead Lock In Java
+
+ - If two threads are waiting for each other forever such situation is called Dead lock in java.
+
+ - If Thread1 holding object 1 and Thread2 holding object 2 but Thread1 is waiting for object2 and Thread2 is waiting for object1 forever then we can say
+   that Thread1 and Thread2 are in dead lock condition.
+
+ - There is no complete re-solution for solving dead lock in java but several prevention techniques are possible.
+ - Synchronized keyword is cause of dead lock in java, we have to use synchronised keyword carefully
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
