@@ -32,6 +32,17 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ # Advantage of Java 11 over java 8
+
+ -Java 11 includes a number of performance improvements, such as a new garbage collector called ZGC and
+  a new HTTP client. These improvements can make Java applications run faster and more efficiently.
+ -Java 11 is a long-term support (LTS) release, which means that it will be supported by Oracle for at least eight years.
+ -Java 11 applications can start up to 25% faster than Java 8 applications.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Static Blocks in java
 
 - Static blocks or static initialise blocks are used to initialise static fields in java
@@ -121,6 +132,48 @@ interface InterfaceName {
  5) Interface can be declared using 'Interface' keyword.
  6) Interface can be implemented using 'Implement' keyword.
 
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ # When to use Abstract class and when to use Interface in java
+
+ Abstract Class
+ 1) share code among the related classes,
+ 2) if require access modifier other than public (like protected & private)
+ 3) if you want to declare non-static or non-final fields.
+
+ 4) If we know partial implemention of the class but not complete implemention then abstract class is good choice
+
+ Interface
+ 1) Implements interface with unrelated classes such as Serializable, Clonable
+ 2) If you want to take advantage of multiple inheritance
+
+ Note: many classes use both abstract classes and interfaces like HashMap class
+ implements several interface and also extends abstract class AbstractMap
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Marker Interface
+
+ -An interface which does not contain any field, method or constants is called marker interface.
+ - The Serializable and Cloneable interfaces are the example of marker interface.
+
+ Marker interface is used as a tag that inform the Java compiler by a message so that it can add some special
+ behavior to the class implementing it. Java marker interface are useful if we have information about the class
+ and that information never changes, in such cases, we use marker interface represent to represent the same.
+ Implementing an empty interface tells the compiler to do some operations.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Callable Interface in java
+
+-The Callable interface in Java is a functional interface that defines a single method, call(), which returns a value.
+-The value can be obtained through Future<V> objects.
+-In order to Return the result we use callable interface.
+
+-Callable is similar to Runnable, but it can return a result and can throw checked exceptions
+-Runnable cannot throw checked exceptions and does not return a result.
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Encapsulation In Java
@@ -133,6 +186,9 @@ interface InterfaceName {
      -Member function should be public in nature.
 
  - Any class in java is best example of Encapsulation in java.
+
+ - Encapsulation prevents outer classes from accessing and changing fields and methods of a class. This also helps to achieve data hiding.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -199,6 +255,9 @@ interface InterfaceName {
 
 
 
+
+-  A subclass can only throw the same exception or a narrower (more specific) exception than the one declared in the parent class method.
+-  This is to ensure that the caller of the method is not surprised by a broader exception than they were expecting.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -297,6 +356,51 @@ interface InterfaceName {
  - There is no complete re-solution for solving dead lock in java but several prevention techniques are possible.
  - Synchronized keyword is cause of dead lock in java, we have to use synchronised keyword carefully
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-The wait() method is provided by the Object class in Java.This method is used for inter-thread communication in Java.
+ The java.lang.Object.wait() is used to pause the current thread,
+ and wait until another thread does not call the notify() or notifyAll() method.
+ Its syntax is given below.
+
+  public final void wait()
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  # Advantages of multithreading
+
+  -Multithreading allows the faster execution of tasks, as threads execute independently.
+  -Multithreading provides better utilization of cache memory as threads share the common memory resources.
+  -Multithreading reduces the number of the required server as one server can execute multiple threads at a time.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ # Thread LifeCycle
+
+ A thread can have one of the following states during its lifetime:
+
+ -New: In this state, a Thread class object is created using a new operator, but the thread is not alive. Thread doesn't start until we call the start() method.
+
+ -Runnable: In this state, the thread is ready to run after calling the start() method. However, the thread is not yet selected by the thread scheduler.
+
+ -Running: In this state, the thread scheduler picks the thread from the ready state, and the thread is running.
+
+ -Waiting/Blocked: In this state, a thread is not running but still alive, or it is waiting for the other thread to finish.
+
+ -Dead/Terminated: A thread is in terminated or dead state when the run() method exits.
+
+
+wait()
+1) The wait() method is defined in Object class.
+2) The wait() method releases the lock.
+
+sleep()
+1)The sleep() method is defined in Thread class.
+2)The sleep() method doesn't release the lock.
+
+
+-The Synchronized block can be used to perform synchronization on any specific resource of the method.
+ Only one thread at a time can execute on a particular resource, and all other threads which attempt to enter the synchronized block are blocked.
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -379,6 +483,54 @@ interface InterfaceName {
 
  - Functional interface can contain any number of default and static methods.
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
  # Stream API
 
+ - Stream API is one of the way in java 8 by which we can achieve implemention of functional programming in java.
+ - Stream API in java 8 is set of classes and interfaces which are used to work with sequence of elements in functional
+   and declarative way.
+ -It allows to perform aggegrate operations on collection of data using filtering, mapping, sorting etc
 
+  There are two types of Operations perform in stream api as
+
+      - Intermediate operations  : The operations which are used to transform or filter the stream of data is
+                                    known as Intermediate operations
+                                    map(), filter(), sorted(), distinct() etc
+
+      - Terminal Operations  : The operations which are used at the end of stream pipeline is called Terminal Operations.
+                                forEach(), collect(), reduce(), count() etc
+
+      - Parallel Streams: The Stream API supports parallel execution of stream operations,
+                          allowing for efficient processing of large datasets across multiple threads.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Enums in Java
+
+ - Enum is special type of data in java that can be used to represent the group of constants
+ - Enum are useful when we have fixed set of values that are known at compile time
+ - Enums make your code more readable and maintainable.
+
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  # Single ton class in java
+
+
+  A singleton class in Java is a class that can have only one object at a time.
+  It is one of the five Creational Design patterns in Java which helps in effortless development
+  of Java programs.
+
+  Here are the steps on how to create a singleton class in Java:
+
+  -Make the constructor private. This will prevent the class from being instantiated directly.
+  -Create a private static variable of the class type. This will store the single instance of the class.
+  -Create a public static method that returns the instance of the class. This method will check if the
+    instance has already been created. If it has not, it will create it and store it in the private
+    static variable. If it has already been created, it will simply return the existing instance.
