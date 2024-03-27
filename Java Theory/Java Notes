@@ -36,6 +36,7 @@
 
  -Java 11 includes a number of performance improvements, such as a new garbage collector called ZGC and
   a new HTTP client. These improvements can make Java applications run faster and more efficiently.
+
  -Java 11 is a long-term support (LTS) release, which means that it will be supported by Oracle for at least eight years.
  -Java 11 applications can start up to 25% faster than Java 8 applications.
 
@@ -365,6 +366,15 @@ interface InterfaceName {
 
   public final void wait()
 
+
+ wait()
+ 1) The wait() method is defined in Object class.
+ 2) The wait() method releases the lock.
+
+ sleep()
+ 1)The sleep() method is defined in Thread class.
+ 2)The sleep() method doesn't release the lock.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   # Advantages of multithreading
 
@@ -389,13 +399,7 @@ interface InterfaceName {
  -Dead/Terminated: A thread is in terminated or dead state when the run() method exits.
 
 
-wait()
-1) The wait() method is defined in Object class.
-2) The wait() method releases the lock.
 
-sleep()
-1)The sleep() method is defined in Thread class.
-2)The sleep() method doesn't release the lock.
 
 
 -The Synchronized block can be used to perform synchronization on any specific resource of the method.
@@ -488,7 +492,7 @@ sleep()
 
  # Stream API
 
- - Stream API is one of the way in java 8 by which we can achieve implemention of functional programming in java.
+ - Stream API is one of the way in java 8 by which we can achieve implementation of functional programming in java.
  - Stream API in java 8 is set of classes and interfaces which are used to work with sequence of elements in functional
    and declarative way.
  -It allows to perform aggegrate operations on collection of data using filtering, mapping, sorting etc
