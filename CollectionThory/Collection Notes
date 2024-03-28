@@ -100,6 +100,46 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ # List in java
+
+ public interface List<E> extends Collection<E>
+
+ - List interface found in java.util package and it inherit collection interface.
+ - List in java is ordered collection
+ - We can store null values in List
+ - We can store duplicate elements in list.
+ -
+
+# List vs ArrayList
+
+ List is interface whereas ArrayList is implemented class of List interface.
+
+  - ArrayList and LinkedList class provides implementation of List interface
+
+
+ # Creating ArrayList and LinkedList
+
+ // Creating a list of Strings
+
+ List<String > list = new ArrayList<String>();
+
+ // Creating a list of Integers
+
+ List<Integer> list = new ArrayList<Integer>();
+
+ //Creating List of books
+
+ List<Book> list = new ArrayList<Book>();
+
+ //Creating list of integers
+
+ List<Integer> list = new LinkedList<Integer>();
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
  # Lambada Expressions
 
  - Lambada expression is anonymous function which doesn't have function name, return type, access modifier and which does not return any value.
