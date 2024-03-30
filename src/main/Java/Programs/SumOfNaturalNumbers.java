@@ -13,10 +13,20 @@ public class SumOfNaturalNumbers {
       System.out.println("Sum of Natural Numbers is:"+totalSum);
     }
 
-    public static int sumOfNumbers(int n){
-        int sum=0;
+//    public static int sumOfNumbers(int n){
+//        int sum=0;
+//
+//        for(int i=0; i<=n; i++){
+//            sum = sum+i;
+//        }
+//        return sum;
+//    }
 
-        for(int i=0; i<=n; i++){
+    public static int sumOfNumbers(int n)
+    {
+        int sum =0;
+        for(int i=0; i<=n; i++)
+        {
             sum = sum+i;
         }
         return sum;

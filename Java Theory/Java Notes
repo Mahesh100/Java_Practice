@@ -1,6 +1,70 @@
 ## Object class is the parent class of all the classes in java.
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Looping in java
+
+ # While Loop
+
+  -While loop is pre-test loop
+  -It check the condition first before execution enters into body of loop
+  -While loop is used when we don't know the number of iterations in advanced.
+  -While loop is also known as entry control loop
+
+ # Syntax
+
+   while(condition)  //if condition is true
+   {
+    //statement
+   }
+
+   #Flow chart
+
+                        Start
+                          |
+                          |
+                  |---Condition     //Until condition true
+                  |       |  (True)
+                  |       |
+                  -----Statement
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  # Do While loop
+
+  - Do while loop is post test loop
+  - Here we first execute the statement/code block then it will check the condition.
+  - Do while loop is used when we want to execute loop body at least once even condition is falise
+  - It is also known as exit control loop.
+
+
+  #Syntax
+
+  do
+  {
+  // Statement
+  }
+  while(Condition);
+
+   #Flow chart
+
+                        Start
+                          |
+                          |
+                  |---Statement
+                  | (True)|  (True)
+                  |       |
+                  ----Condition
+                          | (False)
+                          |
+                         End
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Constructor in Java
 
 - Constructor is block of code having same name as that of class name.
