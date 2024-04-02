@@ -1,6 +1,12 @@
 ## Object class is the parent class of all the classes in java.
 
+# Lambada Expression are usually passed as a parameters to functions.
 
+# The main objective of introducing lambada expression in java is to bring functional programming feature in java.
+  As java is Object oriented programming language which doesn't supports functional programming features (But other languages already supports functional programming features)
+
+# To invoke Lambada expression we need functional interface.
+  To call the lambada expression we use only functional interface.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -36,7 +42,7 @@
 
   - Do while loop is post test loop
   - Here we first execute the statement/code block then it will check the condition.
-  - Do while loop is used when we want to execute loop body at least once even condition is falise
+  - Do while loop is used when we want to execute loop body at least once even condition is false
   - It is also known as exit control loop.
 
 

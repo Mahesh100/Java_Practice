@@ -7,13 +7,7 @@
 
 # Map stores data in the form of objects as key and values pairs
 
-# Lambada Expression are usually passed as a parameters to functions.
 
-# The main objective of introducing lambada expression in java is to bring functional programming feature in java.
-  As java is Object oriented programming language which doesn't supports functional programming features (But other languages already supports functional programming features)
-
-# To invoke Lambada expression we need functional interface.
-  To call the lambada expression we use only functional interface.
 
 
 
@@ -25,6 +19,12 @@
 3) Arraylist class provide better performance for the add and search operations
 4) Arraylist class has default capacity of 10
 5) Arraylist class implements RandomAccess interface.
+6) Every method present in Arraylist is non-synchronised.
+   ( This means that multiple threads can access and modify the list at the same time,
+     which can lead to data corruption.
+    To make a linked list synchronized, you can use the Collections.synchronizedList() method. )
+
+7) Arraylist is not thread safe as at one  time multiple threads are allowed to operate on arraylist.
 
 --> LinkedList:
 1) Linked-list class inherit the features of list and queue as it implements list and dequeue interface.
@@ -32,6 +32,8 @@
 3) Linked-list class provide better better performance of insertion and deletion operation from middle.
 4) There is no default size of linked-list class.
 5) Linked list class does not implements RandomAccess interface.
+6) LinkedList is not synchronised.
+7) Linked list not thread safe as at one time multiple thread are allowed to operate on LinkedList.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -40,7 +42,7 @@
 
  - Collection Hierarchy starts with collection interface
 
- - Three basic interfaces which implements this collection iterface are
+ - Three basic interfaces which implements this collection interface are
      -List
      -Queue
      -Set

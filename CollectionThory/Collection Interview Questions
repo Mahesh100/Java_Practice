@@ -1,18 +1,35 @@
 
-1] What is difference between List and ArrayList?
+1] How do we make List unmodified?
 
-2] What is difference between ArrayList and LinkedList?
+2] Explain the Collection Hierarchy
 
-3] What is difference between Iterator and ListIterator?
+3]  What do you understand by blocking queue?
 
-4] How do we make List unmodified?
+4] Why Map doesn't extends the collection interface ?
 
-5] Explain the Collection Hierarchy
+5] Explain internal working of hashmap
 
-6] Why Map doesn't extends the collection interface ?
+6] What is enumeration?
+       ------------------       ------------------        ------------------
+
+5] What is difference between ArrayList and LinkedList?
+
+6] What is difference between List and ArrayList?
 
 7] What is difference between fail fast and fail safe iterator
 
-8] What do you understand by blocking queue?
+8] What is difference between Iterator and ListIterator?
 
 9] What is Difference between HashSet and Linked HashSet?
+
+10] Difference between ArrayList and Vector
+
+11] Difference between Arrays and Collections
+
+12] Difference between Set and Map
+
+13] Difference between HashMap and HashSet
+
+14] Difference between Set and List
+
+15]
