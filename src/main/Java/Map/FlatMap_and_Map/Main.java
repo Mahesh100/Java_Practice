@@ -15,7 +15,7 @@ public class Main {
         citiesWorkedIn1.add("Noida");
         citiesWorkedIn1.add("Bangalore");
 
-        Employee e1 = new Employee(1, "Code", citiesWorkedIn1);
+        Employee e1 = new Employee(1, "Code");
 
         List<String> citiesWorkedIn2 = new ArrayList<String>();
         citiesWorkedIn2.add("Pune");
@@ -23,7 +23,7 @@ public class Main {
         citiesWorkedIn2.add("Noida");
         citiesWorkedIn2.add("Bangalore");
 
-        Employee e2 = new Employee(2, "Code2", citiesWorkedIn2);
+        Employee e2 = new Employee(2, "Code2");
 
         List<String> citiesWorkedIn3 = new ArrayList<String>();
         citiesWorkedIn3.add("Pune");
@@ -31,7 +31,7 @@ public class Main {
         citiesWorkedIn3.add("Banglore");
         citiesWorkedIn3.add("Noida");
 
-        Employee e3 = new Employee(3, "code3", citiesWorkedIn3);
+        Employee e3 = new Employee(3, "code3");
 
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(e1);

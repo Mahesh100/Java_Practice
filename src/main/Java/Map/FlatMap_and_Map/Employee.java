@@ -8,7 +8,7 @@ public class Employee {
     private String namne;
     private List<String> citiesWorkedIn;
 
-    public Employee(int id, String namne, List<String> citiesWorkedIn) {
+    public Employee(int id, String namne) {
         this.id = id;
         this.namne = namne;
         this.citiesWorkedIn = citiesWorkedIn;

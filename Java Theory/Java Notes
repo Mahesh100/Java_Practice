@@ -212,10 +212,10 @@ interface InterfaceName {
  2) if require access modifier other than public (like protected & private)
  3) if you want to declare non-static or non-final fields.
 
- 4) If we know partial implemention of the class but not complete implemention then abstract class is good choice
+ 4) If we know partial implementation of the class but not complete implementation then abstract class is good choice
 
  Interface
- 1) Implements interface with unrelated classes such as Serializable, Clonable
+ 1) Implements interface with unrelated classes such as Serializable, Cloneable
  2) If you want to take advantage of multiple inheritance
 
  Note: many classes use both abstract classes and interfaces like HashMap class
@@ -565,7 +565,7 @@ interface InterfaceName {
  - Stream API is one of the way in java 8 by which we can achieve implementation of functional programming in java.
  - Stream API in java 8 is set of classes and interfaces which are used to work with sequence of elements in functional
    and declarative way.
- -It allows to perform aggegrate operations on collection of data using filtering, mapping, sorting etc
+ -It allows to perform aggregate operations on collection of data using filtering, mapping, sorting etc
 
   There are two types of Operations perform in stream api as
 

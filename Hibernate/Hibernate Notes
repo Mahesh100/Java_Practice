@@ -1,0 +1,12 @@
+
+# Hibernate is ORM tool
+
+ - Hibernate is java framework that simplifies the development of java application to interact with database.
+ - Hibernate works on database layer
+
+ - ORM is Object relational Mapping
+ - Using hibernate we are mapping the Object in java application to RDBMS database.
+ - Hibernate makes java application loosely coupled with databases.
+ - Any kind of application can be build using hibernate
+
+

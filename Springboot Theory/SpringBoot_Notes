@@ -29,12 +29,14 @@
  2) @Component annotation:
     - @Component annotation indicates that the annotated class is Spring bean/ component
     - @Component annotation tell spring container to automatically create spring bean.
+    - So in annotation based configuration we can tell spring container to automatically create spring
+      bean for a particular class.
 
 
  3) @Qualifier annotation
   -This annotation is used to resolve the ambiguity happened during injection of spring bean.
 
- 4) @Bean : It is used to declear that the corresponding method will produce a Java Object
+ 4) @Bean : It is used to declare that the corresponding method will produce a Java Object
             which is managed by spring container.
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
