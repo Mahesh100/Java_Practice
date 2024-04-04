@@ -7,6 +7,8 @@
 
 # To invoke Lambada expression we need functional interface.
   To call the lambada expression we use only functional interface.
+
+#  The super keyword can be used to call a method on the superclass of the current class.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -109,6 +111,9 @@
 
  -Java 11 is a long-term support (LTS) release, which means that it will be supported by Oracle for at least eight years.
  -Java 11 applications can start up to 25% faster than Java 8 applications.
+
+
+# New Features in java 11
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -228,11 +233,29 @@ interface InterfaceName {
  -An interface which does not contain any field, method or constants is called marker interface.
  - The Serializable and Cloneable interfaces are the example of marker interface.
 
- Marker interface is used as a tag that inform the Java compiler by a message so that it can add some special
+ -It provides run-time type information about objects, so the compiler and JVM have additional information about the object.(tagging interface.)
+
+ Marker interface is used as a tag that inform the Java compiler  a message so that it can add some special
  behavior to the class implementing it. Java marker interface are useful if we have information about the class
  and that information never changes, in such cases, we use marker interface represent to represent the same.
  Implementing an empty interface tells the compiler to do some operations.
 
+
+ # Serialization in java
+
+ - The process of converting object into series of bits is called serialization in java.
+
+ - The object must be serialize to do following operations :
+
+    1) Writing a object to a file
+    2) Reading an object from file
+    3) Writing an object to a network
+    4) Reading an object to a network.
+
+  - Class must implement java.io.serializable interface to make suitable object  (Marker interface)
+
+  -In Java, a serialVersionUID is a unique identifier for each Serializable class that is used to verify
+   that the saved object and the loaded class are compatible.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Callable Interface in java
@@ -258,7 +281,8 @@ interface InterfaceName {
 
  - Any class in java is best example of Encapsulation in java.
 
- - Encapsulation prevents outer classes from accessing and changing fields and methods of a class. This also helps to achieve data hiding.
+ - Encapsulation prevents outer classes from accessing and changing fields and methods of a class.
+   This also helps to achieve data hiding.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -329,6 +353,7 @@ interface InterfaceName {
 
 -  A subclass can only throw the same exception or a narrower (more specific) exception than the one declared in the parent class method.
 -  This is to ensure that the caller of the method is not surprised by a broader exception than they were expecting.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -357,6 +382,14 @@ interface InterfaceName {
    - Finalize is method in java.
    - Finalize method is called by garbage collector to destroy unused objects.
    - Finalize method is used to write clean up codes.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -458,13 +491,17 @@ interface InterfaceName {
 
  A thread can have one of the following states during its lifetime:
 
- -New: In this state, a Thread class object is created using a new operator, but the thread is not alive. Thread doesn't start until we call the start() method.
+ -New: In this state, a Thread class object is created using a new operator, but the thread is not alive.
+       Thread doesn't start until we call the start() method.
 
- -Runnable: In this state, the thread is ready to run after calling the start() method. However, the thread is not yet selected by the thread scheduler.
+ -Runnable: In this state, the thread is ready to run after calling the start() method.
+            However, the thread is not yet selected by the thread scheduler.
 
- -Running: In this state, the thread scheduler picks the thread from the ready state, and the thread is running.
+ -Running: In this state, the thread scheduler picks the thread from the ready state,
+           and the thread is running.
 
- -Waiting/Blocked: In this state, a thread is not running but still alive, or it is waiting for the other thread to finish.
+ -Waiting/Blocked: In this state, a thread is not running but still alive, or it is
+                   waiting for the other thread to finish.
 
  -Dead/Terminated: A thread is in terminated or dead state when the run() method exits.
 
@@ -473,7 +510,8 @@ interface InterfaceName {
 
 
 -The Synchronized block can be used to perform synchronization on any specific resource of the method.
- Only one thread at a time can execute on a particular resource, and all other threads which attempt to enter the synchronized block are blocked.
+ Only one thread at a time can execute on a particular resource, and all other threads
+ which attempt to enter the synchronized block are blocked.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -546,8 +584,8 @@ interface InterfaceName {
 
  # Lambada Expression
 
- - Lambada Expression is the anonymous function. It is function without name and it does not belong to class
-   or object.
+ - Lambada Expression is the anonymous function. It is function without name and it does not
+   belong to class or object.
 
  - Lambada Expression is mainly used for to implement Functional Interface.
 
@@ -579,6 +617,11 @@ interface InterfaceName {
       - Parallel Streams: The Stream API supports parallel execution of stream operations,
                           allowing for efficient processing of large datasets across multiple threads.
 
+  # Advantages of Stream API
+
+  - Stream API allow us complex data manupalation in concise and redable way.
+  - Stream API used lazy evaluation meaning only process elements when needed.
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -594,6 +637,22 @@ interface InterfaceName {
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+# Design Pattern in java
+
+ - Design pattern are the well proved solutions of commonly occurring problem in software design.
+ - Design pattern is the way to handle commonly occurring problem while creating software.
+ - Design pattern represent idea.
+ -
+   Three main categories in design pattern is :
+
+   1) Creational Design pattern
+   2) Structural Design pattern
+   3) Behavioral Design pattern
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
   # Single ton class in java
 
 
@@ -608,3 +667,57 @@ interface InterfaceName {
   -Create a public static method that returns the instance of the class. This method will check if the
     instance has already been created. If it has not, it will create it and store it in the private
     static variable. If it has already been created, it will simply return the existing instance.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # SOLID Principle
+
+  S - Single Responsibility Principle
+  O - Open/Close Principle
+  L - Liskov Substitution Principle
+  I - Interface Segmented Principle
+  D - Dependency Inversion Principle.
+
+  S- Single Responsibility principle states that the class should have only one reason to change
+     or it has only one responsibility
+
+  O- Open/Closed Principle sates that
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  # Apache Kafka
+
+  - Kafka is open source even driven distributed streaming platform
+
+  - Microservice 1 will produce the message and it will send to kafka broker  and Microservice 2 will
+    consume that message from the kafka broker
+
+                          Microservice 1    (Produce message)
+                                |
+                                |
+                                |
+                          Kafka Broker
+                                |
+                                |
+                          Microservice 2     (Consume message)
+
+  - There can be a lot of microservices that can consume kafka messages from the kafka broker.
+
+  - In kafka we have Kafka cluster and this kafka cluster have one or more than one broker.
+
+  - Here, producer will produce message and send it to kafka broker and the consumer basically
+    consume those message from kafka broker.
+
+  - Here we have "Topics" in kafka cluster and consumer will subscribe this topics from kafka cluster
+
+  - In cluster we have one more important term called "Zookeeper", zookeeper basically mange the
+    state of kafka broker inside the cluster
+
+  - Apache kafka is fault tolerance

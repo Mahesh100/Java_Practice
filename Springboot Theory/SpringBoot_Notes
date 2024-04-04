@@ -12,9 +12,10 @@
 
 
 
-      -EnableAutoConfiguration will configure various component of springBoot application by just scanning  dependency and class path.
-       Whatever the dependency we have added in POM.xml file this particular annotation will scan these dependencies and will load all the required jar
-       for you
+      -EnableAutoConfiguration will configure various component of springBoot application by just
+       scanning  dependency and class path.
+       Whatever the dependency we have added in POM.xml file this particular annotation will scan these dependencies
+       and will load all the required jar for you
 
        -@CompantantScan
        -To scan spring component in particular package

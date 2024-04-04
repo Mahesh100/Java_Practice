@@ -1,3 +1,4 @@
+# Classes whose objects are stored in database table are called Persistent classes.
 
 # Hibernate is ORM tool
 
@@ -8,5 +9,24 @@
  - Using hibernate we are mapping the Object in java application to RDBMS database.
  - Hibernate makes java application loosely coupled with databases.
  - Any kind of application can be build using hibernate
+
+# Core Interfaces in hibernate are
+
+   1) Session
+   2) SessionFactory
+   3) Configuration
+   4) Transaction
+   5) Query
+   6) Criteria
+
+# SQL query created in hibernate using
+
+    Session.CreateSQLQuery
+
+# HQL Query is create in hibernate
+
+     Session.CreateQuery
+
+
 
 

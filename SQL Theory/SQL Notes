@@ -1,4 +1,21 @@
 
+# Stored Procedure : A stored procedure is prepeaed sql code that can be save so the
+  code can be reused again and again.
+
+ - So suppose we have sql query that we want to write again and again then just save it as
+   stored procedure and call it to execute whenever needed.
+
+
+  # syntax
+
+  create procedure procedure_name
+  as sql_statement Go;
+
+
+  - Execute stored procedure.
+
+  EXEC procedure_name
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Find Nth highest salary from the employee table.
 
    In MySql we can use
@@ -18,9 +35,18 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ # Primary is column in sql table which uniquely identify the record in table
+ - We can have only one primary key for each table
+ - Primary key does not have null values
 
  # Unique Constraints in SQL
 
  - Unique constraints is column or set of column that uniquely define the record
  - Unique constraints ensures that the all the values in specific columns is different.
+
+ # Foreign key
+
+ - Foreign key used to link one or more than one table together.
+ - A foreign key is specified as a key that is related to primary key of another table.
+ -
 
