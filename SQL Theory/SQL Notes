@@ -1,5 +1,25 @@
 
-# Stored Procedure : A stored procedure is prepeaed sql code that can be save so the
+ - Having clause is added to the sql because where clause can not be used with aggregate function
+
+ - Having clause use to filter result based on group specified
+
+ - Having clause is used with Group By clause.  (Having clause is generally used after GROUP BY.)
+
+ - If you wish to filter a group, the HAVING clause comes into action.
+
+ - Having clause is used to filter data according to the conditions provided.
+
+ - Having clause is only used with the SELECT clause.
+
+  Query
+
+  Select department sum(salary) salary from emp_table group by department  having sum(salary)> 50000
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Group By clause combines similar rows and produce single record having similar values
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Stored Procedure : A stored procedure is prepared sql code that can be save so the
   code can be reused again and again.
 
  - So suppose we have sql query that we want to write again and again then just save it as
@@ -31,18 +51,21 @@
 
       Select salary from employee order by salary desc offset (N-1) fetch 1 row only;
 
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- # Primary is column in sql table which uniquely identify the record in table
+ # Primary key is column in sql table which uniquely identify the record in table
  - We can have only one primary key for each table
  - Primary key does not have null values
 
  # Unique Constraints in SQL
 
- - Unique constraints is column or set of column that uniquely define the record
+ - Unique key is column or set of column that uniquely define the record
  - Unique constraints ensures that the all the values in specific columns is different.
+
+- The main difference between a primary key vs unique key is that a primary key is a key that
+  uniquely identifies each record in a table but cannot store NULL values.
+  In contrast, a unique key prevents duplicate values in a column and can store NULL values.
 
  # Foreign key
 

@@ -1,3 +1,5 @@
+
+
 ## Object class is the parent class of all the classes in java.
 
 # Lambada Expression are usually passed as a parameters to functions.
@@ -8,10 +10,93 @@
 # To invoke Lambada expression we need functional interface.
   To call the lambada expression we use only functional interface.
 
-#  The super keyword can be used to call a method on the superclass of the current class.
+# The super keyword can be used to call a method on the superclass of the current class.
+
+# Static block is used for static initialization of classes
+
+# code inside the static block is executed only once: the first time the class is loaded into memory.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ # Access modifiers in java
+
+   1) Public
+   2) Private
+   3) Protected
+   4) Default
+
+  1) Public access modifiers mean that the class, method, or variable can be accessed from
+    anywhere in the program.
+
+  2) Private access modifiers mean that the class, method, or variable can only be
+    accessed from within the same class.
+
+  3) Protected access modifiers mean that the class, method, or variable can be
+     accessed from within the same package and by subclasses of the class.
+
+  4) Default access modifiers mean that the class, method, or variable can
+     be accessed from within the same package.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# Different Types of Variables in Java
+
+ 1) Local Variables
+ 2) Instance Variables
+ 3) Static Variables
+
+ 1) Local Variable:  (Declared Inside the method body)
+     -A variable defined within block of code, method or constructor is called local variable in java.
+
+     -These variables are created when execution is enters into the block of code or method is called
+       and destroyed when execution comes cutoff block of code.
+
+     -The scope of this variables are only withing the block of code in which the variables are declared.
+
+     - Initialization of local variable is mandatory before using it in defined scope.
+
+  2) Instance Variable:  (Declared outside the method and inside the class)
+
+       - Instance variable are non-static variables which declared outside of any method, constructor or block
+       - Instance variables can be accessed only by creating objects.
+       - We initialize instance variables using constructors while creating an object.
+          We can also use instance blocks to initialize the instance variables.
+
+  3) Static Variables:
+      - Variables which are declared using static keyword are called static variables in java.
+      - Static variables are used for memory management
+      -
+
+   the static variable is initialized before the instance variable,
+   and the instance variable is initialized before the local variable.
+
+   Static -> Instance -> Local
+
+  Class TypeOfVariables{
+
+       Static int c =30;
+
+       int a = 10; //instance variable
+
+       public static void main(String [] args)
+       {
+           int b =20;   //Local Variable
+
+
+           System.out.println(b);
+           System.out.println(c);
+
+           TypeOfVariables obj = new TypeOfVariables();
+
+            System.out.println( obj.a);
+       }
+
+  }
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Looping in java
 
  # While Loop
@@ -260,7 +345,8 @@ interface InterfaceName {
 
 # Callable Interface in java
 
--The Callable interface in Java is a functional interface that defines a single method, call(), which returns a value.
+-The Callable interface in Java is a functional interface that defines a single method, call(),
+   which returns a value.
 -The value can be obtained through Future<V> objects.
 -In order to Return the result we use callable interface.
 
@@ -394,7 +480,10 @@ interface InterfaceName {
 
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ # Multitasking in java
 
+ - Performing multiple task at single time.
+ -
  # Multithreading in java.
 
  - For the Maximum utilization of CPU/Memory java allows concurrent execution of two or more parts of program
@@ -407,7 +496,8 @@ interface InterfaceName {
 
 
  Threads can be created by using two mechanism :
-  1) By extending thread class
+
+  1) By extending thread class (Thread class present in java.lang package)
   2) By implementing runnable interface.
 
   // Java code for thread creation by extending
