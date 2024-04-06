@@ -674,10 +674,43 @@ interface InterfaceName {
 
  # Lambada Expression
 
+   Objective :
+    -To bring functional programming features
+    - Code optimization/we can write concise code
+
+
+ - To bring the functional programming features in java, lambada expression is introduced in java 8
+
+ - Using lambada expression we can achieve functional programming features in java.
+
+ - Generally in java, which is object oriented programming language.
+   The data will be stored in Classes  and Objects
+
+   But, in functional programming language the data will be stored in functions and variables
+
  - Lambada Expression is the anonymous function. It is function without name and it does not
    belong to class or object.
 
+ - Lambada expression is anonymous function which doesn't have name of method, return type and no return value, no access modifier.
+
  - Lambada Expression is mainly used for to implement Functional Interface.
+
+
+
+ General way of writing method in java :
+
+ public void methodName(){
+
+    System.out.println("Welcome");
+ }
+
+  With Lambada expression:
+
+   () -> {
+                 System.out.println("Welcome");
+         }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Functional Interface
 
