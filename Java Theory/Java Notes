@@ -695,6 +695,7 @@ interface InterfaceName {
 
  - Lambada Expression is mainly used for to implement Functional Interface.
 
+ - Lambada expression is always associated with functional interface.
 
 
  General way of writing method in java :
@@ -714,11 +715,37 @@ interface InterfaceName {
 
  # Functional Interface
 
- - A interface which contains exactly one abstract method is called functional interface.
+   # Default Functional Interfaces in java
 
- - Functional interface can contain any number of default and static methods.
+    1) Runnable interface  -----> run()     [method, only one abstract method]
+    2) Callable interface  -----> call()
+    3) Comparable interface ----> compareTo()
+    4) ActionListener       ----> actionPerformed()
 
 
+     - A interface which contains exactly one abstract method is called functional interface. (also contains defualt and static methods)
+
+     - Functional interface can contain any number of default and static methods.
+     - To call the lambada expression we need functional interface only
+     - Lambada expressions can be invoked using functional interface.
+     -
+
+    # Predefine functional interfaces :
+
+    1) Predicate
+    2) Function
+    3) Consumer
+    4) Supplier
+
+  1) Predicate is one of the pre-define functional interface in java.
+     - It has abstract method called test();
+     - To check certain conditions in lambada expression we use Predicate.
+        interface Predicate(T)
+        {
+
+                public abstract boolean test(1 argument);
+
+        }
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Stream API
