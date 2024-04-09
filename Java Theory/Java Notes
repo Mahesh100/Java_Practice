@@ -1,3 +1,8 @@
+ # Java : Java is programming language which is used to develop various applications like desktop, web, stand alone applications
+          It is secure programming language which supports various features like oops,collections, multithreading etc
+
+   OOPS : Object Oriented Programming System.
+
 
 
 ## Object class is the parent class of all the classes in java.
@@ -320,7 +325,7 @@ interface InterfaceName {
 
  -It provides run-time type information about objects, so the compiler and JVM have additional information about the object.(tagging interface.)
 
- Marker interface is used as a tag that inform the Java compiler  a message so that it can add some special
+ Marker interface is used as a tag  information to the Java compiler or a message so that it can add some special
  behavior to the class implementing it. Java marker interface are useful if we have information about the class
  and that information never changes, in such cases, we use marker interface represent to represent the same.
  Implementing an empty interface tells the compiler to do some operations.
@@ -723,7 +728,7 @@ interface InterfaceName {
     4) ActionListener       ----> actionPerformed()
 
 
-     - A interface which contains exactly one abstract method is called functional interface. (also contains defualt and static methods)
+     - A interface which contains exactly one abstract method is called functional interface. (also contains default and static methods)
 
      - Functional interface can contain any number of default and static methods.
      - To call the lambada expression we need functional interface only
@@ -769,7 +774,7 @@ interface InterfaceName {
 
   # Advantages of Stream API
 
-  - Stream API allow us complex data manupalation in concise and redable way.
+  - Stream API allow us complex data manipulation in concise and readable way.
   - Stream API used lazy evaluation meaning only process elements when needed.
 
 
@@ -803,7 +808,7 @@ interface InterfaceName {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  # Single ton class in java
+  # Singleton class in java
 
 
   A singleton class in Java is a class that can have only one object at a time.
