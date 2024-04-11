@@ -725,18 +725,9 @@ interface InterfaceName {
          }
 
 
-   # Types of Lambda expression
 
-   1) Predicate
 
-   - Predicate<T> is as default lambada expression
-   - Predicate is an interface which contains only one abstract method which is test() abstract method which always contain single parameter
 
-      Predicate<String> pr = s->(s.length()>4);
-      System.out.println(pr.test("Welcome"));  //true
-
-   - Predicate always return boolean values either true or false
-   -
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -773,6 +764,16 @@ interface InterfaceName {
                 public abstract boolean test(1 argument);
 
         }
+
+           - Predicate<T> is as default lambada expression
+           - Predicate is an interface which contains only one abstract method which is test() abstract method which always contain single parameter
+
+              Predicate<String> pr = s->(s.length()>4);
+              System.out.println(pr.test("Welcome"));  //true
+
+           - Predicate always return boolean values either true or false
+           - Predicate is used only when we have conditional checks in your program.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Stream API
