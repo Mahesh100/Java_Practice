@@ -21,6 +21,14 @@
 
 # code inside the static block is executed only once: the first time the class is loaded into memory.
 
+# Duplicate constructor is not allowed in class, we have to overlaid it.
+
+# We can overload constructor
+
+# Constructor is also use to initialise the class variables/Instance variables.
+
+# "this" keyword is used when we have to initialise the class variables or instance variables.
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -716,6 +724,20 @@ interface InterfaceName {
                  System.out.println("Welcome");
          }
 
+
+   # Types of Lambda expression
+
+   1) Predicate
+
+   - Predicate<T> is as default lambada expression
+   - Predicate is an interface which contains only one abstract method which is test() abstract method which always contain single parameter
+
+      Predicate<String> pr = s->(s.length()>4);
+      System.out.println(pr.test("Welcome"));  //true
+
+   - Predicate always return boolean values either true or false
+   -
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Functional Interface
@@ -829,6 +851,16 @@ interface InterfaceName {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # SOLID Principle
+
+   # Advantages of SOLID principles
+
+   1) Easy to maintain
+   2) Easy to understand
+   3) It avoids duplicate code
+   4) It maintain structure
+   5) Flexible structure
+   6) Reduce complexity
+
 
   S - Single Responsibility Principle
   O - Open/Close Principle
