@@ -1,4 +1,4 @@
-package LambadaExpression;
+package FunctionalProgramming.LambadaExpression;
 
 
 @FunctionalInterface

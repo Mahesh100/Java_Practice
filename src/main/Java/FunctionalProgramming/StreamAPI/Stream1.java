@@ -1,4 +1,4 @@
-package StreamAPI;
+package FunctionalProgramming.StreamAPI;
 
 import Map.FlatMap_and_Map.Employee;
 

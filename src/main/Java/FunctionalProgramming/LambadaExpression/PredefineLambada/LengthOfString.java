@@ -1,4 +1,4 @@
-package LambadaExpression.PredefineLambada;
+package FunctionalProgramming.LambadaExpression.PredefineLambada;
 
 // To verify length of string in an array
 

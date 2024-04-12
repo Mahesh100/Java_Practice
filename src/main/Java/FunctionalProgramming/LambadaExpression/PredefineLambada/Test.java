@@ -1,4 +1,4 @@
-package LambadaExpression.PredefineLambada;
+package FunctionalProgramming.LambadaExpression.PredefineLambada;
 
 
 interface Predicate<T>

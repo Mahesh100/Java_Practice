@@ -684,6 +684,16 @@ interface InterfaceName {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+   # Collection in java
+
+   - Collection is group of objects or group of elements
+   - To store the group of objects or group of elements we used collections
+   -
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
  # Lambada Expression
 
@@ -778,9 +788,47 @@ interface InterfaceName {
 
  # Stream API
 
+ - To processes the group of objects in collection we used Stream API concepts
+ - Stream API provides two different mechanism to process the data in collection as
+      1) filter
+      2) map
+
+ - Stream API present in java.util package
+
+    1) filter :
+    - Suppose we have collection of objects as ArrayList have some integer objects
+       so if we suse filer here then filter will filter data based up on certain condition and store it in some other collection
+
+    2) map :
+    -  Whatever data we have in collection that same data will be updated/modified and store in new targeted collection.
+    -
+
+   # Difference between filter and map in stream
+     1) In case of filter the data may be reduced
+     2) In case of map data will only get updated.
+
+    But we don't directly process data from the collection
+    We have stream , we will add all the objects from the collection to the stream and we will do all the operation on stream itself
+
+    - Here Stream is class in which different methods are available as filter, map.
+
+    Different methods available in stream class
+    -filter()                -map()               -sorted()              -count()
+
+    -collect()               -distinct()         -forEach()              -min()         -max()
+
+  - To process the data in the stream we use lambada expressions
+
+  1) filter() in stream class
+    - filter should happen based on certain condition
+    -
+
+
+
  - Stream API is one of the way in java 8 by which we can achieve implementation of functional programming in java.
  - Stream API in java 8 is set of classes and interfaces which are used to work with sequence of elements in functional
    and declarative way.
+
  -It allows to perform aggregate operations on collection of data using filtering, mapping, sorting etc
 
   There are two types of Operations perform in stream api as

@@ -1,0 +1,17 @@
+
+# React Js is javascript library which works as framework which helps to build single page application
+
+- React uses JSX - JavaScript Syntax Extension
+- JSX :Javascript Syntax Extension is used to insert dynamic javascript with  html
+- React divide whole website in different components
+   Component: Header, footer, main ,Left side component, right side component
+
+- React sends data from one component to other component with the help of props
+
+- In react, we have package called React Routing Dom which helps to do routing react
+
+- Routing means when one jump from one page to another
+
+   Ex: When user clicks on " About us " option on existing page and the existing still not get reload/refreshed.
+
+-
