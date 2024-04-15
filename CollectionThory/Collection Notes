@@ -35,6 +35,26 @@
 6) LinkedList is not synchronised.
 7) Linked list not thread safe as at one time multiple thread are allowed to operate on LinkedList.
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Difference between ArrayList and Set in java
+
+- ArrayList inherit the features of list interface as it implements List interface
+- Underline data structure of ArrayList is resizable or growable array
+- Arraylist stores ordered elements
+- ArrayList is ordered collection, it will remember oder of insertion
+- Arraylist can have any number of duplicate elements
+- ArrayList allows any number of null values
+- ArrayList is class
+- ArrayList class has default capacity of 10
+
+- Set is itself interface as implements collection interface.
+- Set unordered collection that is it will not remember oder of insertion
+- Set does not allow duplicate elements
+- Set allows only one null value
+- Set is interface.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

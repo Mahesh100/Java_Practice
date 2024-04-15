@@ -29,7 +29,8 @@
 
 # "this" keyword is used when we have to initialise the class variables or instance variables.
 
-
+# Reflection in java
+-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Access modifiers in java
@@ -40,10 +41,10 @@
    4) Default
 
   1) Public access modifiers mean that the class, method, or variable can be accessed from
-    anywhere in the program.
+     anywhere in the program.
 
   2) Private access modifiers mean that the class, method, or variable can only be
-    accessed from within the same class.
+     accessed from within the same class.
 
   3) Protected access modifiers mean that the class, method, or variable can be
      accessed from within the same package and by subclasses of the class.
@@ -228,13 +229,16 @@
   placed in given code.
 - Static block get executed even before the constructor of the class get executed.
 
+- Static keyword is a powerful tool that can be used to improve the memory management,
+  efficiency, and organization of your Java code.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # Abstraction
 
-- If method in a class don't have body it then must be declared as abstract
+- If method in a class don't have body then it must be declared as abstract
 
       abstract void start();
 
@@ -329,7 +333,7 @@ interface InterfaceName {
 # Marker Interface
 
  -An interface which does not contain any field, method or constants is called marker interface.
- - The Serializable and Cloneable interfaces are the example of marker interface.
+ -The Serializable and Cloneable interfaces are the example of marker interface.
 
  -It provides run-time type information about objects, so the compiler and JVM have additional information about the object.(tagging interface.)
 
@@ -474,6 +478,9 @@ interface InterfaceName {
    - In finally block we always write cleanup code.
       - Closing DB connections
       - Closing open files
+      - To close used resources finally block is used.
+
+   - There can only be one finally block, and it must follow the catch blocks.
 
 
 
@@ -504,8 +511,8 @@ interface InterfaceName {
  -
 
  - Multithreading is feature in java that allows concurrent execution of two or more part of program for maximum utilization cpu/memory.
- -Each part of such program is called thread
- -So threads are light weight processes within the process.
+ -  Each part of such program is called thread
+ - So threads are light weight processes within the process.
 
 
  Threads can be created by using two mechanism :
@@ -566,11 +573,12 @@ interface InterfaceName {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -The wait() method is provided by the Object class in Java.This method is used for inter-thread communication in Java.
+
  The java.lang.Object.wait() is used to pause the current thread,
  and wait until another thread does not call the notify() or notifyAll() method.
  Its syntax is given below.
 
-  public final void wait()
+  public final void wait();
 
 
  wait()
@@ -797,7 +805,7 @@ interface InterfaceName {
 
     1) filter :
     - Suppose we have collection of objects as ArrayList have some integer objects
-       so if we suse filer here then filter will filter data based up on certain condition and store it in some other collection
+       so if we use filer here then filter will filter data based up on certain condition and store it in some other collection
 
     2) map :
     -  Whatever data we have in collection that same data will be updated/modified and store in new targeted collection.

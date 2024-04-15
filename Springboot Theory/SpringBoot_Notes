@@ -1,5 +1,8 @@
+# Inversion Of Control (IOC) in Spring Boot
 
-
+- Inversion of Control in spring boot is one of the component in spring boot.
+- It manges the creation of objects in spring boot and helps to inject them whenever necessary
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Annotations
 
  1) @SpringBootApplication
