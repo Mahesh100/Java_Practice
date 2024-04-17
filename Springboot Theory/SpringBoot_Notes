@@ -1,7 +1,30 @@
 # Inversion Of Control (IOC) in Spring Boot
 
+- Spring IOC Container is predefine program or component of spring which comes with spring itself
+- IOC Container is responsible for creation of objects, holding them into memory and if needed it also do dependency
+  injection task
+   Create Object, hold them in memory and inject them as required.
+ - IOC maintains the object lifecycle
+
 - Inversion of Control in spring boot is one of the component in spring boot.
 - It manges the creation of objects in spring boot and helps to inject them whenever necessary
+
+- IOC means that we are inverting the control of creation of object from user to some external resource.
+- And that external resource which is responsible for injecting dependence into our application is known as IOC Container
+- IOC Container is responsible for instance or configure object and it is also responsible to inject dependence
+  into application
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Application Context :
+  - Application context is interface which represents IOC container
+  - Application context extends bean factory  (Application context is child class and Bean factory is parent class)
+  - Application context has bean factory methods along with its own implementations.
+
+    -We cant create object of Application context interface :
+      so we have subclasses as :
+       1) ClassPathXMLApplication context
+       2) AnnotationConfigApplication Context
+       3) FileSystemXMLApplication Context
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Annotations
 

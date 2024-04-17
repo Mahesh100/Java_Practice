@@ -800,17 +800,13 @@ interface InterfaceName {
  - Stream API provides two different mechanism to process the data in collection as
       1) filter
       2) map
-
  - Stream API present in java.util package
-
     1) filter :
     - Suppose we have collection of objects as ArrayList have some integer objects
        so if we use filer here then filter will filter data based up on certain condition and store it in some other collection
 
     2) map :
     -  Whatever data we have in collection that same data will be updated/modified and store in new targeted collection.
-    -
-
    # Difference between filter and map in stream
      1) In case of filter the data may be reduced
      2) In case of map data will only get updated.
