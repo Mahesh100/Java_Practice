@@ -1,3 +1,24 @@
+# POM : Project Object Model
+
+- When we add starter jar it will pull all the jars inside project , in which we have on jar as Auto configuration jar
+- In Auto configuration folder we have folder called META-INF/spring.factories, inside META-INF we have spring.factories file
+- Inside the spring.factories file all autoconfiguration is already defined.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# application.properties file
+- To change and customize the spring boot configuration application.properties file is used
+- Stores the data in the form of key and value pairs
+- we can customise this according to our need
+-
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# application.yml file
+-
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Inversion Of Control (IOC) in Spring Boot
 
 - Spring IOC Container is predefine program or component of spring which comes with spring itself

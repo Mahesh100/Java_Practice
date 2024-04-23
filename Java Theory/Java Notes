@@ -893,10 +893,14 @@ interface InterfaceName {
   Here are the steps on how to create a singleton class in Java:
 
   -Make the constructor private. This will prevent the class from being instantiated directly.
+
   -Create a private static variable of the class type. This will store the single instance of the class.
-  -Create a public static method that returns the instance of the class. This method will check if the
+
+  -Create a public static method that returns the instance of the class.
+    This method will check if the
     instance has already been created. If it has not, it will create it and store it in the private
-    static variable. If it has already been created, it will simply return the existing instance.
+    static variable.
+    -If it has already been created, it will simply return the existing instance.
 
 
 
