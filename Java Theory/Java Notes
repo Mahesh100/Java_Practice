@@ -339,7 +339,7 @@ interface InterfaceName {
 
  Marker interface is used as a tag  information to the Java compiler or a message so that it can add some special
  behavior to the class implementing it. Java marker interface are useful if we have information about the class
- and that information never changes, in such cases, we use marker interface represent to represent the same.
+ and that information never changes, in such cases, we use marker interface  to represent the same.
  Implementing an empty interface tells the compiler to do some operations.
 
 
