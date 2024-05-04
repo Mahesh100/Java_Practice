@@ -1,0 +1,15 @@
+
+
+# JWT : JSON Web Token
+
+JWT :
+ -JWT also known as Json web token provides you a way of representing claims transfer between two parties
+ -JWT is mainly used for authorization purpose not for authentication purpose.
+
+ -JWT consist of three parts :
+        i)   Header
+        ii)  Payload
+        iii) Signature
+
+ -Header and Payload are base64 encoded string and can be decoded without any password, so anyone can read the plain text format
+

@@ -205,3 +205,13 @@
      2) Callable  having call() abstract method
      3) Comparable having compareTo() abstract method.
      4) ActionListener having actionPerformed() abstract method.
+
+
+# HashSet in java
+
+- HashSet is implemented class of Set interface
+- HashSet does not allow duplicate elements
+- HashSet allows only one null elements
+- HashSet is unordered collection it means that it does not maintain the oder of
+  object in which they are inserted.
+-
