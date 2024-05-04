@@ -240,7 +240,8 @@
 - StringBuffer is thread safe
 - StringBuffer implements Serializable and CharSequence interfaces
 - The principal operation for StringBuffer is to append and insert methods
-
+- The append() method will always add the object at the end of buffer
+- The insert() method adds the object at specific point
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
