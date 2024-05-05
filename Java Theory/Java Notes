@@ -810,9 +810,11 @@ interface InterfaceName {
  - Stream API is introduced in java 1.8 version
 
  - To processes the group of objects in collection we used Stream API concepts
+
  - Stream API provides two different mechanism to process the data in collection as
       1) filter
       2) map
+
  - Stream API present in java.util package
     1) filter :
     - Suppose we have collection of objects as ArrayList have some integer objects
@@ -837,6 +839,8 @@ interface InterfaceName {
   - To process the data in the stream we use lambada expressions
 
   1) filter() in stream class
+
+    - To process the data based up on certain condition we use filter()
     - filter should happen based on certain condition
     -
 
