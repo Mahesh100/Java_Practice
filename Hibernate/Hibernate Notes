@@ -27,6 +27,17 @@
 
      Session.CreateQuery
 
+# SessionFactory is kind of connection and it is thred safe object
+  -Every Project has only one SessionFactory
 
 
+# Commonly used hibernate annotations
 
+1) @Entity - Used to mark class as Entity
+2) @Table  - Used to change the table details
+3) @Id - Used to mark column as primary key
+4) @GeneratedValue : @GeneratedValue annotation provides different strategies for generation of primary key
+5) @Column : Used to map the fields with database column & and used to set the name of column in database
+6) @Transient : Used to restrict creation or mapping of particular column in database.
+7) @Temporal : Used with date filed in class which is used to save the date in particular format.
+8) @Lob : Tells hibernate that this is large objects

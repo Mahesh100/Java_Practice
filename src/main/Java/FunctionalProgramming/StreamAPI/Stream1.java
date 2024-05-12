@@ -11,7 +11,7 @@ public class Stream1 {
     public static void main(String[] args) {
         List<Employee> empList = Arrays.asList(new Employee(1, "abc"), new Employee(2, "abc"), new Employee(3, "abc"), new Employee(4, "abc"));
 
-        // Filter even IDs using Stream API
+        // FilterMethod even IDs using Stream API
         List<Integer> empIdList = empList.stream()
                 .map(Employee::getId)
                 .filter(id -> id % 2 == 0)
