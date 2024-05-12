@@ -3,6 +3,17 @@
 
 2) What is ORM?
 
+3) How does the mapping is done between objects and database tables?
+
+4) How hibernate used JPA annotations?
+
+5) Why Hibernate? why not JDBC?
+
+6) What are all important interfaces of Hibernate you have used in hibernate?
+
+7)
+
+
 3) Define persistent classes
 
 4) What is session in Hibernate?
