@@ -1,5 +1,7 @@
 # Classes whose objects are stored in database table are called Persistent classes.
 
+# In hibernate transaction is only needed when we have to save the data 
+
 # Hibernate is ORM tool
  - Hibernate is Object Relational Mapping (ORM) tool that is used to map java objects and database tables
 
@@ -82,3 +84,33 @@
 6) @Transient : Used to restrict creation or mapping of particular column in database.
 7) @Temporal : Used with date filed in class which is used to save the date in particular format.
 8) @Lob : Tells hibernate that this is large objects
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Fetch Objects get() Vs load()
+
+ # Using get() method
+
+- Both methods come from session interface
+- If we know primary key (id) of the record then we can use get() method from the session 
+- To get the data using get method :
+
+   Student student = session.get(EntityClassName.class, id);
+   System.out.println(student);                                 // Here Student is Entity class (Table in Database)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Using load() method
+
+ - load() method come from the session interface
+ - If we know primary key (id) of the record then we can use get() method from the session 
+ - To get the data using get method :
+ 
+    Student student = session.load(EntityClassName.class, id);
+    System.out.println(student);                                 // Here Student is Entity class (Table in Database)
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
