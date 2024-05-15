@@ -1,3 +1,10 @@
+# Database stores the data in the form of tables
+
+# Hibernate Session Object works as mediator.
+- Hibernate Session Object has various methods like save(), update(), delete(), CreateQuery()
+- We can say that it takes the java object and put it in database
+-
+
 # Classes whose objects are stored in database table are called Persistent classes.
 
 # In hibernate transaction is only needed when we have to save the data 
@@ -93,12 +100,12 @@
 # Fetch Objects get() Vs load()
 
  # Using get() method
-
+- get() and load() methods are internally uses select query to fetch data from the DB
 - Both methods come from session interface
 - If we know primary key (id) of the record then we can use get() method from the session 
 - To get the data using get method :
 
-   Student student = session.get(EntityClassName.class, id);
+   Student student = session.get(EntityType.class, id);
    System.out.println(student);                                 // Here Student is Entity class (Table in Database)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -109,8 +116,61 @@
  - If we know primary key (id) of the record then we can use get() method from the session 
  - To get the data using get method :
  
-    Student student = session.load(EntityClassName.class, id);
+    Student student = session.load(EntityType.class, id);
     System.out.println(student);                                 // Here Student is Entity class (Table in Database)
  
+    # Difference between get() and load() method
+
+    -get()
+    1) get() method from sesssion interface will return 'nul' if object is not found in cache as well as 
+       on database
+     
+    2) get() is used when we are not sure that object exists in Db or not
+    3)
+
+    -load()
+    1) load() method from session interface will return ObjectNotFoundException if object is not found in cache as well
+      as on database
+    2) load() method is used when we are sure that object exits in DB
+    3) 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Mapping in Hibernate
+
+1) One-to-One relationship
+
+2) One-to-Many relationship : 
+
+3) Many-to-Many relationship
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Fetch Type in Hibernate
+
+ 1) Eager Loading  : Data fetched on the spot
+    -Eager loading is design pattern where data loading happens on the spot
+    -
+ 2) Lazy Loading fetch : Only when needed
+   -In Lazy loading associated data loads only when we explicitly getter or size method
+   -Need to call getter here to get the data
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+# Hibernate Persistent Life Cycle states 
+
+ # There are four states
+  1) Transient states
+  2) Persistent states
+  3) Detached state
+  4) Removed state
+
+  1) Transient state :
+      - As soon as we create any object with respective fields to the objects by setting values with getter and setter the object immediatly
+        goes into Transient state
+      -Transient Object is hibernate is an object that is not associated with any hibernate session
+
