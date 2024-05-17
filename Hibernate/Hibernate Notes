@@ -186,3 +186,14 @@
      Detached objects are not managed by Hibernate and any changes made to them will not be persisted to the database.
     -To reattach a detached object to a Hibernate session, you can use the session.merge() method. This method will merge the 
      detached object with the state of the database.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # HQL (Hibernate Query Language)
+
+ - In order to retrive the complex data we use Hibernate query Language
+ - HQL is database independent
+ - HQL is easy to learn
+ - HQL always start with ' from className.java"
