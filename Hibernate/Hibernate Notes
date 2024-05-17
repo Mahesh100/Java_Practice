@@ -173,4 +173,16 @@
       - As soon as we create any object with respective fields to the objects by setting values with getter and setter the object immediatly
         goes into Transient state
       -Transient Object is hibernate is an object that is not associated with any hibernate session
+   
+  2) Persistent state
+     - When object is saved to database then we can say that object is moved to Persistent state
+     - When object get associated with session then we can say that object is in Persistent state  (session.save(Object))
+     - In this state, the object is associated with a Hibernate session and is managed by Hibernate. Any changes made to 
+       the object will be tracked by Hibernate and will be persisted to the database when the session is flushed. 
+     - An object is in the persistent state when it is associated with a Hibernate session and is managed by Hibernate.
 
+  3) Detached state:
+    -When a session is closed, any persistent objects associated with that session become detached.
+     Detached objects are not managed by Hibernate and any changes made to them will not be persisted to the database.
+    -To reattach a detached object to a Hibernate session, you can use the session.merge() method. This method will merge the 
+     detached object with the state of the database.
