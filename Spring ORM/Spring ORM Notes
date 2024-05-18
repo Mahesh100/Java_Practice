@@ -1,0 +1,23 @@
+ # Spring ORM
+ 
+ # Hibernate is implemention of JPA (Java Persistance API)
+ ORM : Object Relational Mapping
+
+ # Advantage of Using Spring ORM
+ - Less coding is required
+ - Hibernate template manages everything
+ - Easy to test
+ - Better Exception Handling (Beacuse of Spring)
+ - Integrated transaction management
+
+
+ # Hibernate Template
+
+ - Hibernate Template is a class
+ - Hibernate template is a class which provides a functionality to perform operation with database
+ - Hibernate template depend upon session factory interface
+ - We can not create object of Session factory as its a interface
+ - So we can create object of LocalSessionFactory bean class object which is implemented class of Session Factory
+ - Hibernate Template have different methods like:
+
+ 1) save()  2) update()  3) insert() 4) get()  5) loadAll()  etc

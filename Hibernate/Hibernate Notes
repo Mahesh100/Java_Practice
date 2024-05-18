@@ -139,12 +139,18 @@
 
 # Mapping in Hibernate
 
-1) One-to-One relationship
+1) One-to-One relationship:
 
 2) One-to-Many relationship : 
 
 3) Many-to-Many relationship
 
+1) One-To-One relationship:
+   
+   # Some examples : 
+     i)   One user have one cart in E-commerce webiste
+     ii)  One student have one Id card 
+     iii) One user have one aadhar card
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
