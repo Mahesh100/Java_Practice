@@ -1,0 +1,72 @@
+# Prerequisite for Spring
+- Core Java ( OOPS, Constructor, etc)
+- JDBC
+- Hibernate
+- Servelt and JSP (MVC - Model View Controller)
+- SQL
+
+# Topics
+
+- Spring core : IOC, Dependency injection
+- Spring Data Integration
+- Spring Web (Mvc)
+- Spring Boot
+- Spring AOP
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+# What is Spring 
+
+- Spring is Dependency injection framework which makes java application loosly coupled
+- Spring framework makes easy development of java applications
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+# Depedency Injection
+
+- If one class depend up on other class to complete its execution then we can say that one class is depend up on other class
+- Dependency injection is the property of Spring where spring can automtically create object of one class and inject in other class (wherever needed)
+- No need to create object of a class manually
+- The process of creating a object of class automitically and inecting it in requried class is know of Inversion of Control
+- IOC : Inversion of Control is design pattern
+- IOC container will mange the object lifecycle
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Spring Modules
+
+   Total 4 modules here  
+
+1) Spring Core  ----------------> 
+   i) Core  ii) Beans  iii) Context  iv) spEL (Spring Expression Language)
+
+   - Spring context inherit the features of beans module
+   - spEL will manage expression langaue and manuplate the object graph at runtime
+
+2)   ----------------> 
+
+  i) AOP   ii) Aspect  iii) Instrumnetion  iv) Messaging
+
+  - AOP allows to define methods, interceptors which makes the code decoupled
+  - Messging will maps the messages with annotations
+
+3) Data Access/Integration Layer  ---------------->
+
+   i) JDBC  ii) JMS  iii) ORM  iv) OXM
+
+   i) JDBC : Spring JDBC provides JDBC abstraction layer that removes need of tedious JDBC code 
+
+   ii) JMS : Produce and Conume messages
+
+   iii) ORM : Spring ORM module will provide integration layer with which spring can integerate any ORM tool in spring application (Ex: Hibernate ORM Tool)
+
+   iv) OXM : It supports object Xml mapping
+
+4) Web Module ---------------->
+
+ i) Web  ii) Servlet   iii) Portlet  iv) WebSocket
+
+5) Test Module  ---------------->
+
+ -Provides features of testing 
+ -Provides mock object for isolation testing
