@@ -70,3 +70,30 @@
 
  -Provides features of testing 
  -Provides mock object for isolation testing
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Spring IOC Container (Inversion Of Control)
+
+- Spring IOC Container is predefine program 
+- It is component of spring which is inbuild in spring framework
+- Spring IOC Continer will create objects, hold objects in memory and inject them in other object whenever required (Dependency Injection)
+-Spring IOC container maintain the object lifecycle.
+
+- Spring container should know which are the Beans/POJO classes need to manage and Configuration information(Config file)
+- Configuration file tells which object is depend on other object
+
+# ApplicationContext
+
+- ApplicationContext is interface
+- ApplicationContext represents the Spring IOC Container that holds all the beans created by application
+- ApplicationContext is responsible for instantiating,configuring, and creating beans.
+
+- Subclasses of ApplicationContext (Implementation of Application context)
+
+i)   ClasspathXMLApplicationContext : It searches XML configuration from java class path.
+ii)  AnnotationConfigApplicationContext : It searches Beans/classes on which annotations are used.
+iii) FileSystemXMLApplicationContext : It serches the config file from the file system.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
