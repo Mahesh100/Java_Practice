@@ -97,3 +97,29 @@ ii)  AnnotationConfigApplicationContext : It searches Beans/classes on which ann
 iii) FileSystemXMLApplicationContext : It serches the config file from the file system.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Ways of Injecting Dependencies
+
+ Dependency Injection can be done in two ways :
+
+    i) Setter Injection  (Property Injection)
+    ii)Constructor Injection 
+
+# Configuration File in Spring (XML)
+- Beans : The class which are provided to IOC Container are called Beans
+- Configuration file provides information to IOC container
+- Configuration file is file where we declare beans and its dependency
+- XML file will always starts with <beans> <bean>   </bean> </beans>
+
+# Data Types (Dependencies)
+  Three Types of Data types handle by IOC Container
+
+  1) Primitive DataTypes
+   byte,short,chat,int,float,double,long,boolean
+
+  2) Collection Type
+   List,Set,Map and Properties
+  
+  3) Reference Type
+    -Non primitive data type / User define data types
