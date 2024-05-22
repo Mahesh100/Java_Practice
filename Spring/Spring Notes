@@ -1,3 +1,5 @@
+# Beans are nothing but the java POJO classes (Plain Old Java Objects)
+
 # Prerequisite for Spring
 - Core Java ( OOPS, Constructor, etc)
 - JDBC
@@ -123,3 +125,19 @@ iii) FileSystemXMLApplicationContext : It serches the config file from the file 
   
   3) Reference Type
     -Non primitive data type / User define data types
+
+
+# Property Injection using Value as attribute
+
+ <property name="exampleId" value="1234"> </property>
+
+# Property Injection using P schema
+
+# Inject collection types List,Set,Map and properties
+
+- In order to use Map in bean use 
+
+   <map>  
+   <entry key=" " value=" "> 
+    <entry key=" " value=" ">
+   </map>

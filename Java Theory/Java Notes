@@ -1,4 +1,5 @@
- # Java : Java is programming language which is used to develop various applications like desktop, web, stand alone applications
+
+# Java : Java is programming language which is used to develop various applications like desktop, web, stand alone applications
           It is secure programming language which supports various features like oops,collections, multithreading etc
 
    OOPS : Object Oriented Programming System.
@@ -21,7 +22,7 @@
 
 # code inside the static block is executed only once: the first time the class is loaded into memory.
 
-# Duplicate constructor is not allowed in class, we have to overlaid it.
+# Duplicate constructor is not allowed in class, we have to overload it.
 
 # We can overload constructor
 
@@ -77,12 +78,11 @@
        - Instance variable are non-static variables which declared outside of any method, constructor or block
        - Instance variables can be accessed only by creating objects.
        - We initialize instance variables using constructors while creating an object.
-          We can also use instance blocks to initialize the instance variables.
+       - We can also use instance blocks to initialize the instance variables.
 
   3) Static Variables:
       - Variables which are declared using static keyword are called static variables in java.
       - Static variables are used for memory management
-      -
 
    the static variable is initialized before the instance variable,
    and the instance variable is initialized before the local variable.
@@ -822,6 +822,7 @@ interface InterfaceName {
 
     2) map :
     -  Whatever data we have in collection that same data will be updated/modified and store in new targeted collection.
+
    # Difference between filter and map in stream
      1) In case of filter the data may be reduced
      2) In case of map data will only get updated.
@@ -945,7 +946,7 @@ interface InterfaceName {
   S- Single Responsibility principle states that the class should have only one reason to change
      or it has only one responsibility
 
-  O- Open/Closed Principle sates that class should be open for extension but close for modification
+  O- Open/Closed Principle states that class should be open for extension but close for modification
 
   L- Liskov substitution principal states that Objects in program should be replaceable with instances of its
      subtypes/subclasses without altering the program
