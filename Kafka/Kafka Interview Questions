@@ -1,0 +1,6 @@
+
+1) What is Apache Kafka?
+2) Explain Architecture of Kafka?
+3) Why you are using kafka in your project?
+4) What is role of the ZooKeeper in Kafka?
+5) Can we use kafka without the ZooKeeper?

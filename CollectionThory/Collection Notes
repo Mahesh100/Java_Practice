@@ -8,9 +8,6 @@
 # Map stores data in the form of objects as key and values pairs
 
 
-
-
-
 # Difference between ArrayList and LinkedList
 
 --> ArrayList:
@@ -24,7 +21,7 @@
      which can lead to data corruption.
     To make a linked list synchronized, you can use the Collections.synchronizedList() method. )
 
-7) Arraylist is not thread safe as at one  time multiple threads are allowed to operate on arraylist.
+7) Arraylist is not thread safe as at one time multiple threads are allowed to operate on arraylist.
 
 --> LinkedList:
 1) Linked-list class inherit the features of list and queue as it implements list and dequeue interface.

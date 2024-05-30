@@ -265,7 +265,7 @@
 - Interface supports multiple inheritance/ Interface used to implement multiple inheritance
 - Interface used to achieve loose coupling.  (IMP)
 - Interface is the blue print of the class which tells class what to do, but it does not show/tell class how to implement a particular task
-- We can not create concerte methods in interface
+- We can not create concerete methods in interface
 - All the methods in interface are  " public abstract " types
 - All the fields/variables in interface are by default "public static final" ;
 
@@ -816,6 +816,7 @@ interface InterfaceName {
       2) map
 
  - Stream API present in java.util package
+
     1) filter :
     - Suppose we have collection of objects as ArrayList have some integer objects
        so if we use filer here then filter will filter data based up on certain condition and store it in some other collection
@@ -959,34 +960,3 @@ interface InterfaceName {
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-  # Apache Kafka
-
-  - Kafka is open source even driven distributed streaming platform
-
-  - Microservice 1 will produce the message and it will send to kafka broker  and Microservice 2 will
-    consume that message from the kafka broker
-
-                          Microservice 1    (Produce message)
-                                |
-                                |
-                                |
-                          Kafka Broker
-                                |
-                                |
-                          Microservice 2     (Consume message)
-
-  - There can be a lot of microservices that can consume kafka messages from the kafka broker.
-
-  - In kafka we have Kafka cluster and this kafka cluster have one or more than one broker.
-
-  - Here, producer will produce message and send it to kafka broker and the consumer basically
-    consume those message from kafka broker.
-
-  - Here we have "Topics" in kafka cluster and consumer will subscribe this topics from kafka cluster
-
-  - In cluster we have one more important term called "Zookeeper", zookeeper basically mange the
-    state of kafka broker inside the cluster
-
-  - Apache kafka is fault tolerance

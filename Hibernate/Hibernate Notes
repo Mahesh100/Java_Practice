@@ -37,11 +37,11 @@
 
  # Why Hibernate ? Why not use JDBC?
 
- 1) Hibernate removes lot of boilerplate code that comes with JDBC?
+ 1) Hibernate removes lot of boilerplate code that comes with JDBC
  2) Hibernate supports HQL which is more object oriented
  3) Hibernate provides transaction management implicitly
  4) Hibernate throws JDBCException or HibernateException which are unchecked exception so we
-    dont need to worry about handling using try catch block
+    don't need to worry about handling using try catch block
  5) Hibernate Support caching for better performance
 
 
@@ -75,7 +75,7 @@
 
      Session.CreateQuery
 
-# SessionFactory is kind of connection and it is thred safe object
+# SessionFactory is kind of connection and it is thread safe object
   -Every Project has only one SessionFactory
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -122,7 +122,7 @@
     # Difference between get() and load() method
 
     -get()
-    1) get() method from sesssion interface will return 'nul' if object is not found in cache as well as 
+    1) get() method from session interface will return 'nul' if object is not found in cache as well as
        on database
      
     2) get() is used when we are not sure that object exists in Db or not
@@ -148,7 +148,7 @@
 1) One-To-One relationship:
    
    # Some examples : 
-     i)   One user have one cart in E-commerce webiste
+     i)   One user have one cart in E-commerce website
      ii)  One student have one Id card 
      iii) One user have one aadhar card
 
@@ -176,9 +176,9 @@
   4) Removed state
 
   1) Transient state :
-      - As soon as we create any object with respective fields to the objects by setting values with getter and setter the object immediatly
+      - As soon as we create any object with respective fields to the objects by setting values with getter and setter the object immediately
         goes into Transient state
-      -Transient Object is hibernate is an object that is not associated with any hibernate session
+      -Transient Object in hibernate is an object that is not associated with any hibernate session
    
   2) Persistent state
      - When object is saved to database then we can say that object is moved to Persistent state
@@ -199,7 +199,7 @@
 
  # HQL (Hibernate Query Language)
 
- - In order to retrive the complex data we use Hibernate query Language
+ - In order to retrieve the complex data we use Hibernate query Language
  - HQL is database independent
  - HQL is easy to learn
  - HQL always start with ' from className.java"

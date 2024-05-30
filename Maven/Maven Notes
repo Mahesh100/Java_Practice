@@ -1,0 +1,85 @@
+ # Maven
+
+ - Maven is Project Management Tool
+ - Maven helps with Build Generation
+ - Maven helps with Dependency resolution
+ - Maven helps with Documentation
+
+ - Maven uses POM (Project Object Model)
+ - When 'maven' command is run it looks for pom.xml in the current dictionary and get needed configuration
+    like : maven install, maven deploy
+ - Maven is highly dependent on pom.xml
+
+ - Before Maven we have 'Ant' build tool
+ - In Ant build tool we have to tell Ant that 'What to do?' & 'How to do?'
+ - In maven we have to tell maven 'What to do?' and maven will take care of 'How to do'
+ -
+
+  # Inside the pom.xml
+   -<project> </project>  : Used to define XML structure or rules of pom.xml file
+
+   -<parent> <parent> : (This is Child Pom) Used to define parent project , current project inherit the configuration from super pom
+
+   - If there is no parent define in pom.xml then maven will automatically inherit from the super pom
+   - So in maven every pom is intenally is child of superpom.xml
+   - Super pom is top hierarchy
+
+   -<properties>
+      <java.version>17</java.version>
+    </properties>
+   properties define the key value pairs for configuration
+
+   <Repositories> </Repositories> This is from where Maven look for project dependencies and download artifacts(jar)
+   - It has one <url> where it can download the jars
+
+    <dependencies>      <dependencies>
+
+    # Maven build life cycle
+
+    (Total 7 Phases)
+    - These all are sequential phases (All previous phases will execute first)
+    - Each phase has multiple goal/task
+    - If you want to run a specific task of particular phase, then all the goals of previous phase + Current goals before the one you defined will get run
+    - <build> </build> element will help you to add new task in any of the phase if needed
+
+    Validate(Phase) --------> Compile(Phase) --------> Test the Code --------> Package Compiles Code(ex:jar or War) --------|
+                                                                                                                            |
+    |_______________________________________________________________________________________________________________________|
+    |
+    |-------->Verify the integrity of Package --------> Install package in Local Repository --------> Deploy Package in remote repository
+
+
+    1) Validate(Phase) : Validate phase will validate the maven structure
+                        -Command : mvn validate
+
+    2) Compile(Phase) : Compile phase will convert java code to byte code
+                        -Command : mvn compile
+
+    3) Test the Code(Phase) : It will run the test case in your project
+                              - Command : mvn test
+
+    4) Package Compile code : This phase will create the jar or war of compile code from compile phase
+                               - Command : mvn package
+
+    5) Verify the integrity of Package : This phase will verify (Task like static code analysis, can add new plugin) {PMD plugin}
+                                         - Command : mvn verify
+      PMD is a source code analyzer:
+       -Finds unused variables
+       -Finds unused objects
+       -Finds unused imports
+       -Empty catch block
+       -Find duplicate code etc
+
+    6) Install package in Local Repository : This phase will install .jar file into local repository (Local system) (.m2/repository/settings.xml folder)
+                                           - If jar file want to deploy some out side then it is called remote repository
+                                           - Command : mvn install
+
+    7) Deploy Package in remote repository : It will deploy the .jar file to remote repository
+                                               - If you want to deploy we have to add in pom.xml
+                                                 <distributionManagement>     </distributionManagement>
+
+                                             - Command mvn deploy
+
+
+
+

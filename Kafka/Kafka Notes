@@ -1,0 +1,158 @@
+
+ # Apache Kafka : Apache Kafka is publish-subscribe model which is based on durable messaging system which is used
+                  for exchanging the data between process, applications and servers.
+
+ - Apache Kafka is publish-subscribe model which is based on durable messaging system
+ - So basically when we have to do some asynchronous communication between two applications then in kafka
+   we have multiple producers which are producing the messages to multiple topics and multiple consumers
+   which consuming from that topic
+ - Also it need to be durable enough because if your consumer die then data which on the topic that should
+   not be removed that should be persisted and also when we have multiple consumers which subscribe to topic
+   so while consuming it should not remove the data from topic while consuming
+ - So kafka persisted message on topic and each message has some Time To Live (TTL)
+ - Using TTL kafka automatically deletes the topics.
+ - Till TTL any number of consumer which subscribe to particular topic can consume the message from topic.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Architecture of Kafka
+
+-Kafka basically consist of one big cluster
+
+
+# Elements of Kafka
+
+1) Producer : Producer is nothing but the applications/services which produces messages to kafka topics.
+              They create ProduceRecord like this
+                            public ProduceRecord(String topics, Integer partition,K Key, V Value, Iterable<Header> headers)
+
+2) Topics:  Topics are logical channels or categories to which messages are published. Topics can be divided into partitions for scalability and parallelism.
+
+3) Partitions: Each topic is divided into partitions which are the basic units of parallelism. Partition is basic place where data is kept.
+
+4) Brokers : Brokers are the individual servers within the kafka cluster. They store and managed data, handle producer and consumer requests, and participate
+             in replication and distribution of data.
+
+5) ZooKeeper: Zookeeper is used for the distributed coordination and management of kafka cluster. It maintains metadata, leader election and helps manage the overall
+             state of the cluster.
+             ZooKeeper is one who manages the kafka cluster.
+
+6) Topic Partitions Replications : Each partitions has multiple replicas for fault tolerance. Replicas are distributed across different brokers.
+                                   One replica is designated as the leader and other are followers.
+
+7) Consumer:
+   Responsibility: Consumer subscribers to one or more topics and consume messages from partitions. Each consumer group can have multiple consumer and each
+                    consumer within a group processes a specific subset for partitions.
+
+8) Consumer Groups:
+   Responsibility: Consumer groups are organized into consumer groups. Each group processes a subset of partitions allowing for parallel processing and load
+                   distributions.
+
+9) Offset Management:
+   Responsibility: Offset represent the position of a consumer within a partition.
+                   Since one consumer can read from the one partition so whenever the consumer dies it knows that it has to read from place where it is
+                   left so that is managed by kafka fully.
+                   -Consumer commits the offsets to Kafka and tracks their process. This ensure that they can resume processing from the last commited
+                   offset in case of failures or restarts.
+
+10) Log Compaction:
+    Responsibility: Kafka supports log compaction retaining only the latest messages for each key in partition. This is useful for scenarios where
+                    maintaining the latest state for a set of keys is critical.
+
+11) Kafka Connect:
+    Responsibility: Kafka Connect is a framework for integrating kafka with external systems. It simplifies the development of connectors for data from
+                    or delivering data to various sources and task.
+
+12) Kafka Streams:
+    Responsibility: Kafka Streams is stream processing library that allows developers to build real-time applications and microservices using kafka as the
+                    underlying data infrastructure.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Architecture Flow:
+
+ Producer Writes to Leader:
+ Producer sends messages to leader partition of specified topic.
+ The leader appends messages to its local log.
+
+ Replica Synchronization:
+ Replication of data is always done at partition level.
+ Leader replicates messages to followers ensuring they have the same set of messages
+
+ *{IMP} :-> ISR( In-Sync Replicas) represents replicas that are up-to-data with leader. (This are partitions that are always up to date with leader partitions).
+            In-Sync replicas are replicas that are capable enough to become leader whenever the leader dies.
+
+ Consumer Reads from Leader:
+ Consumers always read from the leader partition.
+ Once read, it acknowledges the broker that it has read the message successfully and also commits the offset so that in case of failure, it can come
+ back and read from the same offset.
+
+ The leader ensure followers are kept in sync.
+
+ Fault Tolerance:
+ In the event of a leader or broker failure, kafka ensures quick leader election and data replication from in-sync replicas.
+
+ Scalability:
+ Kafka scales horizontally by distributing partitions across multiple brokers.
+
+ ZooKeeper Coordination:
+ ZooKeeper coordination leader election, maintain metadata and helps manage the overall state of the kafka cluster.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Some Key features of Kafka:
+
+1) Scalability
+2) Fault Tolerance
+3) Durability
+4) Real-time Stream processing
+5) Partitioning
+6) High Throughput
+7) Data Retention Policies
+8) Dynamic Reconfiguration
+9) Community and Support
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Role of Zookeeper in Kafka:
+
+- ZooKeeper acts as a centralized and reliable coordination service for Kafka.
+- ZooKeeper ensures that the distributed components of a Kafka cluster can work together seamlessly.
+- ZooKeeper helps in managing the dynamic nature of Kafka clusters providing fault tolerance and enabling
+  coordination among different components.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ # Apache Kafka
+
+  - Kafka is open source even driven distributed streaming platform
+
+  - Microservice 1 will produce the message and it will send to kafka broker  and Microservice 2 will
+    consume that message from the kafka broker
+
+                          Microservice 1    (Produce message)
+                                |
+                                |
+                                |
+                          Kafka Broker
+                                |
+                                |
+                          Microservice 2     (Consume message)
+
+  - There can be a lot of microservices that can consume kafka messages from the kafka broker.
+
+  - In kafka we have Kafka cluster and this kafka cluster have one or more than one broker.
+
+  - Here, producer will produce message and send it to kafka broker and the consumer basically
+    consume those message from kafka broker.
+
+  - Here we have "Topics" in kafka cluster and consumer will subscribe this topics from kafka cluster
+
+  - In cluster we have one more important term called "Zookeeper", zookeeper basically mange the
+    state of kafka broker inside the cluster
+
+  - Apache kafka is fault tolerance
