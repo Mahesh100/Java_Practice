@@ -45,7 +45,7 @@
                     consumer within a group processes a specific subset for partitions.
 
 8) Consumer Groups:
-   Responsibility: Consumer groups are organized into consumer groups. Each group processes a subset of partitions allowing for parallel processing and load
+   Responsibility: Consumers are organized into consumer groups. Each group processes a subset of partitions allowing for parallel processing and load
                    distributions.
 
 9) Offset Management:
@@ -80,7 +80,7 @@
  Replication of data is always done at partition level.
  Leader replicates messages to followers ensuring they have the same set of messages
 
- *{IMP} :-> ISR( In-Sync Replicas) represents replicas that are up-to-data with leader. (This are partitions that are always up to date with leader partitions).
+ *{IMP} :-> ISR( In-Sync Replicas) represents replicas that are up-to-date with leader. (This are partitions that are always up to date with leader partitions).
             In-Sync replicas are replicas that are capable enough to become leader whenever the leader dies.
 
  Consumer Reads from Leader:

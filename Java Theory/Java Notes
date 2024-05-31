@@ -367,7 +367,7 @@ interface InterfaceName {
 
   - Class must implement java.io.serializable interface to make suitable object  (Marker interface)
 
-  -In Java, a serialVersionUID is a unique identifier for each Serializable class that is used to verify
+  - In Java, a serialVersionUID is a unique identifier for each Serializable class that is used to verify
    that the saved object and the loaded class are compatible.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -21,7 +21,7 @@
    -<parent> <parent> : (This is Child Pom) Used to define parent project , current project inherit the configuration from super pom
 
    - If there is no parent define in pom.xml then maven will automatically inherit from the super pom
-   - So in maven every pom is intenally is child of superpom.xml
+   - So in maven every pom is internally is child of superpom.xml
    - Super pom is top hierarchy
 
    -<properties>

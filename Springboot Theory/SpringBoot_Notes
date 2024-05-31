@@ -1,6 +1,6 @@
 # POM : Project Object Model
 
-- When we add starter jar it will pull all the jars inside project , in which we have on jar as Auto configuration jar
+- When we add starter jar it will pull all the jars inside project ,in which we have on jar as Auto configuration jar
 - In Auto configuration folder we have folder called META-INF/spring.factories, inside META-INF we have spring.factories file
 - Inside the spring.factories file all autoconfiguration is already defined.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@
  - IOC maintains the object lifecycle
 
 - Inversion of Control in spring boot is one of the component in spring boot.
-- It manges the creation of objects in spring boot and helps to inject them whenever necessary
+- It manages the creation of objects in spring boot and helps to inject them whenever necessary
 
 - IOC means that we are inverting the control of creation of object from user to some external resource.
 - And that external resource which is responsible for injecting dependence into our application is known as IOC Container
@@ -58,8 +58,7 @@
          -@SpringBootConfguration
 
 
-
-      -EnableAutoConfiguration will configure various component of springBoot application by just
+      - EnableAutoConfiguration will configure various component of springBoot application by just
        scanning  dependency and class path.
        Whatever the dependency we have added in POM.xml file this particular annotation will scan these dependencies
        and will load all the required jar for you
@@ -90,7 +89,7 @@
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# JAP Annotations
+# JPA Annotations
 
  - @OneToOne  -@OnetoOne annotation in Hibernate is used to create a one-to-one association between
                two entities

@@ -1,13 +1,13 @@
  # Spring ORM
  
- # Hibernate is implemention of JPA (Java Persistance API)
+ # Hibernate is implementation of JPA (Java Persistence API)
  ORM : Object Relational Mapping
 
  # Advantage of Using Spring ORM
  - Less coding is required
  - Hibernate template manages everything
  - Easy to test
- - Better Exception Handling (Beacuse of Spring)
+ - Better Exception Handling (Because of Spring)
  - Integrated transaction management
 
 
