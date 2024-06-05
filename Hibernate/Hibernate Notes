@@ -1,6 +1,6 @@
 # Database stores the data in the form of tables
 
-# Hibernate Session Object works as mediator.
+# Hibernate Session Object works as mediator between java application and database
 - Hibernate Session Object has various methods like save(), update(), delete(), CreateQuery()
 - We can say that it takes the java object and put it in database
 -
@@ -31,6 +31,12 @@
 
 -  1) JPA Annotation based configurations :
       - JPA is interface and hibernate is class which is  implementation of JPA interface
+
+      or example:
+
+      interface JPA implements Hibernate {
+
+      }
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

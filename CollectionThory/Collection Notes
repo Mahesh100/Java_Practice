@@ -48,7 +48,7 @@
 - ArrayList class has default capacity of 10
 
 - Set is itself interface as implements collection interface.
-- Set unordered collection that is it will not remember oder of insertion
+- Set is unordered collection so it will not remember order of insertion
 - Set does not allow duplicate elements
 - Set allows only one null value
 - Set is interface.
@@ -156,6 +156,16 @@
 
 
 
+
+# HashSet in java
+
+- HashSet is implemented class of Set interface
+- HashSet does not allow duplicate elements
+- HashSet allows only one null elements
+- HashSet is unordered collection it means that it does not maintain the oder of
+  object in which they are inserted.
+-
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -203,12 +213,3 @@
      3) Comparable having compareTo() abstract method.
      4) ActionListener having actionPerformed() abstract method.
 
-
-# HashSet in java
-
-- HashSet is implemented class of Set interface
-- HashSet does not allow duplicate elements
-- HashSet allows only one null elements
-- HashSet is unordered collection it means that it does not maintain the oder of
-  object in which they are inserted.
--

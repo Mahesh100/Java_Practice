@@ -58,3 +58,34 @@
                Concurrency package
                Thread pool (Executor framework)
 
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+# Difference between process and Thread
+
+# process :
+ - The executing program is called process
+ - Process is heavy weight
+ - Process takes less time for context switching
+ - Process takes more time for inter process communication.
+ - Each process has different address space
+ - Process are not dependent on each other
+ - Process does not require synchronization
+ - Process consume more resources
+ - Process require more time for creation
+ - Process takes more time for termination
+
+# Thread :
+ - Sub part of process is called thread
+ - Thread is light weight.
+ - Thread takes less time for context switching
+ - Thread takes less time for inter thread communication
+ - Thread share same address space.
+ - Threads are dependent on each other
+ - Thread may require synchronization
+ - Resource consumption is less in threads
+ - Threads takes less time for creation
+ - Thread takes less time for termination
+
+
