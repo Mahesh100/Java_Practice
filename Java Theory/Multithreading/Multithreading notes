@@ -1,0 +1,60 @@
+# Multi threading in java
+
+# Multitasking
+- Performing multiple task at single time is called multitasking
+- Multitasking increases the performance of CPU
+
+- We can achieve multitasking by two ways :
+
+    1) Process based multitasking  (Multi Processing)
+    2) Thread based multitasking   (Multi Threading)
+
+ 1) Process Based multitasking (Multi Processing)
+ - When one system is connected to multiple processors in order to complete the task.
+ - It is best suitable at system level
+
+   # Process (Program)[Ex VLC] :
+   - Process is combination of multiple small small task (threads)
+   -
+
+ 2) Thread based multitasking (Multi threading)
+
+ # Thread:
+   - Executing multiple threads at same time is called multithreading
+   -
+
+   Example :
+
+   class VLC{
+        public static void main(String [] args)
+        {
+
+        }
+
+        class Video   (Thread 1)
+        {
+            void playVideo()
+            {
+
+            }
+        }
+
+        class Music  (Thread 2)
+        {
+            void startMusic()
+            {
+
+            }
+        }
+   }
+
+   - Multi threading is best suitable is programming level
+   - In java we have predefine API's for multithreading so we don't need to do internal coding, we have to implement only classes and interfaces
+     to achieve multithreading in java
+
+     Example : Thread class
+               Runnable interface
+               Thread Group class
+               Concurrency package
+               Thread pool (Executor framework)
+
