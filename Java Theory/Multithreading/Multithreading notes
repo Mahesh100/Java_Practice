@@ -83,9 +83,12 @@
  - Thread takes less time for inter thread communication
  - Thread share same address space.
  - Threads are dependent on each other
- - Thread may require synchronization
+ - Threads may require synchronization
  - Resource consumption is less in threads
  - Threads takes less time for creation
  - Thread takes less time for termination
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

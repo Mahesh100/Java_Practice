@@ -30,7 +30,7 @@
 4) There is no default size of linked-list class.
 5) Linked list class does not implements RandomAccess interface.
 6) LinkedList is not synchronised.
-7) Linked list not thread safe as at one time multiple thread are allowed to operate on LinkedList.
+7) Linked list is not thread safe as at one time multiple thread are allowed to operate on LinkedList.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -204,7 +204,7 @@
 
  - A interface which contains only one single abstract method called as functional interface.
 
- - From java 7 we can declare default and static methods in interface.
+ - From java 8 we can declare default and static methods in interface.
 
  - Default functional interfaces in java :
 
