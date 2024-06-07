@@ -92,3 +92,105 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Steps to create thread in java
+
+1) Step: 1  Define class by extending Thread class
+
+  public class Test extends Thread
+  {
+        Step: 2  Override run() method
+        public void run()
+        {
+            //Tast
+            System.out.println("Thread task");
+        }
+
+        public static void main(String [] args)
+        {
+            Step 3: Create Object of class
+            Test t = new Test();
+
+            Step: 4 Invoke run() method using object.start() method
+
+            t.start();
+        }
+  }
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ # Thread class constructor and  methods
+
+ # Syntax
+
+ public class Thread implements Runnable
+ {
+
+    # Constructors
+
+    # Basic thread constructor
+
+    1) Default constructor
+    Thread();
+
+    2) Second constructor
+    Thread(Runnable target)
+
+    3) Third constructor
+    Thread(String name)      //For providing thread name
+
+   # Thread group related constructor
+
+    4) Fourth constructor  (For runnable interface)
+    Thread(Runnable target, String name)
+
+    5) Fifth constructor  (Related thread group)
+    Thread(ThreadGroup tg, Runnable target)
+
+    6) Sixth constructor
+    Thread(ThreadGroup tg, String name)
+
+    7) Seventh Constructor
+    Thread(ThreadGroup tg, Runnable target, String name)
+
+    8) Eighth constructor
+    Thread(ThreadGroup tg, Runnable target, String name, long StackSize)
+
+    # Methods
+
+    # Basic methods
+    1) run() method
+    2) start() method  //It is synchronise method
+
+    # Naming method
+    3) currentThread() method  (static method and provides thread reference)    [These are Native method]  {Native methods are the one whose
+    4) isAlive()              //  return boolean value                          [These are Native method]   implementation is not in java language but
+    5) getName()                                                                                            in some other language}
+    6) setName(String name)
+
+    # Daemon thread methods
+    7) isDemon()
+    8) setDemon(boolean value)
+
+    # Priority based methods
+    9) getPriority()
+    10) setPriority(int value)
+
+    # Preventing thread execution methods
+    11) sleep() method
+    12) yield()
+    13) join()      //Deprecated suspend() , resume() destroy()
+
+    # Thread Interrupting  methods
+    14) interrupt(), isInterrupt()  interpreted()
+
+    # Inter thread communication method
+    # Present in object class
+
+    1) wait()
+    2) notify()
+    3) notifyAll()
+
+ }
