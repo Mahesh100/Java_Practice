@@ -128,17 +128,15 @@
     # Difference between get() and load() method
 
     -get()
-    1) get() method from session interface will return 'nul' if object is not found in cache as well as
+    1) get() method from session interface will return 'null' if object is not found in cache as well as
        on database
-     
     2) get() is used when we are not sure that object exists in Db or not
-    3)
 
     -load()
     1) load() method from session interface will return ObjectNotFoundException if object is not found in cache as well
       as on database
     2) load() method is used when we are sure that object exits in DB
-    3) 
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -150,6 +148,8 @@
 2) One-to-Many relationship : 
 
 3) Many-to-Many relationship
+
+
 
 1) One-To-One relationship:
    
@@ -180,6 +180,7 @@
   2) Persistent states
   3) Detached state
   4) Removed state
+
 
   1) Transient state :
       - As soon as we create any object with respective fields to the objects by setting values with getter and setter the object immediately

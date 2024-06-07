@@ -5,7 +5,7 @@
  - Apache Kafka is publish-subscribe model which is based on durable messaging system
  - So basically when we have to do some asynchronous communication between two applications then in kafka
    we have multiple producers which are producing the messages to multiple topics and multiple consumers
-   which consuming from that topic
+   which are consuming from that topic
  - Also it need to be durable enough because if your consumer die then data which on the topic that should
    not be removed that should be persisted and also when we have multiple consumers which subscribe to topic
    so while consuming it should not remove the data from topic while consuming

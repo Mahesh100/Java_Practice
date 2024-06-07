@@ -1,6 +1,6 @@
 # POM : Project Object Model
 
-- When we add starter jar it will pull all the jars inside project ,in which we have on jar as Auto configuration jar
+- When we add starter jar it will pull all the jars inside project ,in which we have one jar as Auto configuration jar
 - In Auto configuration folder we have folder called META-INF/spring.factories, inside META-INF we have spring.factories file
 - Inside the spring.factories file all autoconfiguration is already defined.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

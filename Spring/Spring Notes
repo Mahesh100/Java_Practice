@@ -82,7 +82,7 @@
 - Spring IOC Container is predefine program 
 - It is component of spring which is inbuilt in spring framework
 - Spring IOC Container will create objects, hold objects in memory and inject them in other object whenever required (Dependency Injection)
--Spring IOC container maintain the object lifecycle.
+- Spring IOC container maintain the object lifecycle.
 
 - Spring container should know which are the Beans/POJO classes need to manage and Configuration information(Config file)
 - Configuration file tells which object is depend on other object

@@ -27,19 +27,17 @@ public class CountWords {
 
                 //str.charAt(i) ==' ' && s.charAt(i+1)!=' '
 
-                for (
-                        int i = 0;
-                        i < length - 1; i++) {
+                for (int i = 0; i < length - 1; i++) {
                     if ((str.charAt(i) == ' ') && (str.charAt(i + 1) != ' ')) {
                         count++;
                     }
                 }
-                System.out.println("Number of words in a String:" + count);
+                System.out.println("Number of words in a String: " +  count);
                 System.out.println();
 
-                if(str ==' '){
-                    run();
-                }
+//                if(str ==' '){
+//                    run();
+//                }
             }
         }
 

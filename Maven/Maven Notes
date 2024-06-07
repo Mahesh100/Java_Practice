@@ -22,7 +22,7 @@
 
    - If there is no parent define in pom.xml then maven will automatically inherit from the super pom
    - So in maven every pom is internally is child of superpom.xml
-   - Super pom is top hierarchy
+   - Super pom is top at hierarchy
 
    -<properties>
       <java.version>17</java.version>

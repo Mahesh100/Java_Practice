@@ -5,7 +5,6 @@
    OOPS : Object Oriented Programming System.
 
 
-
 ## Object class is the parent class of all the classes in java.
 
 # Lambada Expression are usually passed as a parameters to functions.
@@ -17,6 +16,7 @@
   To call the lambada expression we use only functional interface.
 
 # The super keyword can be used to call a method on the superclass of the current class.
+  -The super keyword refers to superclass (parent) objects. It is used to call superclass methods, and to access the superclass constructor.
 
 # Static block is used for static initialization of classes
 
@@ -373,7 +373,7 @@ interface InterfaceName {
 
 # Callable Interface in java
 
--The Callable interface in Java is a functional interface that defines a single method, call(),
+-The Callable interface in Java is a functional interface that defines a single method, call() method,
    which returns a value.
 -The value can be obtained through Future<V> objects.
 -In order to Return the result we use callable interface.
@@ -717,7 +717,7 @@ interface InterfaceName {
  # Lambada Expression
 
    Objective :
-    -To bring functional programming features
+    - To bring functional programming features
     - Code optimization/we can write concise code
 
 
@@ -725,7 +725,7 @@ interface InterfaceName {
 
  - Using lambada expression we can achieve functional programming features in java.
 
- - Generally in java, which is object oriented programming language.
+ - Generally in java  is object oriented programming language.
    The data will be stored in Classes  and Objects
 
    But, in functional programming language the data will be stored in functions and variables
@@ -752,9 +752,6 @@ interface InterfaceName {
    () -> {
                  System.out.println("Welcome");
          }
-
-
-
 
 
 

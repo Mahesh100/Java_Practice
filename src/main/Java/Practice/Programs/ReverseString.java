@@ -4,7 +4,7 @@ package Practice.Programs;
 
 
 public class ReverseString {
-//Reverse string in java
+    //Reverse string in java
     public static void main(String[] args){
 
         String str = "Mahesh";

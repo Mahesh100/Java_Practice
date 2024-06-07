@@ -15,13 +15,13 @@
 
    # Process (Program)[Ex VLC] :
    - Process is combination of multiple small small task (threads)
-   -
+
 
  2) Thread based multitasking (Multi threading)
 
  # Thread:
    - Executing multiple threads at same time is called multithreading
-   -
+
 
    Example :
 
@@ -67,7 +67,7 @@
 # process :
  - The executing program is called process
  - Process is heavy weight
- - Process takes less time for context switching
+ - Process takes more time for context switching
  - Process takes more time for inter process communication.
  - Each process has different address space
  - Process are not dependent on each other
