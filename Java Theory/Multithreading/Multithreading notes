@@ -277,3 +277,40 @@
  - JVM is not dependent on daemon thread.
 
  - Daemon should have low priority, but we can change it according to our need
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Thread Priorities
+
+- Priorities are represented in the form of Integer values and ranges from 1 to 10
+  Where,
+
+  1  is MIN_PRIORITY
+  5  iS NORM_PRIORITY
+  10 is MAX_PRIORITY   //These constants are provided by java
+
+  //Not priority for thread (Not exists)
+  0, < 1, >10, LOW_Priority, Normal_Priority, Maximum_priority, High_PRIORITY
+
+- Priority of thread is a integer number given to thread.
+- Every thread has its own priority
+- JVM sets the priority to each thread.
+- According to priority JVM will allocate processor to thread
+- Priorities are inherited from parent thread
+- By default priority of main thread is 5 (NORM_PRIORITY)
+- If multiple threads have same priority then it is depend on JVM to give first priority to threads
+- Windows does not supports priority
+- Priority depends up on platform
+
+# Methods for Priority
+
+public final void setPriority()
+
+public final int getPriority()
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
