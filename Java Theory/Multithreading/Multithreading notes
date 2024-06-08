@@ -237,3 +237,43 @@
   -Garbage collector is service thread(Daemon) which executes in background which provides the service
    as it will restrict main thread from any potential memory problem.
    It will delete waste object and free the memory
+
+# Methods in daemon thread
+
+ # public final void setDaemon(boolean value)   //return type void
+
+ # public final boolean isDaemon()     //return boolean value
+
+ class Test extends Thread
+ {
+     public void run()
+     {
+        System.out.println("Child Thread");
+     }
+
+     public static void main(String [] args)
+     {
+             System.out.println("Main Thread");
+
+             Test t = new Test();
+             t.setDaemon(true);   //alway create before start() method
+             t.start()
+     }
+ }
+
+
+ # Cases :
+
+ Case 1:
+ - We have to create daemon thread before start() method
+ - If we create thread after start() method then it will throw runtime exception as IllegalStateException
+ - We can not create main thread as demon thread as main thread already started and
+   we have to create daemon thread before starting the thread.
+
+ - Life of daemon thread depends up on another thread( on whose background it is running(Parent thread))
+
+ - Daemon thread inherits the properties from its parent thread
+
+ - JVM is not dependent on daemon thread.
+
+ - Daemon should have low priority, but we can change it according to our need
