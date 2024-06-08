@@ -1,5 +1,9 @@
 # Multi threading in java
 
+- By default JVM will provide name to thread automatically
+- We can set name to any thread using Thread.currentThread().setName("Mahesh");   //Mahesh is name of thread here
+
+
 # Multitasking
 - Performing multiple task at single time is called multitasking
 - Multitasking increases the performance of CPU
@@ -194,3 +198,42 @@
     3) notifyAll()
 
  }
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ # Get Current Thread
+
+   class Test extends Thread
+   {
+   public void run()
+   {
+   System.out.println("Task");
+   }
+}
+   public static void main(String [] args)
+   {
+        System.out.println(Thread.currentThread().getName());
+        Thread.currentThread().setName("Thread-1");
+
+        Test t = new Test();
+        t.start();
+   }
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Daemon Thread in java
+
+ - Threads which run in background of another thread
+ - Use: Daemon thread provides service to thread
+
+ Example:
+ Garbage Collector, Finalizer, Attach Listener, Signal dispatcher
+
+  -Garbage collector is service thread(Daemon) which executes in background which provides the service
+   as it will restrict main thread from any potential memory problem.
+   It will delete waste object and free the memory
