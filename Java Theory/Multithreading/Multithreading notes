@@ -314,3 +314,141 @@ public final int getPriority()
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Prevent Thread Execution method in java
+
+1) sleep() method
+
+- In thread class we have two sleep methods
+  means sleep() method overloaded
+
+  Method 1
+
+  public static native void sleep(long mili) throws InterruptedException
+
+  Method 2
+
+  public static void sleep(long miliSeconds, int nanoSeconds) throws InterruptedException
+
+  Both are static methods so we can all both methods directly from thread class
+
+  class Test
+  {
+    public static void main(String [] args)
+    {
+    for(int i=1; i<=5;i++)
+    {
+    try{
+        Thread.sleep(1000);
+      System.out.println(i);
+      }
+      catch(Exception e)
+      {
+      System.out.println(e);
+      }
+    }
+    }
+  }
+
+- sleep() method will throw InterruptedException
+
+- While thread is in sleep mode it does not release lock
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # yield() method
+
+ - This method will stop current running/executing thread and give chance to other thread for execution
+
+ Working of yield method
+
+ - In java 5, yield method used sleep() method internally
+ - In java 6, Thread provided the hint to thread scheduler then it depends on thread scheduler to accept or ignore the hint
+
+# Method
+
+public static native void yield();
+
+- output may be different each time
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# join() method in multi threading
+
+- join() method is used when if thread wants to wait for another thread to complete its task
+
+# Methods : (Overloaded)
+
+1) public final void join() throws InterruptedException{}
+
+2) public final synchronized void join(long mili) throws InterruptedException{}
+
+3) public final synchronized void join(int mili, long nano) throws InterruptedException{}
+
+public class  Test extends Thread{
+
+    public void run()
+    {
+        try{
+            for(int i=1; i<=5; i++)
+            {
+                System.out.println("Child Thread");
+                Thread.sleep(1000);
+            }
+        }catch(Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+
+    public static void main(String [] args) throws InterruptedException {
+        Test t = new Test();
+        t.start();
+        t.join();
+        try{
+            for(int i=1; i<=5; i++)
+            {
+                System.out.println("Main Thread");
+                Thread.sleep(1000);
+
+            }
+        }catch(Exception e)
+        {
+            System.out.println(e);
+        }
+
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Difference between sleep() yield() and join() method
+
+  - All three methods will temporary stops the execution
+
+  Property                               sleep()                                                              yield()                                                                       join()
+
+1) Purpose               If any thread does not want to perform operation                 It stops current executing thread and provides chance                      If one thread wants to wait for another thread to complete its
+                         for particular time                                              of another thread of same priority or higher priority to execute           task
+
+2) Example               Timer,PPT                                                        Licence department
+
+3) How the thread       -Invokes automatically as per given time period                   Automatically invoke by thread scheduler                                    Automatically invoked after completion of another thread task
+   invoke again         -If thread is interrupted                                                                                                                     After completion of given time period
+                                                                                                                                                                      If thread is interrupted
+
+4) Methods              native sleep(long mili)                                                   yiled()                                                                    join()
+                        sleep(long mili, int nano)                                                                                                                    join(long mili)
+                                                                                                                                                                      join(long mili, int nano)
+
+5) If overloaded        Yes                                                                No                                                                          Yes
+
+6) Exception            InterruptedException                                               N/A                                                                         InterruptedException
+
+7) is final()           No                                                                 No                                                                          Yes
+
+8) is static            Yes                                                                Yes                                                                         No
+
+9) is Native            Yes                                                                Yes                                                                         No
