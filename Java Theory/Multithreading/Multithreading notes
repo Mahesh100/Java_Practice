@@ -452,3 +452,103 @@ public class  Test extends Thread{
 8) is static            Yes                                                                Yes                                                                         No
 
 9) is Native            Yes                                                                Yes                                                                         No
+
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+ # interrupting methods in java
+
+ - It is use to interrupt an existing thread
+ - Interrupt method works only when the thread is in sleep() or wait() state
+ - If thread is not is in sleeping or waiting state then calling interrupt method will perform normal behavior
+ - Interrupt method always throws InterruptedException (Checked exception/ handle using try-catch block)
+ - public void interrupt()
+
+ Example :
+
+ class Test extends Thread
+ {
+      public void run()
+      {
+       try{
+        for(int i=1; i<=5; i++)
+        {
+            System.out.println(i);
+            Thread.sleep(1000);
+        }
+        }catch(Exception e)
+        {
+          System.out.println(e);
+          }
+        }
+
+        public static void main(String [] args)
+        {
+          Test t = new Test();
+          t.start();
+        }
+      }
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+# Synchronization in java
+
+ # Program without Synchronization
+
+public class BookTheaterSeat {
+    int total_seats = 10;
+    void bookSeat(int seats)
+    {
+        if(total_seats>=seats)
+        {
+            System.out.println("Seats booked successfully");
+            total_seats = total_seats-seats;
+            System.out.println("Left seats: "+total_seats);
+        }else {
+            System.out.println("Seats can not be booked");
+            System.out.println("Seats Left "+total_seats);
+        }
+    }
+}
+
+
+public class MovieBookApp extends Thread{
+
+   static BookTheaterSeat b;
+   int seats;
+    public void run(){
+
+        b.bookSeat(seats);
+
+    }
+
+    public static void main(String[] args) {
+            b= new BookTheaterSeat();
+
+            MovieBookApp deepak = new MovieBookApp();
+            deepak.seats=7;
+            deepak.start();
+
+            MovieBookApp mahesh = new MovieBookApp();
+            mahesh.seats=12;
+            mahesh.start();
+
+            MovieBookApp amit = new MovieBookApp();
+            amit.seats = 6;
+            amit.start();
+    }
+}
+
+
+- Synchronization is process by which we can control the accessibility of multiple threads of particular resource.
+- Without synchronization Data inconsistency and multiple thread interference problem may occur
+- Advantages of synchronization :
+        Avoid data inconsistency problem
+        No thread interference
+
+Disadvantages of Synchronization:
+    Increase the waiting time period of threads
+    Create performance problems
+
+

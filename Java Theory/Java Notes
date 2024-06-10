@@ -7,6 +7,13 @@
 
 ## Object class is the parent class of all the classes in java.
 
+# Primitive variable like int a =10;  String s ="abc" doesn't hold any reference it just store value itself.
+
+# Sting Constant Pool (SCP) is present in Heap Memory Area.
+
+# Object are stored in Heap area but reference is created Stack area.
+
+# Once the code execution get completed it the references from the stack area get deleted/clear
 # Lambada Expression are usually passed as a parameters to functions.
 
 # The main objective of introducing lambada expression in java is to bring functional programming feature in java.
@@ -957,3 +964,91 @@ interface InterfaceName {
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Garbage Collector In Java
+
+- Stack memory will store Reference of object
+- Heap memory will store actual onject
+
+
+- Garbage collector is used to delete the unreferenced objects from the heap area
+- JVM control when to run garbage collector
+- System.gc() will run the garbage collector
+- Garbage collector does automatic memory management
+
+ # Strong reference and weak reference and Soft reference in Stack memory
+
+ WeakReference<Person> pobj = new WeakReference();
+
+ Strong reference : Object never get deleted until strong reference is present
+
+ Weak reference : As soon as garbage collector get run this object will deleted
+
+ Soft reference: Depend up on gc , but only do if there is shortage of space
+
+
+- In heap area whenever the object reference is not present, heap will allow to fee up the memory using garbage collector
+
+
+
+-- Heap Memory in java
+
+- Heap memory is divided into two parts
+
+  1) Young generation  (Minor Garbage collector)
+  2) Old generation    ( Major Garbage Collector)
+
+  3) Meta Space   (Outside of heap)
+
+
+
+  1) Young generation is divided into 3 parts
+     i) Eden
+     ii)
+
+
+   When we create new object it will goes to Eden space of young generation
+
+   Example:  Object1, Object2, Object3, Object4, Object5.
+
+   Now, suppose after periodic time Garbage collector get invoked by JVM
+   and in Eden space Object1 and Object2 don't have reference
+
+   So, Object1 and Object2 are marked to be deleted by GC from the memory
+   and it will sweep this remaining/surviving objects survive memory space
+   and the age will added to survival objects and this is called Minor gc
+
+
+   1) First time garbage collector runs
+
+   2) Second time garbage collector runs
+
+   3) Third time garbage collector runs
+
+
+   - After age limit object has to do promotion
+   - Promotion means moving object from young generation to old generation
+
+   # Meta Space (Permanent generation in old java and is part of Heap memory)
+   - Meta space is outside of Heap area
+   - Meta space will store class variables. class meta-data, constants
+
+
+   # Garbage Collector Algorithm
+   - Garbage collector uses Mark and sweep algorithm
+   - Garbage collector uses Mark and sweep with Compact
+          -This will compact object/survival objects in sequential manner
+
+   # Different version of Gc
+
+   1) Serial Gc : Only one thread is used so work will be slow and Gc will be expensive as all application will stop/pause
+                 -If Gc is slow then your application would become slow
+
+   2) Parallel Gc (Default GC) : It depend up on core so 2 core have 2 threads, 4 core have 4 thread and it is little bit faster
+                                 - Currently java 8 using parallel gc
+
+   3) Concurrent mark and sweep : While application thread are working concurrently Garbage collector threads are also working
+                                 - Application threads are not stopping because of Gc thread (Not garenty)
+
+   4) G1 Garbage Collector : It will garrenty that application thread will not stop because of Gc
+
