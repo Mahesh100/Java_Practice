@@ -1,6 +1,6 @@
 package Programs;
 
-import org.jetbrains.annotations.Contract;
+
 
 public class CountDigits {
 
@@ -11,7 +11,6 @@ public class CountDigits {
 
      */
 
-    @Contract(pure = true)
     public static long countDigits(long x) {
 
         long result = 0;

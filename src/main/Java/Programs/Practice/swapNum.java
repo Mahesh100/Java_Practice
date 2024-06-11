@@ -1,4 +1,4 @@
-package Practice.Programs;
+package Programs.Practice;
 
 public class swapNum {
     public static void main(String[] args) {
