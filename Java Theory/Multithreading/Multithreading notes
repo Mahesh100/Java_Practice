@@ -52,7 +52,7 @@
         }
    }
 
-   - Multi threading is best suitable is programming level
+   - Multi threading is best suitable at programming level
    - In java we have predefine API's for multithreading so we don't need to do internal coding, we have to implement only classes and interfaces
      to achieve multithreading in java
 
@@ -68,29 +68,19 @@
 
 # Difference between process and Thread
 
-# process :
- - The executing program is called process
- - Process is heavy weight
- - Process takes more time for context switching
- - Process takes more time for inter process communication.
- - Each process has different address space
- - Process are not dependent on each other
- - Process does not require synchronization
- - Process consume more resources
- - Process require more time for creation
- - Process takes more time for termination
+                 Process                                                                                    Thread
 
-# Thread :
- - Sub part of process is called thread
- - Thread is light weight.
- - Thread takes less time for context switching
- - Thread takes less time for inter thread communication
- - Thread share same address space.
- - Threads are dependent on each other
- - Threads may require synchronization
- - Resource consumption is less in threads
- - Threads takes less time for creation
- - Thread takes less time for termination
+ - The executing program is called process                                              - Sub part of process is called thread
+ - Process is heavy weight                                                              - Thread is light weight.
+ - Process takes more time for context switching                                        - Thread takes less time for context switching
+ - Process takes more time for inter process communication.                             - Thread takes less time for inter thread communication
+ - Each process has different address space                                             - Thread share same address space.
+ - Process are not dependent on each other                                              - Threads are dependent on each other
+ - Process does not require synchronization                                             - Threads may require synchronization
+ - Process consume more resources                                                       - Thread Consumes less resources
+ - Process require more time for creation                                               - Threads takes less time for creation
+ - Process takes more time for termination                                              - Thread takes less time for termination
+
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -179,7 +169,7 @@
     8) setDemon(boolean value)
 
     # Priority based methods
-    9) getPriority()
+    9)  getPriority()
     10) setPriority(int value)
 
     # Preventing thread execution methods
@@ -229,7 +219,7 @@
  # Daemon Thread in java
 
  - Threads which run in background of another thread
- - Use: Daemon thread provides service to thread
+ - Use: Daemon thread provides service to current thread
 
  Example:
  Garbage Collector, Finalizer, Attach Listener, Signal dispatcher
@@ -256,7 +246,7 @@
              System.out.println("Main Thread");
 
              Test t = new Test();
-             t.setDaemon(true);   //alway create before start() method
+             t.setDaemon(true);   //always create before start() method
              t.start()
      }
  }
@@ -329,7 +319,7 @@ public final int getPriority()
 
   public static void sleep(long miliSeconds, int nanoSeconds) throws InterruptedException
 
-  Both are static methods so we can all both methods directly from thread class
+  Both are static methods so we can call both methods directly from thread class
 
   class Test
   {
@@ -370,6 +360,30 @@ public final int getPriority()
 public static native void yield();
 
 - output may be different each time
+
+public class Test extends  Thread{
+
+    public void  run(){
+        for(int i=0; i<=5; i++){
+            System.out.println(Thread.currentThread().getName());
+          //  System.out.println(i);
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.start();
+
+        for(int i=0; i<5; i++)
+        {
+            Thread.yield();
+            System.out.println("Main Thread");
+        }
+    }
+}
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -439,7 +453,7 @@ public class  Test extends Thread{
    invoke again         -If thread is interrupted                                                                                                                     After completion of given time period
                                                                                                                                                                       If thread is interrupted
 
-4) Methods              native sleep(long mili)                                                   yiled()                                                                    join()
+4) Methods              native sleep(long mili)                                                   yield()                                                                    join()
                         sleep(long mili, int nano)                                                                                                                    join(long mili)
                                                                                                                                                                       join(long mili, int nano)
 
@@ -471,12 +485,19 @@ public class  Test extends Thread{
  {
       public void run()
       {
-       try{
-        for(int i=1; i<=5; i++)
-        {
-            System.out.println(i);
-            Thread.sleep(1000);
-        }
+     try {
+                 for (int i = 1; i <= 5; i++)
+                 {
+                     if(i>3)
+                     {
+                         Thread.interrupted();
+                     }else
+                     {
+                         System.out.println(i);
+
+                       //  Thread.sleep(3000);
+                     }
+                 }
         }catch(Exception e)
         {
           System.out.println(e);
@@ -547,7 +568,7 @@ public class MovieBookApp extends Thread{
         Avoid data inconsistency problem
         No thread interference
 
-Disadvantages of Synchronization:
+-Disadvantages of Synchronization:
     Increase the waiting time period of threads
     Create performance problems
 
