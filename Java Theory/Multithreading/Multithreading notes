@@ -572,4 +572,37 @@ public class MovieBookApp extends Thread{
     Increase the waiting time period of threads
     Create performance problems
 
+ # Synchronization can be archived by using two ways:
 
+ 1) Process Synchronization
+ 2) Thread Synchronization
+
+   2) Thread Synchronization divided into two parts:
+      i)  Mutual Exclusive
+      ii) Cooperation
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+
+ # Synchronize methods in java
+
+ 1) Synchronized method
+    - Any method with synchronized keyword is known as synchronized method
+    - In java every object have unique lock
+    - In object there are two areas as
+          i) Synchronized area
+          ii) Non-Synchronized area
+
+
+2) Synchronize block in java
+
+ - Need Of Synchronize block:
+   - In synchronize block lock is on object level
+   - If we want to make only particular lines of code synchronise
+   - Apply synchronization at only impacted area
+   - It reduces thread waiting time
+   - Scope of synchronise() block is less than scope of synchronise method
+
+
+ 3) Static Synchronization :
+    -In static synchronization lock is at class level
