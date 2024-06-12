@@ -18,6 +18,15 @@ public class Test {
 
         System.out.println( "Length of given string is greater than 4 : "+pr.test("Mahesh"));
 
+        //Example 3
 
+        String[] names = {"David","Mahesh","Tom","Hat"};
+
+        for(String name: names)
+        {
+             if(pr.test(name)){
+                 System.out.println("Length is greater than 4  "+ name);
+             }
+        }
     }
 }

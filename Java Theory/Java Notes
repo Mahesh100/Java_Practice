@@ -823,10 +823,11 @@ Example 3:
 
     # Java 8 have some Predefine functional interfaces :
 
-    1) Predicate
-    2) Function
-    3) Consumer
-    4) Supplier
+                                            When to choose                                                                    Method
+    1) Predicate                       - When we have some conditional Checks in program                                   test() method
+    2) Function                        - To perform certain operation and return value                                     apply() method
+    3) Consumer                        - When we have to consume/use the provided input but doesn't return any value       accept() method
+    4) Supplier                        - It supply somting, it doesn't take any input or parameter                         get() method
 
     - These interface have one abstract method each
     - These pre-define functional interface are present in java.util.function package
@@ -851,6 +852,37 @@ Example 3:
            - Predicate always return boolean values either true or false
            - Predicate is used only when we have conditional checks in your program.
 
+
+  2) Function Interface:
+
+     - Function interface have one abstract method as apply() method.
+     - apply() method take any type of parameter and will return single value
+     -
+
+     interface Function<T,R>     //T - Type and R- Return type
+     {
+         apply(Type);
+     }
+
+  # Function Chaining
+
+     - we can chain the function
+     - andThen() method  straight order execution
+     - compose() method  reverse order execution
+
+
+  3) Consumer Functional Interfaces
+
+     - Consumer have one abstract  method called accept()
+     - Consumer is just accept some input do some processing but doesn't return any value
+     -
+
+
+  4) Supplier Functional interface
+
+      - In case of supplier it doesn't take any input/argument but it do some action and return some object
+      -
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Stream API
