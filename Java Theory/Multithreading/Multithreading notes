@@ -18,7 +18,14 @@
  - It is best suitable at system level
 
    # Process (Program)[Ex VLC] :
+   - Process is instance of program that is getting executed
    - Process is combination of multiple small small task (threads)
+
+   - Every time a process get created they allocate their own memory/resources
+   - Each process has its own heap memory
+   - One process has multiple threads
+   - When process is created, it starts with one thread and that thread is known as 'main' thread
+     and from main thread we can create multiple threads to perform task concurrently
 
 
  2) Thread based multitasking (Multi threading)
@@ -80,6 +87,110 @@
  - Process consume more resources                                                       - Thread Consumes less resources
  - Process require more time for creation                                               - Threads takes less time for creation
  - Process takes more time for termination                                              - Thread takes less time for termination
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    # Memory management in Multi Threading
+
+    - In java JVM have  multiple memory areas like Stack, Heap , Code segment, Data Segments, Registers and program counters etc
+
+    - Whenever a process is created a new JVM instance get created.
+    - Whenever a process is created a new JVM instance is created and  allocated to that process.
+    - And each JVM  instance has all this areas
+
+    - How much heap memory allocated to process?
+      - We can define the memory allocation
+
+         -Xms<size>
+          This will set the initial size
+          Suppose we have set 256MB then :  java -Xms256m -Xmx2g MainClassName
+
+         -Xmx<size>
+          This will allocate Max heap size
+
+          If process is required to allocate more memory then outOffMemory error will come even though JVM heap have 10Gb of memory
+
+    - Suppose in process we have multiple threads like p1,p2 and p3
+      Then,
+          - Register, Stack and Counter are local to each thread
+
+          - Code Segment, Data Segment and heap memory is shared among all three threads p1,p2,and p3
+
+    - What is Code Segment
+      - Code Segment contains the compiled BYTECODE (machine code of java program)
+      - Code segment is read only
+      - All threads within the same process share the same code segment
+
+    - What is Data Segment
+      - Contains the GLOBAL and Static variables
+      - All the process within the same process share the same data segment
+      - Threads can read and modify teh same data
+      - Synchronization is required between multiple threads
+
+    Heap :
+    - Whenever a thread create new object using 'new' keyword so for object a space is allocated into a heap area
+    - Heap is shared among all the threads of same process
+    - Heap is not shared among the two different process
+
+
+    Stack (What is Stack)
+    - Each thread has their own stack area
+    - Stack manages method calls, local variables
+    - Each thread has its own stack
+
+
+    Register : (What is Register)
+    - When JIT (Just In Time) compiler converts the ByteCode into native machine code, it uses register to optimized the
+      generated machine code.
+    - Register is used to store intermediate values
+    - Register also helps in context switching
+    - Each thread has its own Register
+
+
+   Counter : (What is Counter)
+   - Also known as Program Counter, it points to the instruction which is  getting executed
+   - Increments its counter after successfully execution of instruction
+   - Points to the instructions which is to be executed means
+       we know that  Code Segment has machine code which hash to be executed, each thread in program
+       is running some part of code so what part of code a thread have to run the counter points the address
+       of that instruction in code segment (Counter tells to thread ok you have to run this particular part)
+
+
+
+   # Complete Flow :
+    Suppose I have written on java code having file name as Main.java
+    Inside Main.java code we have small code segments which executing different parts of code
+    like T1, T2 and T3 etc threads
+
+    1) To run java code we have to do   javac Main.java  (Compile)
+       Here byte code get generated
+
+    2) Now when we are executing java Main.java  then Process will be created
+       Now once the process is created then the JVM instance get allocated and JVM instance have
+       heap memory and lets say we have allocated heap memory as -Xms<size> of 1GB
+       So JVM instance has Code Segment, Data Segment etc
+       -Currently this process don't have Threads
+       Now, JIT which is inside JVM will start compiling the code and converting it to ByteCode to Machine Code
+       While it is converting byte code to machine code it will create respective threads for Progress (lets say 3)
+       - So for each thread a Register , Stack and counter will be assign by the JVM.
+         JVN will create threads while converting the Byte code to Machine code
+
+    3) Now the this machine code generated is saved into code segment by JVM
+       so code segment hava the machine code which CPU understands
+       Now the counter of particular code points to address of machine code inside the Code Segment
+       - Each counter have the address of code segment where the threads has to start working
+
+    4) Now
+
+    //Todo
+
+
+
+
+
 
 
 
@@ -583,6 +694,8 @@ public class MovieBookApp extends Thread{
 ----------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
 
+ I] Mutual Exclusive Synchronization
+
 
  # Synchronize methods in java
 
@@ -606,3 +719,19 @@ public class MovieBookApp extends Thread{
 
  3) Static Synchronization :
     -In static synchronization lock is at class level
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+ II] Co-operation (Inter thread Communication )
+
+   - Inter thread communication can be achieved by
+       1) wait()
+       2) notify();
+       3) notifyAll();
+
+   - Inter thread communication is mechanism by which a running thread which have a lock acquired will release its lock and went into waiting state and another thread
+     will acquire a lock and soon as this thread completes its execution it will send a notification to first thread and first thread now starts its execution.
+
+   - Inter-thread communication is mechanism in which a thread releases the lock and enter into paused state
+   - All this methods are not methods of Thread class, this are present in Object class
+
