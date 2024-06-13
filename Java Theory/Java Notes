@@ -708,39 +708,6 @@ interface InterfaceName {
   5] By using listIterator cursor we can retrieve, remove, replace and add collection elements.
 
 
-# How to Create stream Object in java
-
-  There are total 5 ways to create Stream object in java
-
-  1) To create empty stream
-    Stream<Object> emptyStream = Stream.empty();
-
-  2)     2nd Method using array
-         String[] names = {"Durgesh","Uttam", "Aniket","Divya"};
-         Stream<String> stream1 = Stream.of(names);
-         stream1.forEach(e->{
-             System.out.println(e);
-         });
-
-3)        3rd method using Builder pattern
-          Stream<Object> streamBuilder = Stream.builder().build();
-
-
-4)        4th Method using Arrays  (anonymous array)
-          IntStream stream = Arrays.stream(new int[]{2,4,65,3,5});
-          stream.forEach(e->{
-              System.out.print(e+",");
-          });
-
-
-5)        Using collection Object List/set/Map
-
-          List<Integer> list1 = new ArrayList<>();
-          list1.stream().forEach(e->{
-              System.out.println(e);
-          });
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1009,6 +976,79 @@ Example 3:
   # Stream API and IO Stream are two different things
   - IO stream it is sequence of data using which we can read and write data
   - Stream of API is for processing the group of objects or collection of data
+
+
+
+# How to Create stream Object in java
+
+  There are total 5 ways to create Stream object in java
+
+  1) To create empty stream
+    Stream<Object> emptyStream = Stream.empty();
+
+  2)     2nd Method using array
+         String[] names = {"Durgesh","Uttam", "Aniket","Divya"};
+         Stream<String> stream1 = Stream.of(names);
+         stream1.forEach(e->{
+             System.out.println(e);
+         });
+
+3)        3rd method using Builder pattern
+          Stream<Object> streamBuilder = Stream.builder().build();
+
+
+4)        4th Method using Arrays  (anonymous array)
+          IntStream stream = Arrays.stream(new int[]{2,4,65,3,5});
+          stream.forEach(e->{
+              System.out.print(e+",");
+          });
+
+
+5)        Using collection Object List/set/Map
+
+          List<Integer> list1 = new ArrayList<>();
+          list1.stream().forEach(e->{
+              System.out.println(e);
+          });
+
+
+# Methods in Stream API
+
+1) filter() method
+   -filter method takes predicate
+   -It is used to filter the data
+
+2) map() method
+  -map method is used to perform operation on each element
+  - Example: Square each element in list
+  - map() method will modify existing stream
+
+3) collect() method
+  - It collect the stream of elements
+
+4) forEach() method
+   - It is used to iterate over stream and takes consumer interface.
+
+5) sorted() method
+   -It will sort the stream
+
+6) min() method
+
+7) max() method
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# IntStream and Stream API in java
+
+           IntStream                                                                         Stream<Integer>
+
+    -IntStream is stream of primitive int values (Data types)                       - Stream<Integer> is stream of Integer objects (Wrapper class)
+    -IntStream has built-in concept of range() and sum(),average() etc              - To do sum operation here we have to use reduce() method
+    -IntStream is a specialized stream for working with primitive int values.       - Stream<Integer> is a stream of Integer objects (the wrapper class for the primitive int).
+    - It provides methods specifically designed for numerical operations
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
