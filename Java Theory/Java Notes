@@ -707,6 +707,40 @@ interface InterfaceName {
   4] Using ListIterator cursor we can retrieve collection elements in both forward and backward direction.
   5] By using listIterator cursor we can retrieve, remove, replace and add collection elements.
 
+
+# How to Create stream Object in java
+
+  There are total 5 ways to create Stream object in java
+
+  1) To create empty stream
+    Stream<Object> emptyStream = Stream.empty();
+
+  2)     2nd Method using array
+         String[] names = {"Durgesh","Uttam", "Aniket","Divya"};
+         Stream<String> stream1 = Stream.of(names);
+         stream1.forEach(e->{
+             System.out.println(e);
+         });
+
+3)        3rd method using Builder pattern
+          Stream<Object> streamBuilder = Stream.builder().build();
+
+
+4)        4th Method using Arrays  (anonymous array)
+          IntStream stream = Arrays.stream(new int[]{2,4,65,3,5});
+          stream.forEach(e->{
+              System.out.print(e+",");
+          });
+
+
+5)        Using collection Object List/set/Map
+
+          List<Integer> list1 = new ArrayList<>();
+          list1.stream().forEach(e->{
+              System.out.println(e);
+          });
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -714,14 +748,32 @@ interface InterfaceName {
 
    - Collection is group of objects or group of elements
    - To store the group of objects or group of elements we used collections
-   -
+
+
+  # Ways of Creating List in java
+
+  1) List<Integer> intList = new ArrayList<Integer>();
+
+         intList.add(1);
+         intList.add(2);
+         intList.add(3);
+         intList.add(4);
+
+
+  2) List<Integer> inList = Arrays.asList(1,2,3,4);
+   -Arrays.asList() in Java is mutable
+
+
+  3) List<Integer> inList = List.Of(1,2,3,4);
+   -List.of() is immutable
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
----------------------------------------------------------------------------------------- Functional Programming In Java -------------------------------------------------------------------------------
+---------------------------------------------------------------------- Functional Programming In Java -------------------------------------------------------------------------------
 
  # Lambada Expression
 
