@@ -2,6 +2,7 @@ package FunctionalProgramming.StreamAPI.ListOfAllStreamAPIPrograms;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class ProgramList {
@@ -51,6 +52,9 @@ public class ProgramList {
 
         int sum = list3.stream().mapToInt(Integer::intValue).sum();
         System.out.println("Sum of all integer elements in List is : "+ sum);
+
+
+
 
 
     }
