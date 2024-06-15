@@ -1,0 +1,66 @@
+
+
+# Design Pattern in java
+
+ - Design pattern are the well proved solutions of commonly occurring problem in software design.
+ - Design pattern is the way to handle commonly occurring problem while creating software.
+ - Design pattern represent idea.
+ -
+   Three main categories in design pattern is :
+
+   1) Creational Design pattern
+   2) Structural Design pattern
+   3) Behavioral Design pattern
+
+
+   1) Creational Design pattern :
+
+   -Factory Design pattern, Builder Design pattern, Singleton design pattern etc
+
+   2) Structural Design pattern : How to structure the code
+
+   - Proxy design pattern, adapter design pattern etc
+
+   3) Behavioral Design pattern - Focuses on object interaction more
+
+   - Observer design pattern, State pattern, Iterator design pattern
+
+
+
+1] Creational Design Pattern
+
+  1) Single Ton design pattern
+     - Constructor of the class should be private in nature
+     - Method in class should be public static in nature
+     - Variables/fields in class are private static in nature
+
+   # There are two ways of creating singleton object
+
+   1) Eager way    2) Lazy way
+
+   1)Eager way : Static variable get initialize first
+
+   2)Lazy way  : In lazy way object is created only when method get called
+                 - It is not thread safe
+
+
+# How to break SingleTon design pattern
+
+ 1) Using reflection API
+    Solution: If object exists then throws exception from inside constructor
+              Use enum
+
+ 2) Using Deserialization
+    Solution: Override read resolve method
+
+ 3) Using Object cloning
+    Solution :
+
+
+2] Factory Design Pattern
+   - When there is super class and multiple child classes and we have to create objects of
+     child class based on certain input
+
+
+     Advantages :
+
