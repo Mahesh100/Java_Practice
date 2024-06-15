@@ -1044,15 +1044,16 @@ Example 3:
   -Many times we need to perform certain operations where stream of data get reduced to single resultant value
    For example : Maximum, minimum, sum,product
   -Reducing a data is repeated process of combining all elements.
-  -Reduce method is used for aggregating the data.
+  -Reduce() method is used for aggregating the data.
 
 
   # map() and reduce() example
 
   -map() is used for transforming the data
+
   -reduce() is used for aggregating the data.
 
-  ( combining elements of stream and produces a single value
+  ( combining elements of stream and produces a single value )
 
   Stream: [1,2,3,4] Calculate the sum of numbers present in stream
 
@@ -1072,6 +1073,9 @@ Example 3:
   identity: 0 which is nothing initial value
 
   accumulator : (a,b)-> a+b function
+
+* While using reduce() method with list of String we don't need to pass identity
+  instead we have to pass function expression
 
 
 
