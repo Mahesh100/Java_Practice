@@ -27,7 +27,7 @@
 
 
 
-1] Creational Design Pattern
+1] Creational Design Pattern :---------------------->
 
   1) Single Ton design pattern
      - Constructor of the class should be private in nature
@@ -57,9 +57,10 @@
     Solution :
 
 
-2] Factory Design Pattern
+   2) Factory Design Pattern     (Part of Creational Design Pattern)
+
    - When there is super class and multiple child classes and we have to create objects of
-     child class based on certain input
+     child class based on certain input/requirement
 
 
      Advantages :

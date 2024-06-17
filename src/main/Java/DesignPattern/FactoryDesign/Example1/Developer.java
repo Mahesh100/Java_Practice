@@ -1,4 +1,4 @@
-package DesignPattern.FactoryDesign;
+package DesignPattern.FactoryDesign.Example1;
 
 public class Developer {
     public static void main(String[] args) {
