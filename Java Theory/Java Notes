@@ -37,6 +37,10 @@
 
 # "this" keyword is used when we have to initialise the class variables or instance variables.
 
+# Whenever we create object of sub class it will call the constructor of Super(Parent) class as well as sub(Child) class
+
+
+# By default maximum heap size is 64 Mb
 # Reflection in java
 -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -206,6 +210,53 @@
     {
     className();
     }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Super keyword in java
+
+- Super keyword refers to the object of super class
+- Super keyword is used when we want to call the  variable, method constructor from super class using  the sub class object
+
+- When to use :
+  -Super keyword is used only when the variable, method and constructor of sub class and super clas are same.
+  -To avoid the confusion between super class and sub class variables and methods that have same name we should use super keyword
+
+- Every constructor in sub class have the super() method by default.
+
+# Syntax
+
+  # Calling variable of super class using sub class object
+
+class A {     //super class
+
+  int a = 20;
+
+}
+
+class B extends A  // sub class
+{
+  int a =10;
+  void show()
+  {
+    System.out.println(a);
+    System.out.println(super.a);
+  }
+
+   public static void main(String [] args)
+   {
+        B obj = new B();
+        obj.show();
+
+
+   }
+
+}
+
+# To do (Super keyword for methods)
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1247,6 +1298,12 @@ Example 3:
 
   1) Young generation  (Minor Garbage collector)
   2) Old generation    ( Major Garbage Collector)
+
+  - The separation of memory into the young and old generation allows garbage collector to optimize its collection
+    strategies based on different lifetime of objects
+
+    - Short-lived objects tend to be collected more frequently in the young generation area
+    - Long-lived objects are stored in old generation area.
 
   3) Meta Space   (Outside of heap)
 
