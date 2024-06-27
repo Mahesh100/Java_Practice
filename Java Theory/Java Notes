@@ -712,7 +712,37 @@ interface InterfaceName {
  Only one thread at a time can execute on a particular resource, and all other threads
  which attempt to enter the synchronized block are blocked.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Volatile keyword in java
+
+- Volatile keyword is used in java to indicate that the variables value can be modified by different threads.
+- Volatile keyword ensures that the changes made to the volatile variable by one thread are immediately visible to another thread.
+
+- The values of volatile variables never be cached
+- Value of volatile keyword never read from cached but it is always read from the main memory
+
+For Example (Scenario)
+
+- Suppose we have two threads Thread-1 and Thread-2 and there is one shared variable of type Boolean which stored in main memory RAM of system
+  Now these two threads interact with CPU and CPU interact with RAM and we have cache between CPU and RAM of both threads which reduces the
+  access time of values
+
+  so, whenever we have shared variable which exits in memory where multiple threads are trying to access the same variable and work on it depending
+  up on requirements. Initially the value of shared variable is stored as True in both the cache as well as memory
+
+  Now, we know that this two threads does not read the value of shared variable directly from the memory but instead read locally from their respective
+  cache memory.
+
+  Now suppose thread-2 changes the value of variable as false and it is updated in cache memory, but for other thread-1 the value is still true in its
+  cache memory and in main memory. So thread-2 wil take some time to update the value of variable in main memory as false
+  but still thread-1 don't have any visibility that value is false so this will create a problem
+
+  So, overcome this problem java introduced volatile keyword
+  so volatile boolean True;
+  so now Thread-1 and Thread-2 directly read value from main memory instead of cache.
+  If in case Thread-2 will change the value of shared variable as false then Thread-1 will have access to it instantly.
+  This is how volatile keyword is used in java.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -776,6 +806,17 @@ interface InterfaceName {
 
   4] Using ListIterator cursor we can retrieve collection elements in both forward and backward direction.
   5] By using listIterator cursor we can retrieve, remove, replace and add collection elements.
+
+
+
+#  Enums in Java  (Enumeration)
+
+ - Enumeration is special type of data type which is used to represents set of predefine constants.
+ - These constants typically related to fixed set of possible values of given concept.
+
+ - Enum is special type of data type in java that can be used to represent the group of constants
+ - Enum are useful when we have fixed set of values that are known at compile time
+ - Enums make your code more readable and maintainable.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1199,11 +1240,7 @@ Example 3:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
- # Enums in Java
 
- - Enum is special type of data in java that can be used to represent the group of constants
- - Enum are useful when we have fixed set of values that are known at compile time
- - Enums make your code more readable and maintainable.
 
 
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
