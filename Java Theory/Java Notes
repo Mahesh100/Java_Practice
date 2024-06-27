@@ -564,6 +564,23 @@ interface InterfaceName {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Aggregation in java
+
+- Aggregation is a type of association between classes.
+- In java, aggregation represents "has-a" relationship between two classes,
+  where one class contains reference to the another class
+
+- Reference class object can exists independently to the Container class object
+
+
+# Composition in java
+
+- In Java, composition is type of association between classes where one class contains the object of
+  another class
+- Composition represents the stronger relationship where contained object can not exists independently of
+  the container object
+
+
 
 
 
