@@ -216,8 +216,8 @@
 
 # Super keyword in java
 
-- Super keyword refers to the object of super class
-- Super keyword is used when we want to call the  variable, method constructor from super class using  the sub class object
+- Super keyword refers  the object of super class
+- Super keyword is used when we want to call the  variable, method, constructor from super class using  the sub class object
 
 - When to use :
   -Super keyword is used only when the variable, method and constructor of sub class and super clas are same.
@@ -533,6 +533,8 @@ interface InterfaceName {
  # Difference between Final , Finally and Finalize in java
 
    # Final
+   - In Java, final is non-access modifier used to restrict modification
+   - When you define final variable, method or class its value can not be changed
    - Final is key word in java.
    - Final keyword can be used with
        - Variables
@@ -1357,5 +1359,5 @@ Example 3:
    3) Concurrent mark and sweep : While application thread are working concurrently Garbage collector threads are also working
                                  - Application threads are not stopping because of Gc thread (Not garenty)
 
-   4) G1 Garbage Collector : It will garrenty that application thread will not stop because of Gc
+   4) G1 Garbage Collector : It will garranty that application thread will not stop because of Gc
 
