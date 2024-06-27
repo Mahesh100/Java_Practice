@@ -39,12 +39,26 @@
 
 # Whenever we create object of sub class it will call the constructor of Super(Parent) class as well as sub(Child) class
 
+# "break" statement is used to jump out off the loop
+
+# "continue" statement breaks the one iteration in loop if specified condition occur and continue with the next iteration of loop
 
 # By default maximum heap size is 64 Mb
 # Reflection in java
 -
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Class loader in java
+
+- In Java, a class loader is a part of the Java Runtime Environment (JRE) responsible for dynamically loading Java classes into the Java Virtual
+  Machine (JVM) during runtime.
+- This means that classes are loaded only when they are needed, not all at once when the program starts.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
  # Access modifiers in java
 
    1) Public
@@ -212,6 +226,16 @@
     }
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# this keyword in java
+ - this keyword represents the current object of the class.
+ - this keyword is used to initialize the class variables or instance variables
+ - this is a reference variable that refers to current class object
+ - this can be used to refer current class method
+ - this can be used to invoke current class constructor
+ -
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Super keyword in java
@@ -1414,4 +1438,17 @@ Example 3:
                                  - Application threads are not stopping because of Gc thread (Not garenty)
 
    4) G1 Garbage Collector : It will garranty that application thread will not stop because of Gc
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Getters and Setters in java
+
+  - To protect the data in class getters and setters are used
+  - We can say that getter and setter are used to achieved encapsulation in class
+  - We have to provide the public get and set methods to access and update the value of private variable in class.
+  - The get method returns the value of variable and set method will set the value of variable
+  - To update the private class variables outside from the class we can use getters and setters
 
