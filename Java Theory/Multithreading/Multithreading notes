@@ -1,6 +1,6 @@
 # Multi threading in java
 
-- By default JVM will provide name to thread automatically
+- By default JVM will provide name to thread automatically.
 - We can set name to any thread using Thread.currentThread().setName("Mahesh");   //Mahesh is name of thread here
 
 

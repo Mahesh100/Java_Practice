@@ -558,7 +558,7 @@ Validation: Setters can include validation logic to ensure that the fields are s
 
    ii) Unchecked Exception : (Runtime exception)
        - Unchecked exception are the exception which are not handle at compile time.
-       - Unchecked exception do need to required  handle explicitly.
+       - Unchecked exception do need to required handle explicitly.
        - When unchecked exception occurs program flow is halted with an error message.
        - Examples:
             -ArrayIndexOutOfBoundException
@@ -660,9 +660,12 @@ Validation: Setters can include validation logic to ensure that the fields are s
  -
 
  - Multithreading is feature in java that allows concurrent execution of two or more part of program for maximum utilization cpu/memory.
- -  Each part of such program is called thread
+ - Each part of such program is called thread
  - So threads are light weight processes within the process.
 
+ - A thread is a light weight subprocess that allow you to perform multiple task concurrently within the same application.
+
+ - In Java, a Process represents an executing program or application.
 
  Threads can be created by using two mechanism :
 
@@ -1326,10 +1329,8 @@ Example 3:
 
   # Singleton class in java
 
-
   A singleton class in Java is a class that can have only one object at a time.
-  It is one of the five Creational Design patterns in Java which helps in effortless development
-  of Java programs.
+  It is one of the five Creational Design patterns in Java which helps in effortless development of Java programs.
 
   Here are the steps on how to create a singleton class in Java:
 
@@ -1339,11 +1340,34 @@ Example 3:
 
   -Create a public static method that returns the instance of the class.
     This method will check if the
-    instance has already been created. If it has not, it will create it and store it in the private
-    static variable.
-    -If it has already been created, it will simply return the existing instance.
+    instance has already been created. If it has not, it will create it and store it in the private static variable.
+   -If it has already been created, it will simply return the existing instance.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Singleton basically only one, this means we can create only one instance of the class
+
+- Step 1 : We have to create a static instance of the class
+
+- Step 2 : Define private constructor
+
+- Step 3 : Create public static method which will return the instance of the class ex: public static getInstance(); method
+           method should object of class
+
+1) First create a static instance
+2) Create a private constructor of class
+3) Create public static method which return the object of class
 
 
+# Types of Singleton class in java
+
+1) Eager Initialization                  : For simple scenarios where the instance is always needed.
+
+2) Thread-safe Lazy Initialization       : For multi-threaded environments where resource efficiency is important.
+
+3) Initialization-on-demand holder idiom : For a balance between simplicity and thread safety.
+
+4) Enum Singleton                        : For the most robust and concise implementation, especially in concurrent environments.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
