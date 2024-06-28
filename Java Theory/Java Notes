@@ -44,8 +44,22 @@
 # "continue" statement breaks the one iteration in loop if specified condition occur and continue with the next iteration of loop
 
 # By default maximum heap size is 64 Mb
+
 # Reflection in java
 -
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Instance Variable in java
+
+- In Java, an instance variable is a variable declared within a class but outside any method, constructor, or block.
+  It's called an "instance" variable because its value is unique to each instance (object) of the class.
+
+In java, instance variable are used for several reasons
+
+- Instance variable are used to define properties and attributes of an object
+- By declaring the instance variable private we can control the access of instance variable from out side of class (Data Encapsulation).
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -240,8 +254,8 @@
 
 # Super keyword in java
 
-- Super keyword refers  the object of super class
-- Super keyword is used when we want to call the  variable, method, constructor from super class using  the sub class object
+- Super keyword refers the object of super class
+- Super keyword is used when we want to call the variable,method,constructor from super class using the sub class object
 
 - When to use :
   -Super keyword is used only when the variable, method and constructor of sub class and super clas are same.
@@ -272,10 +286,7 @@ class B extends A  // sub class
    {
         B obj = new B();
         obj.show();
-
-
    }
-
 }
 
 # To do (Super keyword for methods)
@@ -621,12 +632,6 @@ interface InterfaceName {
 - Composition represents the stronger relationship where contained object can not exists independently of
   the container object
 
-
-
-
-
-
-
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Multitasking in java
@@ -760,12 +765,12 @@ interface InterfaceName {
 - Volatile keyword is used in java to indicate that the variables value can be modified by different threads.
 - Volatile keyword ensures that the changes made to the volatile variable by one thread are immediately visible to another thread.
 
-- The values of volatile variables never be cached
-- Value of volatile keyword never read from cached but it is always read from the main memory
+- The values of volatile variables never be cached.
+- Value of volatile keyword never read from cached but it is always read from the main memory.
 
 For Example (Scenario)
 
-- Suppose we have two threads Thread-1 and Thread-2 and there is one shared variable of type Boolean which stored in main memory RAM of system
+- Suppose we have two threads Thread-1 and Thread-2 and there is one shared variable of type Boolean which stored in main memory RAM of system.
   Now these two threads interact with CPU and CPU interact with RAM and we have cache between CPU and RAM of both threads which reduces the
   access time of values
 
@@ -776,10 +781,10 @@ For Example (Scenario)
   cache memory.
 
   Now suppose thread-2 changes the value of variable as false and it is updated in cache memory, but for other thread-1 the value is still true in its
-  cache memory and in main memory. So thread-2 wil take some time to update the value of variable in main memory as false
-  but still thread-1 don't have any visibility that value is false so this will create a problem
+  cache memory and in main memory. So thread-2 will take some time to update the value of variable in main memory as false
+  but still thread-1 don't have any visibility that value is false so this will create a problem.
 
-  So, overcome this problem java introduced volatile keyword
+  So,to overcome this problem java introduced volatile keyword
   so volatile boolean True;
   so now Thread-1 and Thread-2 directly read value from main memory instead of cache.
   If in case Thread-2 will change the value of shared variable as false then Thread-1 will have access to it instantly.
@@ -852,7 +857,7 @@ For Example (Scenario)
 
 #  Enums in Java  (Enumeration)
 
- - Enumeration is special type of data type which is used to represents set of predefine constants.
+ - Enumeration is special type of data type which is used to represents set of pre-define constants.
  - These constants typically related to fixed set of possible values of given concept.
 
  - Enum is special type of data type in java that can be used to represent the group of constants
@@ -1397,7 +1402,7 @@ We have two types of memory space in java as  1) Heap Memory and 2) Stack memory
 
 -- Heap Memory in java
 
-- Heap memory is divided into two parts
+- In Java,Heap memory is divided into different generations for efficient garbage collection
 
   1) Young generation  (Minor Garbage collector)
   2) Old generation    (Major Garbage Collector)
@@ -1405,8 +1410,12 @@ We have two types of memory space in java as  1) Heap Memory and 2) Stack memory
   - The separation of memory into the young and old generation allows garbage collector to optimize its collection
     strategies based on different lifetime of objects
 
+      Young Generation :
     - Short-lived objects tend to be collected more frequently in the young generation area
+
+      Old Generation
     - Long-lived objects are stored in old generation area.
+    - Objects that survive multiple garbage collections in the young generation are promoted to the old generation.
 
   3) Meta Space   (Outside of heap)
 
