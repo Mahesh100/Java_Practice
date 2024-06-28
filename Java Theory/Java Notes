@@ -328,7 +328,16 @@ class B extends A  // sub class
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Inheritance in Java
+  - When one class acquire all the properties and behavior of another class is called inheritance.
+  - Inheritance represents Is-A relationship which is also known as parent child relationship.
+  - For Method overriding inheritance is used (To achieve runtime polymorphism)
+  - Inheritance is used for code reusability.
 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Abstraction
 
 - If method in a class don't have body then it must be declared as abstract
@@ -479,6 +488,14 @@ interface InterfaceName {
 
  - Encapsulation prevents outer classes from accessing and changing fields and methods of a class.
    This also helps to achieve data hiding.
+
+# Getters and Setters in java
+
+  - To protect the data in class getters and setters are used
+  - We can say that getter and setter are used to achieved encapsulation in class
+  - We have to provide the public get and set methods to access and update the value of private variable in class.
+  - The get method returns the value of variable and set method will set the value of variable
+  - To update the private class variables outside from the class we can use getters and setters
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1348,24 +1365,30 @@ Example 3:
 
 # Garbage Collector In Java
 
-- Stack memory will store Reference of object
-- Heap memory will store actual onject
+  # Garbage collection in java is automatic process of managing memory, by removing unused objects.
+   -This overcome the task of manual memory management task
 
+We have two types of memory space in java as  1) Heap Memory and 2) Stack memory
 
+- Heap memory will store actual object
+- Stack memory will store reference of object
+
+- Garbage collector does automatic memory management
 - Garbage collector is used to delete the unreferenced objects from the heap area
 - JVM control when to run garbage collector
 - System.gc() will run the garbage collector
-- Garbage collector does automatic memory management
+
 
  # Strong reference and weak reference and Soft reference in Stack memory
 
+#Example :
  WeakReference<Person> pobj = new WeakReference();
 
- Strong reference : Object never get deleted until strong reference is present
+ 1) Strong reference :   Object never get deleted until strong reference is present
 
- Weak reference : As soon as garbage collector get run this object will deleted
+ 2) Weak reference   :   As soon as garbage collector get run this object will deleted
 
- Soft reference: Depend up on gc , but only do if there is shortage of space
+ 3) Soft reference   :   Depend up on gc , but only do if there is shortage of space
 
 
 - In heap area whenever the object reference is not present, heap will allow to fee up the memory using garbage collector
@@ -1377,7 +1400,7 @@ Example 3:
 - Heap memory is divided into two parts
 
   1) Young generation  (Minor Garbage collector)
-  2) Old generation    ( Major Garbage Collector)
+  2) Old generation    (Major Garbage Collector)
 
   - The separation of memory into the young and old generation allows garbage collector to optimize its collection
     strategies based on different lifetime of objects
@@ -1390,8 +1413,9 @@ Example 3:
 
 
   1) Young generation is divided into 3 parts
-     i) Eden
-     ii)
+     i)  Eden
+     ii) Survivor Space (SO)
+     iii)Survivor Space 1 (S01)
 
 
    When we create new object it will goes to Eden space of young generation
@@ -1403,7 +1427,7 @@ Example 3:
 
    So, Object1 and Object2 are marked to be deleted by GC from the memory
    and it will sweep this remaining/surviving objects survive memory space
-   and the age will added to survival objects and this is called Minor gc
+   and the age will added to survival objects and this is called young garbage collector
 
 
    1) First time garbage collector runs
@@ -1444,11 +1468,5 @@ Example 3:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Getters and Setters in java
 
-  - To protect the data in class getters and setters are used
-  - We can say that getter and setter are used to achieved encapsulation in class
-  - We have to provide the public get and set methods to access and update the value of private variable in class.
-  - The get method returns the value of variable and set method will set the value of variable
-  - To update the private class variables outside from the class we can use getters and setters
 
