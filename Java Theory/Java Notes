@@ -502,11 +502,26 @@ interface InterfaceName {
 
 # Getters and Setters in java
 
-  - To protect the data in class getters and setters are used
-  - We can say that getter and setter are used to achieved encapsulation in class
+   - In Java, Getters and Setters are the methods that provide controlled to access fields/variables of a class.
+     Getters and Setters are the fundamental part of the encapsulation principle in object oriented programming.
+
+   - A getter method retrieves (gets) the value of a private field.
+   - A setter method sets (updates) the value of a private field.
+
+  - To protect the data in class getters and setters are used.
+  - We can say that getter and setter are used to achieved encapsulation in class.
   - We have to provide the public get and set methods to access and update the value of private variable in class.
-  - The get method returns the value of variable and set method will set the value of variable
-  - To update the private class variables outside from the class we can use getters and setters
+  - The get method returns the value of variable and set method will set the value of variable.
+  - To update the private class variables outside from the class we can use getters and setters.
+
+
+Why Do We Need Getters and Setters?
+
+Encapsulation: By making fields private and providing public getter and setter methods, we can control how the fields are accessed and modified.
+               This ensures that the internal representation of the object is hidden from the outside.
+
+Validation: Setters can include validation logic to ensure that the fields are set to appropriate values.
+            This helps in maintaining the integrity of the object.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
