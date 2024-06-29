@@ -1,0 +1,13 @@
+
+# In spring security authentication always comes first later authorization happens
+
+# Authentication happens in beginning and authorization happen later
+
+
+# Authentication:
+
+# Authorization: (Also known as access control)
+
+
+# Spring security by default provides configuration internally
+

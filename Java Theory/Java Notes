@@ -357,7 +357,7 @@ class B extends A  // sub class
 
  - A method without body (No implementation) is known as Abstract methods.
 
- - If class have any abstract method then class should be mark with  abstract Keyword.
+ - If class have any abstract method then class should be mark with abstract Keyword.
 
  - Abstract classes can not be instantiated, we can not create object of an abstract class.
 
@@ -492,8 +492,8 @@ interface InterfaceName {
    is called Encapsulation.
 
  - In order to achieve Encapsulation
-     -data members/ fields should be private
-     -Member function should be public in nature.
+     -data members/fields should be private
+     -Member function/methods should be public in nature.
 
  - Any class in java is best example of Encapsulation in java.
 
