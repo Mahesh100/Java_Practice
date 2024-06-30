@@ -3,11 +3,16 @@
 
 # Authentication happens in beginning and authorization happen later
 
-
-# Authentication:
-
-# Authorization: (Also known as access control)
-
+# In spring boot, default  authentication filter is "BasicAuthenticationFilter"
 
 # Spring security by default provides configuration internally
+
+# Authentication:
+  - Authentication proves who is user
+
+# Authorization: (Also known as access control)
+  - Authorization is about what user allowed to do after user proved who he is.
+
+
+
 
