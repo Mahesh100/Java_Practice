@@ -1,9 +1,16 @@
 
+# Spring Security :
+  Spring security is framework that is implemented in spring boot application which ensure that the only right people will access the
+  certain part of your application.
+
+# Headers are the extra information about data that is being transmitted
+  - They are usually represented as key-value pairs
+
 # In spring security authentication always comes first later authorization happens
 
 # Authentication happens in beginning and authorization happen later
 
-# In spring boot, default  authentication filter is "BasicAuthenticationFilter"
+# In spring boot, default  authentication filter is "BasicAuthenticationFilter"/"FormBasedAuthentication"
 
 # Spring security by default provides configuration internally
 
@@ -12,6 +19,10 @@
 
 # Authorization: (Also known as access control)
   - Authorization is about what user allowed to do after user proved who he is.
+  - Authorization decides what actions user can take after user get authenticate.
+
+
+# Basic Authentication
 
 
 

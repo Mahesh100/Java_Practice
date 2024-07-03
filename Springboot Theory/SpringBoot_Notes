@@ -1,3 +1,18 @@
+
+# There are two types of IOC Container in SpringBoot:
+
+    1) Bean Factory
+    2) ApplicationContext
+
+Bean factory is super interface of application context
+Bean factory is deprecated in earlier versions of springs.
+ApplicationContext is extension of BeanFactory which will provide some additional features.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # POM : Project Object Model
 
 - When we add starter jar it will pull all the jars inside project ,in which we have one jar as Auto configuration jar
@@ -35,12 +50,14 @@
 - IOC Container is responsible for instance or configure object and it is also responsible to inject dependence
   into application
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Application Context :
+# Application Context :  ApplicationContext is the type of Spring IoC container that initializes, configure and manages the lifecycle of bean.
+                        -Application context handles dependency injection which allows loose coupling between applications
+
   - Application context is interface which represents IOC container
   - Application context extends bean factory  (Application context is child class and Bean factory is parent class)
   - Application context has bean factory methods along with its own implementations.
 
-    -We cant create object of Application context interface :
+    -We can't create object of Application context interface :
       so we have subclasses as :
        1) ClassPathXMLApplication context
        2) AnnotationConfigApplication Context
@@ -86,9 +103,29 @@
  4) @Bean : It is used to declare that the corresponding method will produce a Java Object
             which is managed by spring container.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 5) @Configuration : This annotation tells spring that the class on which it is annotated provides configuration to application context
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Security Annotation
+
+1) EnableWebSecurity annotation:
+  - This annotation tells spring boot to enable web security in the application
+
+2) @EnableMethodSecurity :
+   - Provides fine-grained control over access to specific methods within your application.
+   - This annotation allows the use of annotations like @PreAuthorize, @PostAuthorize, @Secured, and
+     @RolesAllowed on methods to specify roles.
+
+3) @PreAuthorize
+   -Ensures the method can only be accessed if the specified condition is true.
+   -Generally applied on method end-point
+
+4) @PostAuthorize
+   -Ensures the method can only return if the specified condition is true.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # JPA Annotations
 
  - @OneToOne  -@OnetoOne annotation in Hibernate is used to create a one-to-one association between
