@@ -2,6 +2,7 @@
 # Spring Security :
   Spring security is framework that is implemented in spring boot application which ensure that the only right people will access the
   certain part of your application.
+  - Spring security helps you keep data safe.
 
 # Headers are the extra information about data that is being transmitted
   - They are usually represented as key-value pairs
@@ -15,14 +16,105 @@
 # Spring security by default provides configuration internally
 
 # Authentication:
-  - Authentication proves who is user
+  - Authentication proves who is user whether it is valid or not
 
 # Authorization: (Also known as access control)
-  - Authorization is about what user allowed to do after user proved who he is.
+  - Authorization is about what user allowed to do after user proved that he is authenticated user.
   - Authorization decides what actions user can take after user get authenticate.
 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Basic Authentication
+# How Spring Security Works :
+
+- Suppose we have one spring boot application in which spring security is implemented.
+   so in same application we have controllers or we can say we have API endpoints.
+   so a normal spring boot application request on server via this end points and we have response from the server.
+   (So in normal spring boot application we have request coming in and response going out)
+
+- Now when request comes in it goes through the series of filters, there are multiple filters depending up on what we configured
+  this also known as filter chain and the request has to goes through the series of filters known as filter chain and then
+  it reaches the controller and controller is where your actual code resides.
+
+- Now this filters has its specific jobs retaliated to their own configuration and if we have spring security configured then we will have
+  a "Authentication Filter" so without security we will filters exists in application but these may or may not be security related filters.
+  But when we configured security we will have some filters which are related to spring security
+
+- Now, what is Authentication filter?
+  Authentication filters will be intercepting the request that are meant to do login/sign-in request and this request contain "username" and "password"
+  or any sort of authentication information that needs to be validated.
+
+  So what are filters? Filters are some code that reside before the controller and your request has to pass through it.
+  Filter always intercept the request for some sort of processing
+
+- Now, what authentication filter will do?
+  Authentication filter will intercept the authentication request and grab the "username" and "password" from the request
+  and create the Authentication object.
+  This object is way to package the credential. So first authentication object get created because every thing in spring security
+  works in form of authentication object
+
+- Once the object is being created the object is handed over the AuthenticationManager
+  Now authentication manager is someone who decided what to do with this "username" and "password".
+  Now this AuthenticationManager will delegate task of authenticating the username and password to some one else.
+  Now to authenticate the request AuthenticationManager will require the "AuthenticationProvider"
+
+- Now what is AuthenticationProvider?
+  AuthenticationProvider is someone who is responsible for checking whether the given "username" and "password" are correct or not
+  Now, to check this username and password correct or not , AuthenticationProvider needs two things
+  as
+     First is PasswordEncoder.
+     Second is UserDetailsService
+
+
+  1) What is PasswordEncoder ?
+  - So, whenever the "username" and "password" are passed with request they are always is in encoded format or in string format.
+    this are encrypted with some kinds of algorithms so decrypt the password we have to do some kind of progressing and hence passwordEncoder
+    will help in process of encryption to decryption of  "password"
+
+  2) What is UserDetailsService
+   - UserDetailsService called by the Authentication Provider to load the user details from the database.
+   - so it fetch the username and password and what all  roles this user have in this system.
+   - Here what happen is this UserDetailService will load the user information and it return the everything that systems needs to know about the user
+     so this UserDetailsService will get the "User" object and it will convert it into "UserDetails" object.
+
+ Now, AuthenticationProvider will have the user detail, and it will validate if "username" and "password" are correct or not
+      Once AuthenticationProvider provider validate the username and password it creates a complete "Authentication" Object.
+
+      So, Authentication object which is created earlier by "Authentication Filter" which might not have some information like "Roles" and etc.
+          so once the Authentication is successful and it is confirmed by the authentication provider then this object is handed to the
+          "AuthenticationManager" such that AuthenticationProvider says, this is updated AuthenticationObject and this is user that you wish to
+          authenticate and this user has been authenticated and this object is return to "AuthenticationFilter" and then the "Security Context"
+          is set.
+
+ #Security Context
+
+         -The security context is kind of context that is available through out the duration of request.
+          So, its a context where the information about the authentication is stored.
+          The Authentication object which is set into the security context which is available throughout the request and through the duration
+          of request this object is referred as what user allowed to do in system and what is not allowed.
+         -The security context holds the security information for the current request, such as the authentication token.
+          This is checked or set by the authentication filter.
+
+# DaoAuthentication Provider :
+  This is one of the common AuthenticationProvider which is used when have to validate the user against the database.
+  Some other Authentication providers:
+   - InMemoryAuthentication Provider
+   - LDAP Authentication Provider (Lightweight Directory Access Protocol)
+   - JDBC Authentication Provider
+
+
+# Flow in short :
+  -You as a user enter the username and password. So login request goes through the series of filter chain and from Authentication filter
+   Authentication filter creates the Authentication object from "username" and "password".
+  - "AuthenticationManager" takes this object and ask "AuthenticationProvider" to authenticate the object.
+     then AuthenticationProvider will fetch the user details from data source.
+     If everything matches "AuthenticationProvider" updates the authenticationObject and inform the "AuthenticationManager" that this
+     user is authenticated.
+  - Now, using  this updated AuthenticatedObject the "Security context" is populated.
+    Then you are allowed to access the controllers in application and during the request this "Security Context" will decide what
+    allowed to do and what not allowed to do
+
+
+
 
 
 
