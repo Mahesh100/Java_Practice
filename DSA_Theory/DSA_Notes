@@ -29,3 +29,15 @@
        thus to delete an element in an array we need to traverse through whole
        array, this will reduce the performance.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ # Sorting : Arranging data in logical order whether it is ascending or descending order.
+
+
+# Bubble Sort in Java
+
+  - Bubble sort is comparsion based algorithm which compares two adjusent element and sort elements in ascending or descending order.
+
+  -> Number of Rounds = Number of elements in List - 1
+
+
+

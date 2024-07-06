@@ -45,6 +45,9 @@
 
 # By default maximum heap size is 64 Mb
 
+# compareTo() method in java is used to compare two string lexicographically.
+
+
 # Reflection in java
 -
 

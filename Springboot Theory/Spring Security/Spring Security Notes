@@ -26,8 +26,7 @@
 
 # How Spring Security Works :
 
-- Suppose we have one spring boot application in which spring security is implemented.
-   so in same application we have controllers or we can say we have API endpoints.
+- Suppose we have one spring boot application in which spring security is implemented so in same application we have controllers or we can say we have API endpoints.
    so a normal spring boot application request on server via this end points and we have response from the server.
    (So in normal spring boot application we have request coming in and response going out)
 
@@ -36,8 +35,8 @@
   it reaches the controller and controller is where your actual code resides.
 
 - Now this filters has its specific jobs retaliated to their own configuration and if we have spring security configured then we will have
-  a "Authentication Filter" so without security we will filters exists in application but these may or may not be security related filters.
-  But when we configured security we will have some filters which are related to spring security
+  a "Authentication Filter" so without security will filters exists in application but these may or may not be security related filters.
+  But when we configured security we will have some filters which are related to spring security.
 
 - Now, what is Authentication filter?
   Authentication filters will be intercepting the request that are meant to do login/sign-in request and this request contain "username" and "password"
@@ -61,8 +60,8 @@
   AuthenticationProvider is someone who is responsible for checking whether the given "username" and "password" are correct or not
   Now, to check this username and password correct or not , AuthenticationProvider needs two things
   as
-     First is PasswordEncoder.
-     Second is UserDetailsService
+     1) First is PasswordEncoder
+     2) Second is UserDetailsService
 
 
   1) What is PasswordEncoder ?
@@ -72,7 +71,7 @@
 
   2) What is UserDetailsService
    - UserDetailsService called by the Authentication Provider to load the user details from the database.
-   - so it fetch the username and password and what all  roles this user have in this system.
+   - so it fetch the username and password and all roles this user have in  system.
    - Here what happen is this UserDetailService will load the user information and it return the everything that systems needs to know about the user
      so this UserDetailsService will get the "User" object and it will convert it into "UserDetails" object.
 
@@ -111,7 +110,7 @@
      user is authenticated.
   - Now, using  this updated AuthenticatedObject the "Security context" is populated.
     Then you are allowed to access the controllers in application and during the request this "Security Context" will decide what
-    allowed to do and what not allowed to do
+    allowed to do and what not allowed to do.
 
 
 
