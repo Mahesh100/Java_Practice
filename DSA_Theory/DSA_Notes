@@ -32,12 +32,47 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Sorting : Arranging data in logical order whether it is ascending or descending order.
 
+ There are total 6 Sorting algorithms:
 
-# Bubble Sort in Java
+   1) Bubble Sort
+   2) Selection Sort
+   3) Insertion Sort
+   4) Merge Sort
+   5) Heap Sort
+   6) Quick Sort
 
-  - Bubble sort is comparsion based algorithm which compares two adjusent element and sort elements in ascending or descending order.
+1] Bubble Sort in Java
+
+  - Bubble sort is comparison based algorithm which compares two adjusent element and sort elements in ascending or descending order.
 
   -> Number of Rounds = Number of elements in List - 1
 
 
+# Selection Sort in java
+  - Selection sort is combination of searching and sort
+  - Selection sort algorithm maintains two sub arrays
 
+     Sub array 1 : First array which is sorted.
+     Sub array 2 : Second(Remaining) array which is unsorted.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Searching Algorithms:
+
+1] Linear Search
+
+2] Binary Search
+
+
+1] Linear Search :
+    -In linear search algorithm a search is made all over the elements one by one.
+     Every element is checked one by one and if element/match is found then that particular element is returned
+     if match is not found then search continues till the end of list/array.
+
+
+2] Binary Search :
+   -Binary Search is faster than the liner search
+   -To user binary search array should be sorted first
+   -Binary Search is apply only on sorted array
+   -Usually we use while loop in binary search
