@@ -2,7 +2,7 @@
 
 # Hibernate Session Object works as mediator between java application and database
 - Hibernate Session Object has various methods like save(), update(), delete(), CreateQuery()
-- We can say that it takes the java object and put it in database
+- We can say that it takes the java object and put it in database.
 -
 
 # Classes whose objects are stored in database table are called Persistent classes.
@@ -17,7 +17,7 @@
  - ORM is Object relational Mapping
  - Using hibernate we are mapping the Object in java application to RDBMS database.
  - Hibernate makes java application loosely coupled with databases.
- - Any kind of application can be build using hibernate
+ - Any kind of application can be build using hibernate.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -29,7 +29,7 @@
      2) XML based configuration
 
 -  1) JPA Annotation based configurations :
-      - JPA is interface and hibernate is class which is  implementation of JPA interface
+      - JPA is interface and hibernate is class which is implementation of JPA interface
 
       or example:
 

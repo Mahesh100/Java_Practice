@@ -30,9 +30,9 @@
        array, this will reduce the performance.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- # Sorting : Arranging data in logical order whether it is ascending or descending order.
+ # Sorting_Algorithms : Arranging data in logical order whether it is ascending or descending order.
 
- There are total 6 Sorting algorithms:
+ There are total 6 Sorting_Algorithms algorithms:
 
    1) Bubble Sort
    2) Selection Sort
@@ -58,7 +58,7 @@
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Searching Algorithms:
+# Searching_Algorithms Algorithms:
 
 1] Linear Search
 

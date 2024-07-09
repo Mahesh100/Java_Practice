@@ -1,26 +1,28 @@
-package Searching.BinarySearch;
+package Searching_Algorithms.BinarySearch;
 
 public class BinarySearchImpl {
 
     public static void main(String[] args) {
 
-        int[] arr = {1,2,4,5,7,8,9,10};
+        int[] arr = {1,2,4,5,7,8,9,10};   //Sorted array always
 
-        int item = 10;
+        int item = 10;    // Target element
 
         int li=0;
-        int hi= arr.length-1; //7
-        System.out.println(hi);
-        int mi= (li+hi)/2;   //3
-        System.out.println(mi);
 
-        while (li<=hi){  //true
-            if(arr[mi]==item)   //false
+        int hi= arr.length-1;
+        System.out.println(hi);  //7
+
+        int mi= (li+hi)/2;
+        System.out.println(mi);   //3
+
+        while (li<=hi){
+            if(arr[mi]==item)
             {
                 System.out.println("Element is present at "+mi+ " and element is "+arr[mi]);
                 break;
             }
-            else if (arr[mi]<item){   //true
+            else if (arr[mi]<item){
                 li =mi+1;   //4th index with item 7   | 9 value and 6th index li=6
             }
             else {

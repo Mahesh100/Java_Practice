@@ -9,11 +9,12 @@
 
 # Primitive variable like int a =10;  String s ="abc" doesn't hold any reference it just store value itself.
 
-# Sting Constant Pool (SCP) is present in Heap Memory Area.
+# String Constant Pool (SCP) is present in Heap Memory Area.
 
 # Object are stored in Heap area but reference is created Stack area.
 
 # Once the code execution get completed it the references from the stack area get deleted/clear
+
 # Lambada Expression are usually passed as a parameters to functions.
 
 # The main objective of introducing lambada expression in java is to bring functional programming feature in java.
@@ -455,7 +456,7 @@ interface InterfaceName {
 
  Marker interface is used as a tag  information to the Java compiler or a message so that it can add some special
  behavior to the class implementing it. Java marker interface are useful if we have information about the class
- and that information never changes, in such cases, we use marker interface  to represent the same.
+ and that information never changes, in such cases, we use marker interface to represent the same.
  Implementing an empty interface tells the compiler to do some operations.
 
 
@@ -836,8 +837,6 @@ For Example (Scenario)
 
  - The iterator() method is used to get iterator for any collection.
 
- -
-
 
   * Difference between Iterator and ListIterator
 
@@ -861,7 +860,7 @@ For Example (Scenario)
 
   # ListIterator
 
-  1] We can get ListIterator cursor  using .listIterator() method
+  1] We can get ListIterator cursor using .listIterator() method
   2] ListIterator can be used only with list implemented classes.  i.e ArrayList, LinkedList, Vector, Stack.
   3] In ListIterator we have methods as :  (total 6)
                 next()
@@ -930,7 +929,7 @@ For Example (Scenario)
 
  - Using lambada expression we can achieve functional programming features in java.
 
- - Generally in java  is object oriented programming language.
+ - Generally java is object oriented programming language.
    The data will be stored in Classes  and Objects
 
    But, in functional programming language the data will be stored in functions and variables
@@ -1124,9 +1123,6 @@ Example 3:
 
     - To process the data based up on certain condition we use filter()
     - filter should happen based on certain condition
-    -
-
-
 
  - Stream API is one of the way in java 8 by which we can achieve implementation of functional programming in java.
  - Stream API in java 8 is set of classes and interfaces which are used to work with sequence of elements in functional
@@ -1355,7 +1351,7 @@ Example 3:
 - Step 2 : Define private constructor
 
 - Step 3 : Create public static method which will return the instance of the class ex: public static getInstance(); method
-           method should object of class
+           method should have object of class
 
 1) First create a static instance
 2) Create a private constructor of class
