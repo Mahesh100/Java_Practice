@@ -9,7 +9,7 @@ public class SecondLargestElement {
         int[] arr = {6, 8, 2, 4, 3, 1, 5, 7};
 
         int temp;
-        int target =
+        int target=8;
         for (int i = 0; i < arr.length; i++)
         {
             for(int j=i+1; j<arr.length; j++)
