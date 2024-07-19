@@ -228,6 +228,15 @@ public class ProgramList {
 
 
 
+        // Find the number greater than 5 and then do square of each number
+
+        List<Integer> numList = Arrays.asList(10,2,3,4,5,6);
+
+        List<Integer> resultList = numList.stream().filter(i->i>5).map(i->i*i).sorted().collect(Collectors.toList());
+        System.out.println(resultList);
+
+
+
 
 
 
