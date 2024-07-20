@@ -1374,6 +1374,9 @@ Example 3:
 
  # SOLID Principle
 
+  - SOLID principles revolutionize the world of Object oriented programming.
+    When this solid principles combine together it will generate more maintainable and understandable and flexible application.
+
    # Advantages of SOLID principles
 
    1) Easy to maintain
@@ -1401,6 +1404,10 @@ Example 3:
   I- Interface Segregation principle
 
   D- Dependency Inversion Principle
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+S- Single Responsibility Principle state that the class should have only one responsibility and only one reason to change.
 
 
 
