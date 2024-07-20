@@ -1,13 +1,13 @@
 
 # Java : Java is programming language which is used to develop various applications like desktop, web, stand alone applications
-          It is secure programming language which supports various features like oops,collections, multithreading etc
+         It is secure programming language which supports various features like oops,collections, multithreading etc.
 
    OOPS : Object Oriented Programming System.
 
 
 ## Object class is the parent class of all the classes in java.
 
-# Primitive variable like int a =10;  String s ="abc" doesn't hold any reference it just store value itself.
+# Primitive variable like int a =10;  String s ="abc" doesn't hold any reference it just store value itself.  //Being variables in java
 
 # String Constant Pool (SCP) is present in Heap Memory Area.
 
@@ -880,7 +880,6 @@ For Example (Scenario)
 
  - Enumeration is special type of data type which is used to represents set of pre-define constants.
  - These constants typically related to fixed set of possible values of given concept.
-
  - Enum is special type of data type in java that can be used to represent the group of constants
  - Enum are useful when we have fixed set of values that are known at compile time
  - Enums make your code more readable and maintainable.
@@ -1160,7 +1159,7 @@ Example 3:
   There are total 5 ways to create Stream object in java
 
   1) To create empty stream
-    Stream<Object> emptyStream = Stream.empty();
+     Stream<Object> emptyStream = Stream.empty();
 
   2)     2nd Method using array
          String[] names = {"Durgesh","Uttam", "Aniket","Divya"};
@@ -1255,8 +1254,6 @@ Example 3:
 
 
 
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # IntStream and Stream API in java
@@ -1309,8 +1306,6 @@ Example 3:
 
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 
 # Design Pattern in java
 
