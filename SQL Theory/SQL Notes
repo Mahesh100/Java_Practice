@@ -73,3 +73,13 @@
  - A foreign key is specified as a key that is related to primary key of another table.
  -
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ # Joins in SQL
+
+  # Self Join in SQL:
+
+  - A self join is regular join in which a table is joined to itself.
+  - Self join are powerful for comparing values in column of rows with same table
