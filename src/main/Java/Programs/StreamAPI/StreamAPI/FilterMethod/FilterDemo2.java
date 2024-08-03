@@ -1,4 +1,4 @@
-package Programs.Strings.StreamAPI.FilterMethod;
+package Programs.StreamAPI.StreamAPI.FilterMethod;
 
 
 import java.util.ArrayList;

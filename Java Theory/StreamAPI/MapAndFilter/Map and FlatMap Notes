@@ -1,0 +1,19 @@
+map() is an intermediate operation
+
+ -map() method will transform the data from the source and get
+  into the target
+ - map() will perform certain operation with every element of stream()
+
+ - map() method always take consumer as parameter
+ - map() will always return single output
+
+
+# Flat Map in Stream API
+
+- Flat map is basically map but we do a flattening of elements
+- If we have complex data in collection then we use flatMap()
+- Collection which contains another collection
+   Example:
+            {1,2},{3,4},{5,6}
+
+- flatmap() will return multiple output

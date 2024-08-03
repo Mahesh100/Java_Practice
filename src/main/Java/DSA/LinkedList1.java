@@ -7,7 +7,6 @@ public class LinkedList1 {
 
         LinkedList<String> list = new LinkedList<String>();
 
-        list.add("a");
         list.add("b");
         list.add("c");
         list.add("d");

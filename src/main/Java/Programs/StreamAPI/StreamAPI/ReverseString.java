@@ -1,4 +1,4 @@
-package Programs.Strings.StreamAPI;
+package Programs.StreamAPI.StreamAPI;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

@@ -1,0 +1,57 @@
+
+- Linked list is implemented class of List interface and it is present in java.util package
+
+- The underline data structure for linked list is "doubly linked list" or "circular linked list"
+
+- Linked list is not stored in contiguous memory locations and every element is separate data object
+  with data part and address part.
+  Each element is known as node.
+
+- The size of linked list automatically increase or decrease when we dynamically add or remove elements.
+
+- The main difference between normal linked list and doubly linked list is that the doubly linked list has extra pointer
+  known as previous pointer
+
+
+
+
+# Advantages of Linked list
+
+- Insertion or deletion operation is faster or efficient.
+- we can travel the list in forward and backward direction both.
+
+
+# Disadvantages of Linked List
+
+- Doubly linked list takes extra space for previous node address.
+- In case of insertion and deletion of element we have to manage/modify the previous and next node/element
+- Nodes cannot be accessed directly instead we need to start from the head and follow through the link to
+  reach a node we wish to access.
+
+
+# Properties of Linked List
+
+1) Linked list is index based data structure.
+2) Linked list can store heterogeneous/different types.
+3) Linked list can allow duplicate elements.
+4) Linked can store multiple null values.
+5) Linked list follows the insertion order.
+6) Linked list does not follows sorting order.
+7) Linked list are non synchronised collection. (Not thread safe)
+
+
+
+# Constructor in linked list
+
+- In order to create the linked list we have to create the object of the linked list
+
+
+1) LinkedList();   This constructor is used to create the empty linked list
+
+   LinkedList emptyList = new LinkedList();
+
+2) LinkedList(Collection C);
+   This linked list is used to create an ordered list that contains all the elements of specified collection.
+
+   LinkedList orderedList = new LinkedList(C);
+
