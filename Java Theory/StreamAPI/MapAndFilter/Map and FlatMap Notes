@@ -10,7 +10,7 @@ map() is an intermediate operation
 
 # Flat Map in Stream API
 
-- Flat map is basically map but we do a flattening of elements
+- Flat map is basically map but here we do a flattrening of elements
 - If we have complex data in collection then we use flatMap()
 - Collection which contains another collection
    Example:
