@@ -102,6 +102,7 @@
     - And each JVM  instance has all this areas
 
     - How much heap memory allocated to process?
+
       - We can define the memory allocation
 
          -Xms<size>

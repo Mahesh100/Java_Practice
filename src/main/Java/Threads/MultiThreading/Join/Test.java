@@ -23,7 +23,7 @@ public class  Test extends Thread{
         try{
             for(int i=1; i<=5; i++)
             {
-                System.out.println("Main Thread");
+                System.out.println("Main2 Thread");
                 Thread.sleep(1000);
 
             }

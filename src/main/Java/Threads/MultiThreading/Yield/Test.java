@@ -18,7 +18,7 @@ public class Test extends  Thread{
         for(int i=0; i<5; i++)
         {
             Thread.yield();
-            System.out.println("Main Thread");
+            System.out.println("Main2 Thread");
         }
     }
 }

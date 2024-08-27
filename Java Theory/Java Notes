@@ -344,6 +344,7 @@ class B extends A  // sub class
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Inheritance in Java
+
   - When one class acquire all the properties and behavior of another class is called inheritance.
   - Inheritance represents Is-A relationship which is also known as parent child relationship.
   - For Method overriding inheritance is used (To achieve runtime polymorphism)
@@ -460,6 +461,8 @@ interface InterfaceName {
  Implementing an empty interface tells the compiler to do some operations.
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
  # Serialization in java
 
  - The process of converting object into series of bits is called serialization in java.
@@ -479,8 +482,7 @@ interface InterfaceName {
 
 # Callable Interface in java
 
--The Callable interface in Java is a functional interface that defines a single method, call() method,
-   which returns a value.
+-The Callable interface in Java is a functional interface that defines a single method, call() method - which returns a value.
 -The value can be obtained through Future<V> objects.
 -In order to Return the result we use callable interface.
 
@@ -758,19 +760,19 @@ Validation: Setters can include validation logic to ensure that the fields are s
 
  A thread can have one of the following states during its lifetime:
 
- -New: In this state, a Thread class object is created using a new operator, but the thread is not alive.
-       Thread doesn't start until we call the start() method.
+ - New             :   In this state, a Thread class object is created using a new operator, but the thread is not alive.
+                       Thread doesn't start until we call the start() method.
 
- -Runnable: In this state, the thread is ready to run after calling the start() method.
-            However, the thread is not yet selected by the thread scheduler.
+ - Runnable        :   In this state, the thread is ready to run after calling the start() method.
+                       However, the thread is not yet selected by the thread scheduler.
 
- -Running: In this state, the thread scheduler picks the thread from the ready state,
-           and the thread is running.
+ - Running         :   In this state, the thread scheduler picks the thread from the ready state,
+                       and the thread is running.
 
- -Waiting/Blocked: In this state, a thread is not running but still alive, or it is
-                   waiting for the other thread to finish.
+ - Waiting/Blocked :   In this state, a thread is not running but still alive, or it is
+                        waiting for the other thread to finish.
 
- -Dead/Terminated: A thread is in terminated or dead state when the run() method exits.
+ - Dead/Terminated :    A thread is in terminated or dead state when the run() method exits.
 
 
 
@@ -923,7 +925,7 @@ For Example (Scenario)
 
    Objective :
     - To bring functional programming features
-    -  To improve Code optimization/we can write concise code
+    - To improve Code optimization/we can write concise code
 
  - To bring the functional programming features in java, lambada expression is introduced in java 8
 
@@ -938,7 +940,7 @@ For Example (Scenario)
    belong to class or object.
 
    # Definition :
-    - Lambada expression is anonymous function which doesn't have name of method, return type and no return value, no access modifier.
+ - Lambada expression is anonymous function which doesn't have name of method, return type and no return value, no access modifier.
 
  - Lambada Expression is mainly used for to implement Functional Interface.
 
@@ -1017,7 +1019,7 @@ Example 3:
 
 # Without defining functional interface we can write lambada expression also : using:-
 
-      Using pre-define functional interface we can lambada expression without functional interface
+      Using pre-define functional interface we can use lambada expression without functional interface
 
     # Java 8 have some Predefine functional interfaces :
 
@@ -1269,11 +1271,11 @@ Example 3:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# For-Each loop in java
+# Advanced for loop in java
 
    The loop syntax:
 
-   In Java, the syntax for a for-each loop is
+   In Java, the syntax for a Advanced for loop is
 
    for (DataType variable : collection){
 
@@ -1396,9 +1398,9 @@ Example 3:
   L- Liskov substitution principal states that Objects in program should be replaceable with instances of its
      subtypes/subclasses without altering the program
 
-  I- Interface Segregation principle
+  I- Interface Segregation principle : Segerate interfaces into sub classes instead of one concerate implementation
 
-  D- Dependency Inversion Principle
+  D- Dependency Inversion Principle :
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 

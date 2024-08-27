@@ -8,7 +8,7 @@ public class Test extends Thread {
 
         public static void main(String[]args)
         {
-            System.out.println("Main thread priority is:" + Thread.currentThread().getPriority());
+            System.out.println("Main2 thread priority is:" + Thread.currentThread().getPriority());
             Test t = new Test();
             t.setPriority(NORM_PRIORITY);
             System.out.println(t.getPriority());

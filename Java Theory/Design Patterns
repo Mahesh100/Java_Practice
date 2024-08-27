@@ -1,12 +1,12 @@
 
-
-
 # Design Pattern in java
 
  - Design pattern are the well proved solutions of commonly occurring problem in software design.
+
  - Design pattern is the way to handle commonly occurring problem while creating software.
+
  - Design pattern represent idea.
- -
+
    Three main categories in design pattern is :
 
    1) Creational Design pattern
@@ -14,15 +14,44 @@
    3) Behavioral Design pattern
 
 
-   1) Creational Design pattern :
+   [1] Creational Design pattern :->
 
-   -Factory Design pattern, Builder Design pattern, Singleton design pattern etc
+   -Factory Design pattern,Abstract Factory Design Pattern, Builder Design pattern, Singleton design pattern etc
 
-   2) Structural Design pattern : How to structure the code
+   1) Singleton design pattern:
+      -Singleton design pattern is a design pattern which restrict the instantiation of the class and ensure that the
+       only one instance/object is present in java virtual machine.
+
+      -Singleton pattern is often used is logging, caching and configuration.
+
+      To create singleton class which implement singleton design pattern
+
+      i) Create a private static variable of class type : This variable will store the single instance of the class
+         - This variable is static because method is static
+            and we can not use non-static variable inside the static context(method)
+
+      ii)Create a private constructor : This private constructor will prevent the class from instantiated from outside of the class.
+
+      iii) Create a public static method of class type which will return the instance of the class.
+           This method will check if instance is already created if not then the method will create it.
+
+           -Here method is static because it belongs to class not object and
+            if method is non-static we have to create object of class to access the method
+            outside of the class.
+
+
+
+
+
+
+   2) Structural Design pattern :-> How to structure the code
 
    - Proxy design pattern, adapter design pattern etc
 
-   3) Behavioral Design pattern - Focuses on object interaction more
+
+
+
+   3) Behavioral Design pattern :-> Focuses on object interaction more
 
    - Observer design pattern, State pattern, Iterator design pattern
 

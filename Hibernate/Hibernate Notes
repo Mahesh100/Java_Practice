@@ -1,3 +1,14 @@
+
+# Hibernate is ORM tool
+ - Hibernate is Object Relational Mapping (ORM) tool that is used to map java objects and database tables
+ - Hibernate is java framework that simplifies the development of java application to interact with database.
+ - Hibernate works on database layer
+
+ - ORM is Object relational Mapping
+ - Using hibernate we are mapping the Object in java application to RDBMS database.
+ - Hibernate makes java application loosely coupled with databases.
+ - Any kind of application can be build using hibernate.
+
 # Database stores the data in the form of tables
 
 # Hibernate Session Object works as mediator between java application and database
@@ -9,15 +20,7 @@
 
 # In hibernate transaction is only needed when we have to save the data 
 
-# Hibernate is ORM tool
- - Hibernate is Object Relational Mapping (ORM) tool that is used to map java objects and database tables
- - Hibernate is java framework that simplifies the development of java application to interact with database.
- - Hibernate works on database layer
 
- - ORM is Object relational Mapping
- - Using hibernate we are mapping the Object in java application to RDBMS database.
- - Hibernate makes java application loosely coupled with databases.
- - Any kind of application can be build using hibernate.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -105,6 +108,7 @@
 # Fetch Objects get() Vs load()
 
  # Using get() method
+
 - get() and load() methods are internally uses select query to fetch data from the DB
 - Both methods come from session interface
 - If we know primary key (id) of the record then we can use get() method from the session 

@@ -3,13 +3,13 @@
 
 2] Explain the Collection Hierarchy
 
-3]  What do you understand by blocking queue?
+3]  What do you understand by blocking queue?  <------------------
 
 4] Why Map doesn't extends the collection interface ?
 
 5] Explain internal working of hashmap
 
-6] What is enumeration?
+6] What is enumeration?   <------------------
        ------------------       ------------------        ------------------
 
 5] What is difference between ArrayList and LinkedList?
@@ -21,7 +21,7 @@
 
 8] What is difference between Iterator and ListIterator?
 
-9] What is Difference between HashSet and Linked HashSet?
+9] What is Difference between HashSet and Linked HashSet?   <------------------
 
 10] Difference between ArrayList and Vector
 

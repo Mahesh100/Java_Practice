@@ -43,7 +43,7 @@
 
 1] Bubble Sort in Java
 
-  - Bubble sort is comparison based algorithm which compares two adjusent element and sort elements in ascending or descending order.
+  - Bubble sort is comparison based algorithm which compares two adjustment element and sort elements in ascending or descending order.
 
   -> Number of Rounds = Number of elements in List - 1
 

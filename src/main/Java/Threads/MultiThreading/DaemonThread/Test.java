@@ -18,7 +18,7 @@ public class Test extends Thread
     public static void main(String [] args)
     {
         //Thread.currentThread().setDaemon(true);   //Not possible to make main thread as Daemon thread
-        System.out.println("Main tread");
+        System.out.println("Main2 tread");
 
         Test t = new Test();
        t.setDaemon(true);

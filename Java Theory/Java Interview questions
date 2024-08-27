@@ -7,7 +7,7 @@
 
 4) Difference between Checked exception and Unchecked exception
 
-5) Difference between Final , Finally and Finalize in java
+5) Difference between Final ,Finally and Finalize in java
 
 6) What is Multi-threading in java?
 
@@ -23,6 +23,7 @@
          }
         }
       }
+
  11) Can you pass the List<String> to a method which accept List<Object>  ?
     -No you can not pass the Lis<String> to a method which accept List<Object> ?
 
