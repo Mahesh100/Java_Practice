@@ -1,0 +1,10 @@
+
+
+3)  If you have monoliths application what would be your approach to convert it to microservice application?
+
+- 1) If we have monolithic application then identify all possible standalone functionalities
+- 2) Once identified create separate stand alone project(Spring boot) for each functionalities.
+- 3) For interactions between this services we need to implement way of communication between them
+     either synchronous communication or asynchronous communication
+- 4) Now we need to include components like service discovery, Eureka client and API gateway in cloud
+     environment etc for proper functioning of these microservices.

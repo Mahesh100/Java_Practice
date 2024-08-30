@@ -1,0 +1,34 @@
+
+# We can use Eureka Service as service discovery
+
+- Eureka is discovery service
+
+-  In production level application one single server is not capable enough to handle all the incoming request
+   so we create replica of each microservice on different servers so when server is down another server is
+   capable enough to handle incoming request
+
+ - In this case load balancing is done for microservices for example:
+   suppose some port is not working like port 8080 and load balancing is done at 8081
+   so in this case Eureka service will automatically redirects the request on where there is less api traffic
+   Eureka handles the load balancing situations and handle dynamic urls
+
+- Every eureka server internally behaves eureka client also because there may be chances that
+  if you have only one eureka sever and what if your eureka server gets down
+  so you won't be able to identify url of any services that way we should always create
+  multiple copies of eureka server
+
+- If we don't want to get register Eureka server as Eureka client on same network then we have
+  configure following properties:
+
+  eureka:
+    client:
+      fetch: false
+      register-with-eureka: false
+
+
+- @EnableEurekaServer is used with main spring boot application run method
+
+# Difference between :
+- Eureka discovery service
+- Eureka discovery client
+- Eureka server

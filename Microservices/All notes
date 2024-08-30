@@ -1,0 +1,14 @@
+
+- In cloud when microservices deployed we have dynamic Urls
+
+- spring.jpa.hibernate.show-sql =true property  is used when we want to see sql queries fired in console
+
+- spring.jpa.hibernate.database-platform property is used in a Spring Boot application to specify the Hibernate dialect that should be used for interacting with your database
+
+- The dialect is a way for Hibernate to generate SQL that is compatible with your specific database.
+
+- The default eureka port for eureka sever is 8761
+
+- Every eureka server internally behaves eureka client
+
+- @EnableEurekaServer is used with main spring boot application run method

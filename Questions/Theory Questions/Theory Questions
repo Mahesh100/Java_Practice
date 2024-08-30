@@ -1,0 +1,23 @@
+
+1)  What are microservices?
+2)  What is advantages of microservices?
+3)  If you have monoliths application what would be your approach to convert it to microservice application?
+4)  Difference between
+    - Eureka discovery service
+    - Eureka discovery client
+    - Eureka server
+
+5)  Steps to connect spring boot application to database
+6)  Can we connect more than one database to single spring boot application
+7)  What are important hibernate configuration need to do while configuring data base in application.properties file
+8)  Difference between application.yml and application.properties file in spring boot
+9)  What are all dependencies you added in Eureka server - Only one
+10) What is default eureka port?
+
+11) What is @RequestMapping annotation in spring boot?
+12) What is ResponseEntity in spring boot?
+13) What are all annotations you have used using Lambook?
+
+14) what is @EnableZuulProxy and @EnableZuulServer ?
+15)
+16)
