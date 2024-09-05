@@ -1,0 +1,15 @@
+
+# Fault tolerance
+
+- Fault tolerance is the property of the system that enables a system to continue operating properly in the event of
+  failure of some of its components
+
+- Fault can arise when one of the microservice is down
+
+- In order to make a fault tolerance we have to configure a circuit breaker design patter
+
+  So whenever a particular microservice is down we have to stop calling that microservice rather call a "Fall Back Method"
+  which is configured.
+
+- Circuit breaker hits/calls the microservice N number of times and how much time it should call the microservice
+  that is also configurable.

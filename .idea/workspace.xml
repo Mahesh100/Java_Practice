@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6dcb3314-3560-44c8-a551-94561c758672" name="Changes" comment="updated">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java_Practice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservices/API_Gateway/API Gateway notes" beforeDir="false" afterPath="$PROJECT_DIR$/Microservices/API_Gateway/API Gateway notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Questions/Theory Questions/Theory Questions" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/Theory Questions/Theory Questions" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mahesh100&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mahesh100/Java_Practice.git&quot;,
+    &quot;accountId&quot;: &quot;a329a796-6aed-406e-9c51-eab28bfcd9bd&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/Java/LambadaExpression/Test3.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/Java/Set/Set1.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2buAtzHOVTgE2JPPaBLmqfbHfaN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Additation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Animal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Animals.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayList2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayListAnimals.executor&quot;: &quot;Run&quot;,
+    &quot;Application.B.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BinarySearchImpl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Bird.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CenterApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CommonElements.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConcatString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConstructorConcept.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConvertArrayToList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountDigits.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountDigits2.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CountNumbers.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CountWords.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Deepak_tutorial.Exception.ExpTut_1.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Deepak_tutorial.Polymorphism.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeleteFirstNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeleteSpecificNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Demo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Developer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DoWhile1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EmployeeDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EvenIdEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EvenOrOdd.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FactorialOfNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FactoryMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FibonacciSeries.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FilterDemo1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FilterDemo2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FilterListWithOutStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindMaxMin.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindMaxMin2.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.HashSet1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InsertAtBeginning.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InsertAtGivenPosition.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LambadaExpression.PredefineLambada.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LambadaExpression.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LargestElementInAnArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LengthOfString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LengthOfStringInCollection.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinearSearchImple.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinearSearchString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedList1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedList2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListOfEmployees.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LowerCaseToUpperCase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Map.HashMap.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MapLengthOfString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxOccurringChar.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MaxOccurringChar2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxOccurringChar3.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Methods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MinMaxElementInArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MissingNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MovieBookApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NaturalNumberSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullInMap.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OptionalExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalindromeString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Play.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PositiveOrNegativeNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrimeNumber.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.PrintCharactersInString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrintNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProgramList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RemoveDuplicates.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RemoveDuplicates2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SecondLargestElement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SecondLargestElement2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SelectionTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Set1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SingleTon.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortingList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Stream1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StreamMain1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StreamObject.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringBufferProg.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringReversal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SumOfIntegers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SumOfNaturalNumbers.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SwapNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.DaemonThread.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.Interruption.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.Join.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.Priority.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.RestricThreadExecution.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.Sleep.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.Synchronization.InterThreadCommunication.MovieBookApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.Synchronization.StaticSynchronization.MovieBookApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.ThreadCases.Case1.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.ThreadCases.Case3.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.ThreadName.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threads.MultiThreading.Yield.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WhileLoop_2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WhileLoop_3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo2.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.filterDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.filterDemo2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.findSecondCharacter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.interfaceClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.markerDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.repeatedCharactersInString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.rev.executor&quot;: &quot;Run&quot;,
+    &quot;Application.swap.executor&quot;: &quot;Run&quot;,
+    &quot;Application.swapNum.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Practice [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Practice [package].executor&quot;: &quot;Run&quot;,
+    &quot;NIXITCH_NIXPKGS_CONFIG&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_CONF_DIR&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_OTHER_STORES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_PATH&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_PROFILES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_REMOTE&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_USER_PROFILE_DIR&quot;: &quot;&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Mahesh/Project Folder/Microservices/Vaccination Portal/center&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Mahesh\Project Folder\Development Projects\Java_Practice\CollectionThory\Images" />
+      <recent name="D:\Mahesh\Project Folder\Development Projects\Java_Practice\Java Theory\Images" />
+      <recent name="C:\Users\ACER\Desktop\Java_Practice\Java Theory\Images" />
+      <recent name="C:\Users\ACER\Desktop\Java_Practice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Mahesh\Project Folder\Development Projects\Java_Practice\Springboot Theory\Spring Security" />
+      <recent name="D:\Mahesh\Project Folder\Development Projects\Java_Practice\Springboot Theory\Images" />
+      <recent name="D:\Mahesh\Project Folder\Development Projects\Java_Practice\Java Theory\Multithreading\Images" />
+      <recent name="D:\Mahesh\Project Folder\Development Projects\Java_Practice\Java Theory\Images" />
+      <recent name="D:\Mahesh\Project Folder\Development Projects\Java_Practice\CollectionThory\Images\Set" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DesignPattern.SingleTon" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPattern.SingletonDesignPattern.SingletonDesign1.Main" />
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPattern.SingletonDesignPattern.SingletonDesign1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPattern.SingletonDesignPattern.SingletonDesign1.Main2" />
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPattern.SingletonDesignPattern.SingletonDesign1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dcb3314-3560-44c8-a551-94561c758672" name="Changes" comment="" />
+      <created>1707054812191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707054812191</updated>
+      <workItem from="1712499755759" duration="12000" />
+    </task>
+    <task id="LOCAL-00001" summary="File added">
+      <created>1708868229897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708868229897</updated>
+    </task>
+    <task id="LOCAL-00002" summary="File added">
+      <created>1708868321323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708868321323</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Files added">
+      <created>1709441010317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709441010317</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Files added">
+      <option name="closed" value="true" />
+      <created>1714415043715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714415043715</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Files updated">
+      <option name="closed" value="true" />
+      <created>1718440051892</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718440051892</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Notes updated">
+      <option name="closed" value="true" />
+      <created>1719471547849</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719471547849</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Aggregation and Composition in java">
+      <option name="closed" value="true" />
+      <created>1719472334168</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719472334168</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Volatile keyword and Enumeration in java">
+      <option name="closed" value="true" />
+      <created>1719482081386</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719482081386</updated>
+    </task>
+    <task id="LOCAL-00009" summary="break and continue statement,this in java, getters and setters in java">
+      <option name="closed" value="true" />
+      <created>1719500200524</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719500200524</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated">
+      <option name="closed" value="true" />
+      <created>1719563722503</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719563722503</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Linear Search and Binary Search">
+      <option name="closed" value="true" />
+      <created>1720336991733</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720336991733</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Selection Sort">
+      <option name="closed" value="true" />
+      <created>1720337023246</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720337023246</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updated">
+      <option name="closed" value="true" />
+      <created>1720549781787</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720549781787</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated">
+      <option name="closed" value="true" />
+      <created>1720863374268</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720863374268</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated">
+      <option name="closed" value="true" />
+      <created>1720863499986</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720863499986</updated>
+    </task>
+    <task id="LOCAL-00016" summary="updated">
+      <option name="closed" value="true" />
+      <created>1721383001821</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721383001821</updated>
+    </task>
+    <task id="LOCAL-00017" summary="updated">
+      <option name="closed" value="true" />
+      <created>1722408134625</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408134625</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="File added" />
+    <MESSAGE value="Files added" />
+    <MESSAGE value="Files updated" />
+    <MESSAGE value="Notes updated" />
+    <MESSAGE value="Aggregation and Composition in java" />
+    <MESSAGE value="Volatile keyword and Enumeration in java" />
+    <MESSAGE value="break and continue statement,this in java, getters and setters in java" />
+    <MESSAGE value="Linear Search and Binary Search" />
+    <MESSAGE value="Selection Sort" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Loops/ForLoops/ForLoops1.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Loops/ForLoops/ForLoops1.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Loops/ForLoops/ForLoops1.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Loops/ForLoops/ForLoops1.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/LIst/FindMaxMin2.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/SumOfNaturalNumbers.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountIterations.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountIterations.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountIterations.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountIterations.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountIterations.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/CountDigits2.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar3.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar3.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar3.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar3.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar3.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Strings/MaxOccurringChar3.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/demo2.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/demo2.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/demo2.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/demo2.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/demo2.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/demo2.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Practice/PrimeNumber.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Practice/PrimeNumber.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Practice/PrimeNumber.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Practice/PrimeNumber.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Practice/PrimeNumber.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Practice/PrimeNumber.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/Programs/Practice/PrimeNumber.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/Java/Loops/ForLoops/ForLoops1.java</url>
+          <line>1</line>
+          <properties class="ForLoops1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

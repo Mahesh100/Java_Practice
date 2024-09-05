@@ -1,0 +1,65 @@
+
+
+# API Gateway acts as a centralise layer between client and microservices
+  and it routes the request to appropriate microservice and return the response to the client
+
+# Microservices can interact with each other through gateway
+
+# There are  number of API gateway available :
+
+ 1) Netflix API Gateway(zuul)
+ 2) Amazon API Gateway
+ 3) Mulesoft
+ 4) Kong API Gateway
+ 5) Azure API Gateway
+ 6) Broadcom API Gateway
+
+
+# Zuul is blocking API in nature.
+ - Zuul going to use as many as threads to handle the incoming request.
+ - Suppose we have Zuul API gateway configured in microservices
+   and at Zuul API gateway we have T1,T2,T3 and T4 request available to handle incoming
+   request from the front end as R1, R2, R3 and R4 respectively
+   Now suppose request R5 come and API gate way dont have thread to handle R5
+   so R5 goes into a queue
+   So this affects the user experience at client side
+
+  -> zuul gateway configuration in application.properties file
+
+  zuul:
+    routes:
+      nameOfService1:
+      uri:
+
+      nameOfService2:
+      uri:
+
+      nameOfService3:
+      uri:
+
+
+
+# Spring cloud API gateway is non-blocking in nature
+  When using non blocking API a thread is always available to handle incoming request
+  These request are then processed asynchronous in background and once completed then
+  response is returned. so no incoming request get blocked while using spring cloud api
+  gateway
+
+   -> Spring cloud gateway configuration in application.properties
+
+   spring:
+      gateway:
+         routes:
+           -id: SERVICE-NAME
+            uri:                  //This is the url where it need to be redirected
+              lb://SERVICE-NAME
+            predicates:
+             -PATH: /citizen/**       (Anything with citizen and anything after it(**) )
+
+
+
+
+
+
+
+
