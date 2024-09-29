@@ -1,0 +1,13 @@
+
+# AWS is Amazon web services
+
+- AWS is cloud computing platform provided by amazon that offers wide range of services
+  to help business to store data and run software's over the internet without having to own
+  or maintain the physical servers
+
+-In AWS console we have all the services listed
+-AWS also provide CLI (Command line interface)
+
+- AWS provides different kind of services like
+
+ - AWS S3: It is storage service which is used to store files

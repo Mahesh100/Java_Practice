@@ -1,4 +1,8 @@
 
+
+# Group By Statement In SQL
+
+- Group By is use to 
  - Having clause is added to the sql because where clause can not be used with aggregate function
 
  - Having clause use to filter result based on group specified

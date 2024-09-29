@@ -1,0 +1,4 @@
+
+- Arraylist implemented in memory with the help of dynamic array
+- Time complexity for insert operation in arraylist is O(n)
+- Time complexity for search operation in arrayList is O(1)     (Big O of 1)

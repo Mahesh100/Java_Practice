@@ -1,0 +1,21 @@
+
+# Kubernetes
+
+- Kubernetes is open source orchestration platform which is used to deploy and manage containerize applications
+- Kubernetes is orchestration tool (Orchestration = Container management tool)
+
+
+- Cluster is group of nodes
+- Pod is smallest unit of kubernetes
+- Cluster consist of Master and slave
+
+- Number of containers increased or decreased are controlled by kubernetes as per required
+- K
+# Kubernetes Architecture
+
+
+# Pod
+  - Pod is smallest entity in kubernetes
+
+# Kubelet
+  - Kubelet is responsible for running the pod

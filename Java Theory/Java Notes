@@ -13,7 +13,10 @@
 
 # Object are stored in Heap area but reference is created Stack area.
 
-# Once the code execution get completed it the references from the stack area get deleted/clear
+   i) The object is stored in the heap.
+   ii) Reference is stored in stack which point to an object in heap.
+
+# Once the code execution get completed, the references from the stack area get deleted/clear
 
 # Lambada Expression are usually passed as a parameters to functions.
 
@@ -247,9 +250,10 @@ In java, instance variable are used for several reasons
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # this keyword in java
+ - this keyword in java returns the current class instance/object
+ -  we can not use this inside static method.
  - this keyword represents the current object of the class.
  - this keyword is used to initialize the class variables or instance variables
- - this is a reference variable that refers to current class object
  - this can be used to refer current class method
  - this can be used to invoke current class constructor
  -
@@ -542,7 +546,7 @@ Validation: Setters can include validation logic to ensure that the fields are s
 -Exception occurs because of program
 -Exceptions are recoverable / We can handle the exception.
 -Exception are of two types :
-   i)  Compiletime exception (Checked exception )      //Remember both starts with C
+   i)  Compile time exception (Checked exception )      //Remember both starts with C
    ii) Runtime exception     (Unchecked exception)
 
  # Error
@@ -625,8 +629,6 @@ Validation: Setters can include validation logic to ensure that the fields are s
       - To close used resources finally block is used.
 
    - There can only be one finally block, and it must follow the catch blocks.
-
-
 
    # Finalize
    - Finalize is method in java.
@@ -843,10 +845,13 @@ For Example (Scenario)
 
   * Difference between Iterator and ListIterator
 
-  List l = new ArrayList();
+
 
   # Iterator
-       Iterator it = l.iterator();
+
+       List list = new ArrayList();
+
+       Iterator it = list.iterator();
 
   1] We can get the Iterator cursor using .iterator() method.
   2] Iterator cursor can be used with any collection objects
@@ -1100,7 +1105,7 @@ Example 3:
 
     1) filter :
     - Suppose we have collection of objects as ArrayList have some integer objects
-       so if we use filer here then filter will filter data based up on certain condition and store it in some other collection
+       so if we use filter here then filter will filter data based up on certain condition and store it in some other collection
 
     2) map :
     -  Whatever data we have in collection that same data will be updated/modified and store in new targeted collection.
@@ -1404,7 +1409,7 @@ Example 3:
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-S- Single Responsibility Principle state that the class should have only one responsibility and only one reason to change.
+
 
 
 

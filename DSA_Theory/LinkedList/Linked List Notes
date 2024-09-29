@@ -3,8 +3,7 @@
 
 - The underline data structure for linked list is "doubly linked list" or "circular linked list"
 
-- Linked list is not stored in contiguous memory locations and every element is separate data object
-  with data part and address part.
+- Linked list is not stored in contiguous memory locations and every element is separate data object with data part and address part.
   Each element is known as node.
 
 - The size of linked list automatically increase or decrease when we dynamically add or remove elements.
@@ -12,7 +11,29 @@
 - The main difference between normal linked list and doubly linked list is that the doubly linked list has extra pointer
   known as previous pointer
 
+- Linked list stores data in non-contiguous memory location
 
+- When we want to insert the element in the middle of list we can use linked list
+  as insert time complexity of linked list is less than the insert time complexity of array list
+
+  [ O(1) > O(n)]     O(1) -> Insert time complexity for linked list
+                     0(n) -> Insert time complexity for array list
+
+- It is not recommended to use linked list for search operation
+
+
+
+# Time complexity in linked list
+
+1) Time complexity for insert operation in linked list is O(1)
+2) Time complexity for search operation in linked list is O(n)
+3)
+
+
+# Types of Linked list
+1) Single linked list
+2) Doubly linked list
+3) Circular linked list
 
 
 # Advantages of Linked list
@@ -45,13 +66,20 @@
 
 - In order to create the linked list we have to create the object of the linked list
 
-
 1) LinkedList();   This constructor is used to create the empty linked list
-
    LinkedList emptyList = new LinkedList();
 
 2) LinkedList(Collection C);
    This linked list is used to create an ordered list that contains all the elements of specified collection.
-
    LinkedList orderedList = new LinkedList(C);
+
+
+
+# Basic structure of linked list :
+
+- Node
+  Node stores two parts  data and next(pointer)       data | next
+
+- First element(Node) in linked list is called "Head"
+- Last element(Node) in linked list is called "Tail"
 
