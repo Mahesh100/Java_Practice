@@ -6,6 +6,16 @@
 
 # Map stores data in the form of objects as key and values pairs
 
+# Hash map does not contain the duplicate key (Hash map contains unique keys)
+  In Hash map each key is unique and adding new key to hash map will replaces/updated with new one.
+
+# HashSet internally uses HashMap to store its elements
+  - When we add a new element to hashset it actually becomes key in the underlying HashMap with
+    constant dummy value associated with it ( As hashMap contains key:value )
+
+# CopyOnArrayList is a thread-safe variant of ArrayList in which all modifications are implemented
+  by creating  separate copy of the underlying array.
+
 
 # Difference between ArrayList and LinkedList
 

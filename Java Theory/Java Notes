@@ -70,7 +70,6 @@ In java, instance variable are used for several reasons
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # Class loader in java
 
 - In Java, a class loader is a part of the Java Runtime Environment (JRE) responsible for dynamically loading Java classes into the Java Virtual
@@ -113,7 +112,7 @@ In java, instance variable are used for several reasons
      -A variable defined within block of code, method or constructor is called local variable in java.
 
      -These variables are created when execution is enters into the block of code or method is called
-       and destroyed when execution comes cutoff block of code.
+       and destroyed when execution comes out off block of code.
 
      -The scope of this variables are only withing the block of code in which the variables are declared.
 
@@ -225,6 +224,10 @@ In java, instance variable are used for several reasons
 - Every java class has a default constructor
 - A constructor is automatically called at the time of object creation
 - Constructor does not have any return type.
+
+- "this" keyword is used in constructor
+    -To call another constructor in the same class
+    -To refer to the current class instance
 
 - 4 Types of constructor in java
 
@@ -493,6 +496,11 @@ interface InterfaceName {
 -Callable is similar to Runnable, but it can return a result and can throw checked exceptions
 -Runnable cannot throw checked exceptions and does not return a result.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Polymorphism in java
+ - Polymorphism is commonly achieved in java by method overriding (run time polymorphism) and method over loading (Compile time polymorphism)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
