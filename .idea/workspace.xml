@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dcb3314-3560-44c8-a551-94561c758672" name="Changes" comment="updated">
-      <change afterPath="$PROJECT_DIR$/SQL Theory/SQL Questions and Answers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/FunctionalProgramming/StreamAPI/PrallelStream/ParallelStreamExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/FunctionalProgramming/forEachLoop/forEachExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/FunctionalProgramming/StreamAPI/PrallelStream/ParallelStreamExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/FunctionalProgramming/forEachLoop/forEachExample.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Theory/Java Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Java Theory/Java Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SQL Theory/SQL Notes" beforeDir="false" afterPath="$PROJECT_DIR$/SQL Theory/SQL Notes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

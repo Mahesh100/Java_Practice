@@ -85,6 +85,13 @@
 
   EXEC procedure_name
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ #-- Highest salary from Employee table
+
+  select max(salary) as Highest_salary from Employee
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Find Nth highest salary from the employee table.
 
    In MySql we can use
@@ -99,6 +106,12 @@
       Select salary from employee order by salary desc offset 2 fetch first 1 row only
 
       Select salary from employee order by salary desc offset (N-1) fetch 1 row only;
+
+     * Easy way : (Second highest salary)
+     Select salary from Employee order by salary desc limit 1 offset 1
+
+     # Find Nth highest salary
+     Select salary from Employee order by salary desc limit 1 offset (n-1)
 
 
 
