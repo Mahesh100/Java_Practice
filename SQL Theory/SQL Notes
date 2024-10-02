@@ -1,5 +1,50 @@
 
 
+ # Primary key in sql
+
+ - Primary key is column in sql table which uniquely identify the each record in table
+ - A table can have only one primary key
+ - Primary key must contains unique values and can not contain null values
+ - A primary key is column in database table which distinct to each record.
+
+
+ # Unique keu in SQL
+
+ - Unique key is column or set of column that uniquely define the record
+ - Unique constraints ensures that the all the values in specific columns is different.
+
+- The main difference between a primary key vs unique key is that a primary key is a key that
+  uniquely identifies each record in a table but cannot store NULL values.
+  On the other hand, a unique key prevents duplicate values in a column and can store NULL values.
+
+ # Foreign key
+
+ - A key which is used to link one or more than one table together is called foreign key.
+ - A foreign key is specified as a key that is related to primary key of another table.
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # Joins in SQL
+
+  1) Self Join in SQL:
+  - A self join is regular join in which a table is joined to itself.
+  - Self join are powerful for comparing values in column of rows with same table
+
+  2) Inner join
+  - A join which return all the records that have matching values in both the table is called inner join.
+
+  3) Left join
+  - A join which returns all the record from the left table and matched record from right table is called left join
+
+  4) Right join
+  - A join which returns all the record from the right table and matched record from the left table is called right join.
+
+  5) Full join
+  - A join which returns the all record when there is matched in either left or right table.
+
+
+
 # Group By Statement In SQL
 
 - Group By is use to 
@@ -55,35 +100,10 @@
 
       Select salary from employee order by salary desc offset (N-1) fetch 1 row only;
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- # Primary key is column in sql table which uniquely identify the record in table
- - We can have only one primary key for each table
- - Primary key does not have null values
-
- # Unique Constraints in SQL
-
- - Unique key is column or set of column that uniquely define the record
- - Unique constraints ensures that the all the values in specific columns is different.
-
-- The main difference between a primary key vs unique key is that a primary key is a key that
-  uniquely identifies each record in a table but cannot store NULL values.
-  In contrast, a unique key prevents duplicate values in a column and can store NULL values.
-
- # Foreign key
-
- - Foreign key used to link one or more than one table together.
- - A foreign key is specified as a key that is related to primary key of another table.
- -
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
- # Joins in SQL
 
-  # Self Join in SQL:
-
-  - A self join is regular join in which a table is joined to itself.
-  - Self join are powerful for comparing values in column of rows with same table

@@ -51,6 +51,9 @@
 
 # compareTo() method in java is used to compare two string lexicographically.
 
+# *Static method in java can not be overridden
+   (Static method belongs to a class not a instances and hence can not be overridden in sub class)
+
 
 # Reflection in java
 -
@@ -235,6 +238,9 @@ In java, instance variable are used for several reasons
  -default constructor
  -parametrized constructor
  -copy constructor
+
+ # *Constructor chaining in java
+    Calling one constructor from another constructor withing the same class using this() method.
 
  # We can call one constructor from another constructor by two ways
 
@@ -1098,12 +1104,21 @@ Example 3:
       - Supplier represents a function/method which does not take in any argument but produces a value of type T.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# forEach method in java 8
 
+-
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Stream API Java
 
  - Stream API is introduced in java 1.8 version
 
  - To processes the group of objects in collection we used Stream API concepts
+
+ - Stream API is one of the way in java 8 by which we can achieve implementation of functional programming in java.
+ - Stream API in java 8 is set of classes and interfaces which are used to work with sequence of elements in functional
+   and declarative way.
 
  - Stream API provides two different mechanism to process the data in collection as
       1) filter
@@ -1139,11 +1154,8 @@ Example 3:
     - To process the data based up on certain condition we use filter()
     - filter should happen based on certain condition
 
- - Stream API is one of the way in java 8 by which we can achieve implementation of functional programming in java.
- - Stream API in java 8 is set of classes and interfaces which are used to work with sequence of elements in functional
-   and declarative way.
 
- -It allows to perform aggregate operations on collection of data using filtering, mapping, sorting etc
+ -Stream API allows to perform aggregate operations on collection of data using filtering, mapping, sorting etc
 
   There are two types of Operations perform in stream api as
 
@@ -1156,6 +1168,13 @@ Example 3:
 
       - Parallel Streams: The Stream API supports parallel execution of stream operations,
                           allowing for efficient processing of large datasets across multiple threads.
+
+  # Parallel Stream in java
+   - Java parallel stream is one of the feature in java 8 which is used for utilizing multiple cores of processors
+   - Normally any java code has one stream of progressing, where it is executed sequentially. Whereas by
+     using parallel stream we can divide the code into multiple stream that are executed in parallel on separate
+     cores and the final result is the combination of the individual outcomes.
+   - The order of execution in parallel stream is not in our control.
 
   # Advantages of Stream API
 
@@ -1177,7 +1196,7 @@ Example 3:
      Stream<Object> emptyStream = Stream.empty();
 
   2)     2nd Method using array
-         String[] names = {"Durgesh","Uttam", "Aniket","Divya"};
+         String[] names = {"Uttam", "Aniket","Divya"};
          Stream<String> stream1 = Stream.of(names);
          stream1.forEach(e->{
              System.out.println(e);
@@ -1279,6 +1298,11 @@ Example 3:
     -IntStream has built-in concept of range() and sum(),average() etc              - To do sum operation here we have to use reduce() method
     -IntStream is a specialized stream for working with primitive int values.       - Stream<Integer> is a stream of Integer objects (the wrapper class for the primitive int).
     - It provides methods specifically designed for numerical operations
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
