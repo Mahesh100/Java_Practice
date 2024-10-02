@@ -355,19 +355,27 @@ class B extends A  // sub class
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Inheritance in Java
+----------------------------------------------------------   OOPS CONCEPT  -----------------------------------------------------------------------------------------------------------------------------------
 
-  - When one class acquire all the properties and behavior of another class is called inheritance.
+1] Inheritance in Java
+
+  - Inheritance in java is mechanism by which one class acquires all the properties and behavior of another class is called inheritance
+
   - Inheritance represents Is-A relationship which is also known as parent child relationship.
   - For Method overriding inheritance is used (To achieve runtime polymorphism)
   - Inheritance is used for code reusability.
+  - "extends" keyword is used to achieve the inheritance
 
+  - In java Single, multilevel and hierarchical inheritance are present in java
+  - Multilevel and Hybrid inheritance is achieved using interface only.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Abstraction
+
+2] Abstraction
+
+- Abstraction in java is mechanism by which we can hide the implementation details and shows only essential details of the class to the user
 
 - If method in a class don't have body then it must be declared as abstract
 
@@ -379,7 +387,57 @@ class B extends A  // sub class
 
  - Abstract classes can not be instantiated, we can not create object of an abstract class.
 
-# Interface
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3] Polymorphism in java
+ - Polymorphism is commonly achieved in java by method overriding (run time polymorphism) and method over loading (Compile time polymorphism)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4] Encapsulation In Java
+
+ - Encapsulation in java is mechanism by which we can wrap/bind data members and member function together in single class
+   is called Encapsulation.
+
+ - In order to achieve Encapsulation
+     -data members/fields should be private
+     -Member function/methods should be public in nature.
+
+ - Any class in java is best example of Encapsulation in java.
+
+ - Encapsulation prevents outer classes from accessing and changing fields and methods of a class.
+   This also helps to achieve data hiding.
+
+# Getters and Setters in java
+
+   - In Java, Getters and Setters are the methods that provide controlled to access fields/variables of a class.
+     Getters and Setters are the fundamental part of the encapsulation principle in object oriented programming.
+
+   - A getter method retrieves (gets) the value of a private field.
+   - A setter method sets (updates) the value of a private field.
+
+  - To protect the data in class getters and setters are used.
+  - We can say that getter and setter are used to achieved encapsulation in class.
+  - We have to provide the public get and set methods to access and update the value of private variable in class.
+  - The get method returns the value of variable and set method will set the value of variable.
+  - To update the private class variables outside from the class we can use getters and setters.
+
+
+Why Do We Need Getters and Setters?
+
+Encapsulation: By making fields private and providing public getter and setter methods, we can control how the fields are accessed and modified.
+               This ensures that the internal representation of the object is hidden from the outside.
+
+Validation: Setters can include validation logic to ensure that the fields are set to appropriate values.
+            This helps in maintaining the integrity of the object.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Interface in java
+
 - The mechanism to achieve abstraction is known as interface.  (-Interface is used to achieve abstraction.)
 - We can not create object of interface.
 - Interface supports multiple inheritance/ Interface used to implement multiple inheritance
@@ -473,7 +531,18 @@ interface InterfaceName {
  and that information never changes, in such cases, we use marker interface to represent the same.
  Implementing an empty interface tells the compiler to do some operations.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Callable Interface in java
+
+-The Callable interface in Java is a functional interface that defines a single method, call() method - which returns a value.
+-The value can be obtained through Future<V> objects.
+-In order to Return the result we use callable interface.
+
+-Callable is similar to Runnable, but it can return a result and can throw checked exceptions
+-Runnable cannot throw checked exceptions and does not return a result.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Serialization in java
@@ -491,61 +560,6 @@ interface InterfaceName {
 
   - In Java, a serialVersionUID is a unique identifier for each Serializable class that is used to verify
    that the saved object and the loaded class are compatible.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Callable Interface in java
-
--The Callable interface in Java is a functional interface that defines a single method, call() method - which returns a value.
--The value can be obtained through Future<V> objects.
--In order to Return the result we use callable interface.
-
--Callable is similar to Runnable, but it can return a result and can throw checked exceptions
--Runnable cannot throw checked exceptions and does not return a result.
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Polymorphism in java
- - Polymorphism is commonly achieved in java by method overriding (run time polymorphism) and method over loading (Compile time polymorphism)
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- # Encapsulation In Java
-
- - Encapsulation in java is mechanism by which we can wrap/bind data members and member function together in single class
-   is called Encapsulation.
-
- - In order to achieve Encapsulation
-     -data members/fields should be private
-     -Member function/methods should be public in nature.
-
- - Any class in java is best example of Encapsulation in java.
-
- - Encapsulation prevents outer classes from accessing and changing fields and methods of a class.
-   This also helps to achieve data hiding.
-
-# Getters and Setters in java
-
-   - In Java, Getters and Setters are the methods that provide controlled to access fields/variables of a class.
-     Getters and Setters are the fundamental part of the encapsulation principle in object oriented programming.
-
-   - A getter method retrieves (gets) the value of a private field.
-   - A setter method sets (updates) the value of a private field.
-
-  - To protect the data in class getters and setters are used.
-  - We can say that getter and setter are used to achieved encapsulation in class.
-  - We have to provide the public get and set methods to access and update the value of private variable in class.
-  - The get method returns the value of variable and set method will set the value of variable.
-  - To update the private class variables outside from the class we can use getters and setters.
-
-
-Why Do We Need Getters and Setters?
-
-Encapsulation: By making fields private and providing public getter and setter methods, we can control how the fields are accessed and modified.
-               This ensures that the internal representation of the object is hidden from the outside.
-
-Validation: Setters can include validation logic to ensure that the fields are set to appropriate values.
-            This helps in maintaining the integrity of the object.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
