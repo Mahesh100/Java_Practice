@@ -1176,6 +1176,15 @@ Example 3:
      cores and the final result is the combination of the individual outcomes.
    - The order of execution in parallel stream is not in our control.
 
+   -Parallel streams are introduce in java 8 as part a part of stream api
+    Parallel streams help in executing collections parallelly by utilising multi core processors and improving the performance
+    By default streams are sequential in nature and are made parallel by invoking the parallel() method on the existing
+    sequential stream or by invoking parallel() stream method from the scratch.
+    Parallel stream divide the data into multiple sub streams executes them in parallel using multiple threads from the fork join pool and combine the result
+    Parallel stream are helpful only when operations are independent of each other and can be executed parallelly
+
+
+
   # Advantages of Stream API
 
   - Stream API allow us complex data manipulation in concise and readable way.
