@@ -42,3 +42,53 @@
  18) Difference between Runnable and callable interface in java?
 
  19)
+
+ --------------------------------------------------------------------------------------------------------------------
+ # General java questions
+   1) What is wrapper class in java?
+      - class which converts primitive data types into objects
+
+   2) Which keyword is used to define constant?
+      - Final keyword
+
+ # Constructor in java
+   1) What happens if we declare constructor private in java?
+      - Class can not be instantiated from out side
+
+ # Static keyword
+   1) Can we override static method in java
+      - No
+
+ # Multithreading in java
+   1) What are ways to implement multithreading in java?
+      - By extending thread class
+      - By implementing runnable interface
+
+ # Interface
+   1) Can interface extends another interface?
+      - Yes
+
+ # Unboxing in java
+   1) What is unboxing in java?
+   - Java compiler automatically converts its wrapper class into corresponding data types in called unboxing in java.
+
+ # Exception in java
+
+   1) What is unchecked exception in java?
+   - Exception that occurs during runtime of program, it is also known as runtime exception.
+     Example of unchecked exception are :
+     - Arithmetic exception
+     - nullPointer exception
+     - ArrayIndexOutOfBound exception
+
+   2) Can try block exits without catch block?
+      - No
+
+ # Functional interface
+   1) What is functional interface in java?
+      - Interface which have only one abstract method
+
+ # Garbage collection in java
+
+   1) What name of method which performs garbage collection in java?
+      - finalize()

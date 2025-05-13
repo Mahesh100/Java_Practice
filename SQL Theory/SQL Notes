@@ -35,7 +35,7 @@
   - A join which return all the records that have matching values in both the table is called inner join.
 
   3) Left join
-  - A join which returns all the record from the left table and matched record from right table is called left join
+  - A left join keyword returns all the records from left table(Table 1) and matching record from right table(Table 2)
 
   4) Right join
   - A join which returns all the record from the right table and matched record from the left table is called right join.
