@@ -103,7 +103,22 @@ In java, instance variable are used for several reasons
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Static methods:
+-  Static methods are associated with class itself, not with any specific object itself.
+-  They are invoked/called using class name followed by method name.
+   ClassName.methodName()
+-  They are called using without creating instance/object of the class.
+-   Access only static members:
+    They can only access static variables and other static methods of the class directly. They cannot directly access instance variables or instance methods.
 
+
+Instance Methods:
+-  Instance methods associated with specific instance/object of the class.
+-  Instance methods called/invoked using object reference followed by method name.
+   objectName.methodName()
+-  Instance methods can access both instance variables and static variables of the class.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Different Types of Variables in Java
 
