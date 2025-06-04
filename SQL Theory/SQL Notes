@@ -8,7 +8,7 @@
  - A primary key is column in database table which distinct to each record.
 
 
- # Unique keu in SQL
+ # Unique key in SQL
 
  - Unique key is column or set of column that uniquely define the record
  - Unique constraints ensures that the all the values in specific columns is different.
@@ -16,6 +16,8 @@
 - The main difference between a primary key vs unique key is that a primary key is a key that
   uniquely identifies each record in a table but cannot store NULL values.
   On the other hand, a unique key prevents duplicate values in a column and can store NULL values.
+
+- Unique key in sql can not have duplicate values
 
  # Foreign key
 
@@ -35,7 +37,7 @@
   - A join which return all the records that have matching values in both the table is called inner join.
 
   3) Left join
-  - A join which returns all the record from the left table and matched record from right table is called left join
+  - A left join keyword returns all the records from left table(Table 1) and matching record from right table(Table 2)
 
   4) Right join
   - A join which returns all the record from the right table and matched record from the left table is called right join.
@@ -47,8 +49,11 @@
 
 # Group By Statement In SQL
 
-- Group By is use to 
- - Having clause is added to the sql because where clause can not be used with aggregate function
+-  Group By statement is used to group the similar records from the table
+
+# Having clause in SQL
+
+ - Having clause is added to the sql because Where clause can not be used with aggregate function
 
  - Having clause use to filter result based on group specified
 
@@ -60,7 +65,8 @@
 
  - Having clause is only used with the SELECT clause.
 
-  Query
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  SQL Query Example
 
   Select department sum(salary) salary from emp_table group by department  having sum(salary)> 50000
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
