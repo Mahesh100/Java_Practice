@@ -176,12 +176,14 @@
 -
 
 # HashMap In java
-- HashMap is java is part of java collection framework
+- HashMap in java is part of java collection framework
 - HashMap provides implementation of Map interface in java.
 - HashMap stores data as a key value pairs.
 - Each key is associated with value and we can access value by corresponding key.
 - HashMap is not not synchronized and hence faster for most of the use cases.
 - HashMap can store only one null key as object but there can be any number of null values.
+- HashMap does not allows duplicate keys, if we try to insert duplicate keys it will replace it with existing
+  values of corresponding keys
 
 # ConcurrentHashMap in java
 
