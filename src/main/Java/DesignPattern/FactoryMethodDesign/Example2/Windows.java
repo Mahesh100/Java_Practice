@@ -1,4 +1,4 @@
-package DesignPattern.FactoryDesign.Example2;
+package DesignPattern.FactoryMethodDesign.Example2;
 
 public class Windows implements OperatingSystem{
     @Override

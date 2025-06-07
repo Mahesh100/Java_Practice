@@ -1,4 +1,4 @@
-package DesignPattern.FactoryDesign.Example1;
+package DesignPattern.FactoryMethodDesign.Example1;
 
 public class EmployeeFactory {
 
