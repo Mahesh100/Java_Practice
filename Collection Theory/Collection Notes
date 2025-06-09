@@ -1,3 +1,10 @@
+
+# Arrays :
+  -Arrays are the collections of similar type of elements.
+  -
+  -
+  -
+
 # All the interfaces and class in collection framework are present in java.util package.
 
 # ArrayList stores data in the form of indexed based positions
@@ -34,7 +41,7 @@
 
 --> LinkedList:
 1) Linked-list class inherit the features of list and queue as it implements list and dequeue interface.
-2) The underlying datastructures of linked-list is doubly liked list.
+2) The underlying datastructures of linked-list is doubly linked list.
 3) Linked-list class provide better better performance of insertion and deletion operation from middle.
 4) There is no default size of linked-list class.
 5) Linked list class does not implements RandomAccess interface.
