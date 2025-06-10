@@ -10,7 +10,7 @@
   - First index in array is always 0
   - Last index in array us always n-1
   - Array indexing is always from 0 to n-1.
-
+  - Array length arr.length = Number of elements present in given array.
 
 # All the interfaces and class in collection framework are present in java.util package.
 
