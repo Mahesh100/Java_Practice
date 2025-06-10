@@ -1,9 +1,16 @@
 
-# Arrays :
+#  Arrays :
   -Arrays are the collections of similar type of elements.
-  -
-  -
-  -
+  -All the elements should be of similar data types.
+  -Maximum size with which array can be define is 10^6 (Inside main method) [max size]
+  -If we are defining array globally then size is 10^7 (Out side main method) [max size]
+
+    int arr[10^7]
+
+  - First index in array is always 0
+  - Last index in array us always n-1
+  - Array indexing is always from 0 to n-1.
+
 
 # All the interfaces and class in collection framework are present in java.util package.
 
