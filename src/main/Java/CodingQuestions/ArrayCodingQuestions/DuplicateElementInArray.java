@@ -1,5 +1,5 @@
 
-package Array.ArrayCodingQuestions;
+package CodingQuestions.ArrayCodingQuestions;
 
 public class DuplicateElementInArray {
 

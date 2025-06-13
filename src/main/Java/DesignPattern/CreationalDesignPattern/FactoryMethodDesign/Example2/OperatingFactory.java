@@ -1,4 +1,4 @@
-package DesignPattern.FactoryMethodDesign.Example2;
+package DesignPattern.CreationalDesignPattern.FactoryMethodDesign.Example2;
 
 public class OperatingFactory {
 

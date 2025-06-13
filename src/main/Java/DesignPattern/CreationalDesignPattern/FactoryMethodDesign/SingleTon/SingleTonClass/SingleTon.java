@@ -1,4 +1,4 @@
-package DesignPattern.SingleTon.SingleTonClass;
+package DesignPattern.CreationalDesignPattern.FactoryMethodDesign.SingleTon.SingleTonClass;
 
 public class SingleTon
 {

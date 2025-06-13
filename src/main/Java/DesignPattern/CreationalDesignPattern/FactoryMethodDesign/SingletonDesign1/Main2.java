@@ -1,4 +1,4 @@
-package DesignPattern.SingletonDesignPattern.SingletonDesign1;
+package DesignPattern.CreationalDesignPattern.FactoryMethodDesign.SingletonDesign1;
 
 public class Main2 {
 

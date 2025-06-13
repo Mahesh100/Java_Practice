@@ -1,4 +1,4 @@
-package DesignPattern.SingleTon;
+package DesignPattern.CreationalDesignPattern.FactoryMethodDesign.SingleTon;
 
 import java.lang.reflect.Constructor;
 
