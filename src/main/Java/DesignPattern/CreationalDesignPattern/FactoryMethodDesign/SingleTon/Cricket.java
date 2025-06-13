@@ -1,4 +1,4 @@
-package DesignPattern.SingleTon;
+package DesignPattern.CreationalDesignPattern.FactoryMethodDesign.SingleTon;
 
 public class Cricket {
 
