@@ -1,4 +1,4 @@
-package CodingQuestions.ArrayCodingQuestions;
+package CodingQuestions.Array;
 
 public class SmallestElementArray {
 

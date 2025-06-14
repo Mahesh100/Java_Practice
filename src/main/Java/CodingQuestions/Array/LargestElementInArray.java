@@ -1,6 +1,4 @@
-package CodingQuestions.ArrayCodingQuestions;
-
-import java.util.Arrays;
+package CodingQuestions.Array;
 
 public class LargestElementInArray {
     //Brute force solution

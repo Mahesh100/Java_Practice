@@ -1,4 +1,4 @@
-package CodingQuestions.ArrayCodingQuestions;
+package CodingQuestions.Array;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package CodingQuestions;
+package CodingQuestions.Array;
 
 public class ReverseArray {
 
