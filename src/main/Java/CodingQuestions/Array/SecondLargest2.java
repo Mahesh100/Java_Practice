@@ -1,4 +1,4 @@
-package CodingQuestions.ArrayCodingQuestions;
+package CodingQuestions.Array;
 
 // Find Second largest element from the array
 /*
