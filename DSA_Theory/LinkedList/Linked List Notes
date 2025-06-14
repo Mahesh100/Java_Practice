@@ -1,4 +1,19 @@
 
+# Linked List
+  : Linked list is linear data structure which is used for storing collections of data in the form of node.
+  - A linked list is consist of node where is each node contain a data and a pointer to the next node.
+  - First node of linked list is always called "Head"
+  -
+
+Types of Linked list:
+
+1. Singly linked list.
+2. Doubly linked list.
+3. Circular linked list.
+4. Doubly circular linked list.
+5. Header linked list.
+
+
 - Linked list is implemented class of List interface and it is present in java.util package
 
 - The underline data structure for linked list is "doubly linked list" or "circular linked list"
