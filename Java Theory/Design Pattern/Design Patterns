@@ -43,6 +43,9 @@
             if method is non-static we have to create object of class to access the method
             outside of the class.
 
+   2) Builder Design patter :
+    - Builder design pattern are the creational design pattern which are used in software design
+    to create complex objects step by step.
 
 
 
