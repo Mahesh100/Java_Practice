@@ -47,7 +47,7 @@
 
 # "continue" statement breaks the one iteration in loop if specified condition occur and continue with the next iteration of loop
 
-# By default maximum heap size is 64 Mb
+# By default maximum heap size is 64 Mb  //Not sure
 
 # compareTo() method in java is used to compare two string lexicographically.
 
@@ -275,7 +275,7 @@ Instance Methods:
 
 # this keyword in java
  - this keyword in java returns the current class instance/object
- -  we can not use this inside static method.
+ - we can not use this inside static method.
  - this keyword represents the current object of the class.
  - this keyword is used to initialize the class variables or instance variables
  - this can be used to refer current class method
