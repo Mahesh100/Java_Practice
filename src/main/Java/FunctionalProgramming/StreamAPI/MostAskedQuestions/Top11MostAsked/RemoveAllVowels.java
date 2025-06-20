@@ -10,6 +10,7 @@ public class RemoveAllVowels {
     public static void main(String [] args){
         String str = "HelloWorld";   //OutPut : Hllwrld
 
+        //Wrong answer
         Arrays.stream(str.split(" ")).filter(x->x.replaceAll("[^aeiouAEIOU]","").trim())
                 .forEach(System.out::println);
         Arrays.stream(str.split(" ")).filter(x->x.replaceAll("[^aeiouAEIOU]","").length()==2).
