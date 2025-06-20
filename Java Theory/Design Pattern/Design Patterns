@@ -105,3 +105,10 @@
 3] Behavioral Design Pattern :
     - Behavioral Design patter guides how objets communicate with each other effectively and distribute task
       efficiently making software system more flexible and easy to maintain.
+
+    1) Strategy Design Pattern
+    - In strategy design pattern a common interface is define which have one or more method in interface.
+    - In strategy design pattern we have one common interface known as "Strategy Interface" and "Concrete Strategy Class"
+      these classes implements strategy interface which provides specific implementation for different algorithms.
+    - Strategy design pattern defines different different strategies.
+    -
