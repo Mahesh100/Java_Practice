@@ -1,15 +1,15 @@
 
 # Design Pattern in java
 
-- Design pattern are nothing but the tried test and well documented solutions to the commonly occurring problem
-
+ - Design pattern are nothing but the tried test and well documented solutions to the commonly occurring problem
+                                                    OR
  - Design pattern are the well proved solutions of commonly occurring problem in software design.
-
+                                                    OR
  - Design pattern is the way to handle commonly occurring problem while creating software.
 
  - Design pattern represent idea.
 
-   Three main categories in design pattern is :
+ - There are 3 main categories in design pattern :
 
    1) Creational Design pattern
    2) Structural Design pattern
@@ -17,22 +17,26 @@
 
 
 [1] Creational Design pattern :->
-    - Creational design patterns are the way of creating objects.
+    - Creational design patterns focuses on object creation mechanism.
     - This pattern is used to define and control how objects are created during class instantiation.
 
-   -Factory Design pattern,Abstract Factory Design Pattern, Builder Design pattern, Singleton design pattern etc
+    1) Singleton design pattern
+    2) Factory method design pattern
+    3) Abstract Factory method design pattern
+    4) Builder design pattern
+    5) Prototype design pattern
 
-   1) Singleton design pattern:
-      -Singleton design pattern is a design pattern which restrict the instantiation of the class and ensure that the
-       only one instance/object is present in java virtual machine.
 
-      -Singleton pattern is often used is logging, caching and configuration.
+ 1) Singleton design pattern:
+    -Singleton design pattern is a design pattern which restrict the instantiation of the class and ensure that the
+     only one instance/object is present in java virtual machine.
 
-      To create singleton class which implement singleton design pattern
+    -Singleton pattern is often used is logging, caching and configuration.
+
+    To create singleton class which implement singleton design pattern
 
       i) Create a private static variable of class type : This variable will store the single instance of the class
-         - This variable is static because method is static
-            and we can not use non-static variable inside the static context(method)
+       - This variable is static because method is static and we can not use non-static variable inside the static context(method)
 
       ii)Create a private constructor : This private constructor will prevent the class from instantiated from outside of the class.
 
