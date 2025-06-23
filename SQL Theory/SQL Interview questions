@@ -1,7 +1,15 @@
 
 # Interview questions
 
- 1) How to find the third highest Employee salary from given Employee table?
+ 1) What is SQL
+    - SQL is Structured Query Language used to manage, manipulate and interact with relational database.
+
+ 2) How do you retrieve all the records from the table?
+    - Using query Select * from table_name;
+
+ 3) What is difference between where and having clause?
+
+ 2)How to find the third highest Employee salary from given Employee table?
 
  2) What are indexes in DB ?
 

@@ -50,7 +50,10 @@
 # Group By Statement In SQL
 
 -  Group By statement is used to group the similar records from the table
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Where clause in SQL
+ - Where clause in sql is used to filter records.
+ -
 # Having clause in SQL
 
  - Having clause is added to the sql because Where clause can not be used with aggregate function
