@@ -971,6 +971,13 @@ For Example (Scenario)
 
  # Lambada Expression
 
+ # Definition :
+     - Lambada expression is anonymous function which doesn't have name of method, return type and no return value, no access modifier.
+
+     - Lambada Expression is mainly used for to implement Functional Interface.
+
+     - Lambada expression is always associated with functional interface.
+
    Objective :
     - To bring functional programming features
     - To improve Code optimization/we can write concise code
@@ -986,13 +993,6 @@ For Example (Scenario)
 
  - Lambada Expression is the anonymous function. It is function without name and it does not
    belong to class or object.
-
-   # Definition :
- - Lambada expression is anonymous function which doesn't have name of method, return type and no return value, no access modifier.
-
- - Lambada Expression is mainly used for to implement Functional Interface.
-
- - Lambada expression is always associated with functional interface.
 
 
  General way of writing method in java :
