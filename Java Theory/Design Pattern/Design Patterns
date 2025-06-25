@@ -47,31 +47,48 @@
             if method is non-static we have to create object of class to access the method
             outside of the class.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 
  4) Builder Design Pattern in java is creational design pattern used to build complex objects step by step.
 
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
    2) Structural Design pattern :-> How to structure the code
 
-      1) Adapter Design pattern
+      1) Adapter Design pattern   # IMP
       2) Bridge Design pattern
-      3) Composite Design pattern
-      4) Decorator Design pattern
-      5) Facade Design pattern
-      6) Flyweight Design pattern
-      7) Proxy Design pattern
+      3) Composite Design pattern # IMP
+      4) Decorator Design pattern # IMP
+      5) Facade Design pattern    # IMP
+      6) Flyweight Design pattern # IMP
+      7) Proxy Design pattern     # IMP
 
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
    3) Behavioral Design pattern :-> Focuses on object interaction more
 
-   - Observer design pattern, State pattern, Iterator design pattern
+      1) Chain of Responsibility
+      2) Command
+      3) Iterator
+      4) Mediator
+      5) Memento
+      6) Observer
+      7) State
+      8) Strategy
+      9) Template method
+      10) Visitor
+      11) Interpreter
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 1] Creational Design Pattern :---------------------->
@@ -114,7 +131,7 @@
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 3] Behavioral Design Pattern :
     - Behavioral Design patter guides how objets communicate with each other effectively and distribute task
       efficiently making software system more flexible and easy to maintain.
