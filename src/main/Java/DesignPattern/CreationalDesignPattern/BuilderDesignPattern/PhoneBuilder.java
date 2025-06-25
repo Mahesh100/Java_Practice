@@ -8,6 +8,10 @@ public class PhoneBuilder {
     private double screenSize;
     private int battery;
 
+    public Phone getPhone(){
+        return new Phone(os,RAM,company,screenSize,battery);
+    }
+
     public PhoneBuilder setOs(String os) {
         this.os = os;
         return this;
@@ -31,9 +35,5 @@ public class PhoneBuilder {
     public PhoneBuilder setBattery(int battery) {
         this.battery = battery;
         return this;
-    }
-
-    public Phone getPhone(){
-        return new Phone(os,RAM,company,screenSize,battery);
     }
 }

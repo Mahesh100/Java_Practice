@@ -20,11 +20,11 @@
     - Creational design patterns focuses on object creation mechanism.
     - This pattern is used to define and control how objects are created during class instantiation.
 
-    1) Singleton design pattern
-    2) Factory method design pattern
-    3) Abstract Factory method design pattern
-    4) Builder design pattern
-    5) Prototype design pattern
+    1) Singleton design pattern  **
+    2) Factory method design pattern  **
+    3) Abstract Factory method design pattern **
+    4) Builder design pattern **
+    5) Prototype design pattern **
 
 
  1) Singleton design pattern:
@@ -47,10 +47,20 @@
             if method is non-static we have to create object of class to access the method
             outside of the class.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2) Factory Method Design Pattern
+    -The Factory Method design pattern in Java is a creational design pattern that provides an interface for creating objects in a superclass,
+     but allows subclasses to alter the type of objects that will be created.
 
- 4) Builder Design Pattern in java is creational design pattern used to build complex objects step by step.
+ 3) Abstract Factory Method Design Pattern
+    -The Abstract Factory design pattern is a creational design pattern in Java that provides an interface for creating
+     families of related or dependent objects without specifying their concrete classes.
 
+ 4) Builder Design Pattern
+    -Builder Design Pattern in java is creational design pattern used to build complex objects step by step.
+
+ 5) Prototype design pattern
+    - The Prototype design pattern is a creational design pattern in Java that focuses on creating new objects by copying an existing object,
+    known as the prototype.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -63,8 +73,8 @@
       3) Composite Design pattern # IMP
       4) Decorator Design pattern # IMP
       5) Facade Design pattern    # IMP
-      6) Flyweight Design pattern # IMP
-      7) Proxy Design pattern     # IMP
+      6) Flyweight Design pattern # IMP  **
+      7) Proxy Design pattern     # IMP  **
 
 
 
@@ -74,13 +84,13 @@
 
    3) Behavioral Design pattern :-> Focuses on object interaction more
 
-      1) Chain of Responsibility
+      1) Chain of Responsibility   **
       2) Command
       3) Iterator
       4) Mediator
       5) Memento
       6) Observer
-      7) State
+      7) State  **
       8) Strategy
       9) Template method
       10) Visitor
@@ -132,13 +142,33 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2] Structural Design Pattern
+   - Structural Design Pattern focuses on how classes and objects composed together to form larger, more flexible and efficient structure.
+
+   5) Facade Design Pattern
+      - The Facade design pattern in Java is a structural design pattern that provides a simplified, unified interface to a set of interfaces in a complex subsystem.
+        It acts as a single entry point, hiding the complexities of the underlying implementation and making the system easier to use for clients.
+
+   6) Flyweight Design Pattern
+      - The flyweight design pattern is a structural pattern that minimizes memory usage by sharing data between multiple objects.
+        It does this by separating the intrinsic (shared) state from the extrinsic (unique) state of an object.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 3] Behavioral Design Pattern :
     - Behavioral Design patter guides how objets communicate with each other effectively and distribute task
       efficiently making software system more flexible and easy to maintain.
 
-    1) Strategy Design Pattern
+    1) Chain of responsibility design pattern
+    - Chain of responsibility design pattern behavioral design pattern that allows an object to pass a request along a chain of potential handlers
+      Until one of them handles it.
+
+    2) Strategy Design Pattern
     - In strategy design pattern a common interface is define which have one or more method in interface.
     - In strategy design pattern we have one common interface known as "Strategy Interface" and "Concrete Strategy Class"
       these classes implements strategy interface which provides specific implementation for different algorithms.
     - Strategy design pattern defines different different strategies.
     -
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
