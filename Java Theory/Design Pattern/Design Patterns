@@ -49,12 +49,21 @@
 
 
 
+ 4) Builder Design Pattern in java is creational design pattern used to build complex objects step by step.
 
 
 
    2) Structural Design pattern :-> How to structure the code
 
-   - Proxy design pattern, adapter design pattern etc
+      1) Adapter Design pattern
+      2) Bridge Design pattern
+      3) Composite Design pattern
+      4) Decorator Design pattern
+      5) Facade Design pattern
+      6) Flyweight Design pattern
+      7) Proxy Design pattern
+
+
 
 
 

@@ -177,22 +177,11 @@
 
  List<Integer> list = new LinkedList<Integer>();
 
-
-
-
-# HashSet in java
-
-- HashSet is implemented class of Set interface
-- HashSet does not allow duplicate elements
-- HashSet allows only one null elements
-- HashSet is unordered collection it means that it does not maintain the oder of
-  object in which they are inserted.
--
-
 # HashMap In java
 - HashMap in java is part of java collection framework
 - HashMap provides implementation of Map interface in java.
 - HashMap stores data as a key value pairs.
+- HashMap does not maintain insertion order
 - Each key is associated with value and we can access value by corresponding key.
 - HashMap is not not synchronized and hence faster for most of the use cases.
 - HashMap can store only one null key as object but there can be any number of null values.
@@ -204,6 +193,24 @@
 - When to use concurrentHashMap in java?
 
 -
+
+
+# HashSet in java
+
+- HashSet is implemented class of Set interface
+- HashSet does not allow duplicate elements
+- HashSet allows only one null elements
+- HashSet is unordered collection it means that it does not maintain the oder of
+  object in which they are inserted.
+-
+
+
+ # Internal Working of HashMap in java
+
+ - HashMap is data structure that maps keys to values
+ - HashMap is implemented as hash table which is array of bucket.
+ - At Each bucket or at each array index there is linked list of key value pairs.
+ -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

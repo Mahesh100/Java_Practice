@@ -1,4 +1,4 @@
-package DesignPattern.AbstractFactoryMethodDesignPattern;
+package DesignPattern.CreationalDesignPattern.AbstractFactoryMethodDesignPattern;
 
 public class AndroidDeveloper implements Employee{
 
