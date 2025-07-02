@@ -18,12 +18,6 @@
 
 # Once the code execution get completed, the references from the stack area get deleted/clear
 
-# The main objective of introducing lambada expression in java is to bring functional programming feature in java.
-  As java is Object oriented programming language which doesn't supports functional programming features (But other languages already supports functional programming features)
-
-# To invoke Lambada expression we need functional interface.
-  To call the lambada expression we use only functional interface.
-
 # The super keyword can be used to call a method on the superclass of the current class.
   -The super keyword refers to superclass (parent) objects. It is used to call superclass methods, and to access the superclass constructor.
 
