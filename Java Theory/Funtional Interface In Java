@@ -1,7 +1,0 @@
-1) Predicate
-2) Function
-
-
-3) Consumer functional interface in java
-   - Consumer is functional interface in java which have only one single abstract method as accept()
-   - accept() method does not return anything as its return type is void

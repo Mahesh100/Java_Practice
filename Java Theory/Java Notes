@@ -18,8 +18,6 @@
 
 # Once the code execution get completed, the references from the stack area get deleted/clear
 
-# Lambada Expression are usually passed as a parameters to functions.
-
 # The main objective of introducing lambada expression in java is to bring functional programming feature in java.
   As java is Object oriented programming language which doesn't supports functional programming features (But other languages already supports functional programming features)
 
