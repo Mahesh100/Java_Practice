@@ -24,8 +24,18 @@
 
 - To invoke Lambada expression we need functional interface.
 
+- Lambada expression helps to avoid boiler plate code
 
-General way of writing method in java :
+- If method body have only one statement then we can remove the curly brackets
+
+# Steps to make any expression as lambada expression
+
+ 1) Remove access modifier
+ 2) Remove return type
+ 3) Remove method name
+ 4) Place arrow
+
+# General way of writing method in java :
 
  public void methodName(){
 
