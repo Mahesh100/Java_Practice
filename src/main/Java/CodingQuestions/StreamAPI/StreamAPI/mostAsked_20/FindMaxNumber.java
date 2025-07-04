@@ -6,9 +6,8 @@ import java.util.Arrays;
 
 public class FindMaxNumber {
     public static  void  main(String [] args){
-        List<Integer> list = Arrays.asList(1,2,3,4);
-
-        int max = list.stream().max(Comparator.comparing(Integer::valueOf)).get();
-        System.out.println(max);
+        List<Integer> numbersList = Arrays.asList(1,2,3,4);
+        int result = numbersList.stream().max(Comparator.comparing(Integer::valueOf)).get();
+        System.out.println(result);
     }
 }
