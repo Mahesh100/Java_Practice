@@ -369,11 +369,15 @@ class B extends A  // sub class
   - Inheritance in java is mechanism by which one class acquires all the properties and behavior of another class is called inheritance
 
   - Inheritance represents Is-A relationship which is also known as parent child relationship.
+
   - For Method overriding inheritance is used (To achieve runtime polymorphism)
+
   - Inheritance is used for code reusability.
+
   - "extends" keyword is used to achieve the inheritance
 
   - In java Single, multilevel and hierarchical inheritance are present in java
+
   - Multilevel and Hybrid inheritance is achieved using interface only.
 
 
