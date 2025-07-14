@@ -1,0 +1,25 @@
+
+- When we create new object of class using new keyword
+
+   Laptop obj = new Laptop();
+
+# Heap Memory
+- The actual object of class (Laptop class) i.e new Laptop() is created in heap.
+
+- Heap is used to store objects and instance variables
+
+- JVM allocates memory for Laptop object here dynamically at runtime.
+
+# Stack Memory
+
+- The reference variable obj is stored in the stack(inside main method stack frame)
+
+- The obj holds the memory address(reference) pointing to the actual object stored in heap.
+
+   ** In simple words we can say, Objects are stored in heap and reference are stored in stack memory
+      which are point to object in heap.
+
+# Garbage collection
+
+- Java uses Garage Collection to free heap memory when object are no longer referenced.
+
