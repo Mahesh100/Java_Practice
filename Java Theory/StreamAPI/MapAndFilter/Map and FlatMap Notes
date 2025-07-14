@@ -2,7 +2,6 @@ map() is an intermediate operation
 
  -map() method will transform the data from the source and get into the target
  -map() will perform certain operation with every element of stream()
-
  - map() method always take consumer as parameter
  - map() will always return single output
 
