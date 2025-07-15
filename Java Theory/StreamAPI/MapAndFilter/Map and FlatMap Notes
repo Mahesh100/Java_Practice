@@ -1,9 +1,13 @@
-map() is an intermediate operation
 
- -map() method will transform the data from the source and get into the target
+# map() in Stream API
+- map() is an intermediate operation
+- To perform one to one transformation map is used in stream API
+- Each element in the input stream is transformed into a single corresponding element in the
+  output stream
+
  -map() will perform certain operation with every element of stream()
- - map() method always take consumer as parameter
- - map() will always return single output
+ -map() method always take consumer as parameter
+ -map() will always return single output
 
 
 # Flat Map in Stream API
