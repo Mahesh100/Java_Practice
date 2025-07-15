@@ -6,7 +6,7 @@
   output stream
 
  -map() will perform certain operation with every element of stream()
- -map() method always take consumer as parameter
+ -map() method either take  function as parameter
  -map() will always return single output
 
 
