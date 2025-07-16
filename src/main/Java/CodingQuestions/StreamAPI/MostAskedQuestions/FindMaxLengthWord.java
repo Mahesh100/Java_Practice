@@ -23,6 +23,8 @@ public class FindMaxLengthWord {
 
         String longestWord2 = Arrays.stream(string.split(" ")).max(Comparator.comparing(String::length)).orElse("");
 
+
+
     }
 }
 

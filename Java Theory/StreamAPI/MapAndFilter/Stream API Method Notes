@@ -19,3 +19,17 @@
             {{1,2},{3,4},{5,6}}
 
 - flatmap() will return multiple output
+
+
+# Reduce method in Stream API
+
+- Reduce method is used for aggregating data.
+- Aggregating means combine stream of elements and produces a single output.
+- Reduce method takes Identity and accumulator as a argument.
+- While dealing with steam of string we don't need to pass identity.
+
+# mapToInt() method in stream API
+
+- mapToInt() method returns Intstream values.
+- mapToInt() transforms elements of stream of objects into stream of primitive int values.
+
