@@ -23,6 +23,5 @@ There are two memory areas in java :
 
 
 # Garbage collection
-
 - Java uses Garage Collection to free heap memory when object are no longer referenced.
 
