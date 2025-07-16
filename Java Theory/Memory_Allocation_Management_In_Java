@@ -1,23 +1,26 @@
 
-- When we create new object of class using new keyword
+- When new object of class is created using new keyword
 
-   Laptop obj = new Laptop();
+   Laptop obj = new Laptop();         //Suppose Laptop is class
+
+There are two memory areas in java :
 
 # Heap Memory
-- The actual object of class (Laptop class) i.e new Laptop() is created in heap.
+- The actual object of class (Laptop class) i.e new Laptop() is created in heap memory area.
 
-- Heap is used to store objects and instance variables
+- Heap is used to store objects and instance variables.  (new Laptop is object here)
 
-- JVM allocates memory for Laptop object here dynamically at runtime.
+- JVM allocates memory in heap area dynamically at runtime.
 
 # Stack Memory
 
-- The reference variable obj is stored in the stack(inside main method stack frame)
+- The reference variable obj is stored in the stack. (inside main method stack frame)
 
 - The obj holds the memory address(reference) pointing to the actual object stored in heap.
 
    ** In simple words we can say, Objects are stored in heap and reference are stored in stack memory
-      which are point to object in heap.
+      which are pointing to object in heap.
+
 
 # Garbage collection
 

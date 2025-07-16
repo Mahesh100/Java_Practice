@@ -26,9 +26,6 @@ public class MapAndReduceExample {
         Integer productOfNumbers = numbers.stream().reduce(1,(a,b)->a*b);
         System.out.println(productOfNumbers);
 
-        //checking if sorted() have mapToInt() method
-
-        int sum3 = numbers.stream().map()
 
 //        int sum=0;
 //        for(int no: numbers){

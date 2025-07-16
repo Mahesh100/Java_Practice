@@ -12,7 +12,7 @@
 
 # Flat Map in Stream API
 
-- Flat map is basically map but here we do a flattening of elements
+- FlatMap is basically like map, but with an extra step: it flattens the nested structure produced by the mapping function
 - If we have complex data in collection then we use flatMap()
 - Collection which contains another collection
    Example:
