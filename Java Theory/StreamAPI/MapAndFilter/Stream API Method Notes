@@ -1,12 +1,12 @@
 
 # map() in Stream API
 - map() is an intermediate operation
-- To perform one to one transformation map is used in stream API
+- To perform one to one transformation map() method is used in stream API
 - Each element in the input stream is transformed into a single corresponding element in the
   output stream
 
  -map() will perform certain operation with every element of stream()
- -map() method either take  function as parameter
+ -map() method takes function as parameter and function() have apply() method.
  -map() will always return single output
 
 
