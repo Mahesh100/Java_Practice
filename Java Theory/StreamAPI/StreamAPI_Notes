@@ -1,0 +1,18 @@
+
+# Parallel Stream in jva
+
+- Parallel streams are introduced in java 8 as a part of stream API
+- They helps in executing collections parallelly by utilizing multicore processor and improving the
+  performance.
+- By default streams are sequential in nature but can be made parallel by invoking parallelStream() method
+  on existing sequential stream or by invoking parallelStream() stream method from the scratch.
+- Parallel stream divide the data into multiple sub streams, execute them in parallel using multiple
+  threads from the ForkJoinPool and combine the result.
+- This is helpful only when operations are independent of each other and can be executed concurrently.
+
+
+# sequentialStream() vs parallelStream()
+
+- sequentialStream() process elements in sequential manner, one element at a time
+- parallelStream() process elements in parallel, utilizing multiple CPU cores.
+

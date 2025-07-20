@@ -45,20 +45,23 @@
   5) Full join
   - A join which returns the all record when there is matched in either left or right table.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # Group By Statement In SQL
 
--  Group By statement is used to group the similar records from the table
+-   Group By statement is used to group the similar records from the table
+-   Group By statement is often used with aggregate functions(Count(), max(),Min(), Sum(), Avg()) to group
+    the result set.
+-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Where clause in SQL
- - Where clause in sql is used to filter records.
- -
+
 # Having clause in SQL
 
  - Having clause is added to the sql because Where clause can not be used with aggregate function
 
- - Having clause use to filter result based on group specified
+ - Having clause use to filter result based on group specified (Used with group by statement)
 
  - Having clause is used with Group By clause.  (Having clause is generally used after GROUP BY.)
 
@@ -67,7 +70,10 @@
  - Having clause is used to filter data according to the conditions provided.
 
  - Having clause is only used with the SELECT clause.
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Where clause in SQL
+ - Where clause in sql is used to filter records.
+ -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   SQL Query Example
 
