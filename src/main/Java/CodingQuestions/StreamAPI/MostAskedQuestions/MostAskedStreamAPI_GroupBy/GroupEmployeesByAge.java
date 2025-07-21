@@ -1,4 +1,4 @@
-package CodingQuestions.StreamAPI.MostAskedQuestions;
+package CodingQuestions.StreamAPI.MostAskedQuestions.MostAskedStreamAPI_GroupBy;
 
 //Group the employees by age by using java 8 Streams
 
