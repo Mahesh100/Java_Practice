@@ -57,7 +57,25 @@
 - Every time we try to print the object of the class then by default it calls toString() method.
 
 -
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Wrapper classes in java:
+  - In order to treat primitive data types as Objects in java Wrapper classes are used. (Integer, Boolean,String).
+  - Wrapper classes converts primitive data types into objects.
+  - The classes in java.util package handles only objects not primitive types hence wrapper classes are needed.
+  - Data structures in collection list stores only Objects and not primitive types.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# AutoBoxing and Unboxing in java
+
+1.AutoBoxing in java
+- The automatic conservation of primitive datatypes into its corresponding wrapper classes is called AutoBoxing in java.
+  For example, int to Integer, long to Long, double to Double, etc.
+
+2.UnBoxing in java.
+- UnBoxing is reverse process of autoBoxing in java. The automatic conservation of wrapper classes into its corresponding primitive data types
+  is called UnBoxing in java.
+  For example, conversion of Integer to int, Long to long, Double to double, etc.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
