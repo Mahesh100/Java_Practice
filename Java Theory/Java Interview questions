@@ -24,6 +24,7 @@
         }
       }
 
+
  11) Can you pass the List<String> to a method which accept List<Object>  ?
     -No you can not pass the Lis<String> to a method which accept List<Object> ?
 
