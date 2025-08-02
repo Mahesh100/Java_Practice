@@ -3,7 +3,7 @@ package CodingQuestions.StreamAPI.All_StreamAPI_Questions.MostAskedQuestions;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class FindSecondHeighestWord {
+public class FindSecondHighestWord {
 
     public static void main(String [] args){
         String s = "I am learning stream api in java"; // output : stream
