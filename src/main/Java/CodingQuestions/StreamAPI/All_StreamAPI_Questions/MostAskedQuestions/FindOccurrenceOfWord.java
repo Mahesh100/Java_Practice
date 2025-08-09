@@ -11,7 +11,7 @@ import static java.util.stream.StreamSupport.stream;
 public class FindOccurrenceOfWord {
 
     public static void main(String [] args){
-        String s = " I am learning stream API in java java";
+        String s = "I am learning stream API in java java";
 
         Map<String,Long> ans = Arrays.stream(s.split(" ")).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 

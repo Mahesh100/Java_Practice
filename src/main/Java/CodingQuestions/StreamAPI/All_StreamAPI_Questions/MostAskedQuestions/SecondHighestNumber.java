@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class SecondHighestElement {
+public class SecondHighestNumber {
     public static void main(String [] args){
         List<Integer> numbers = Arrays.asList(1,8,2,4,5,3,7);
 
