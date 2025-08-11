@@ -10,7 +10,6 @@ public class FilterListWithOutStream {
     public static void main(String[] args) {
 
         // Create a list and filter the all even numbers from the list and add them in another list of integer
-
         List<Integer> evenList = Arrays.asList(1,3,4,5,2,6);
 
         for (Integer result:evenList){
