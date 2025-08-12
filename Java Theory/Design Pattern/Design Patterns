@@ -148,7 +148,12 @@
 
    5) Facade Design Pattern
       - The Facade design pattern in Java is a structural design pattern that provides a simplified, unified interface to a set of interfaces in a complex subsystem.
-        It acts as a single entry point, hiding the complexities of the underlying implementation and making the system easier to use for clients.
+        It acts as a single entry point, hiding the complexities of the underlying implementation/system and making the system easier to use for clients.
+
+      - When we want to hide the system complexity from the client facade design pattern is used.
+
+      - Facade class is not mandatory to use. We should not force client to use facade to interact with sub classes.
+      - While using facade design pattern all the complexity will go to facade interface.
 
    6) Flyweight Design Pattern
       - The flyweight design pattern is a structural pattern that minimizes memory usage by sharing data between multiple objects.
