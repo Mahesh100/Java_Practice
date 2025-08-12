@@ -153,7 +153,8 @@
       - When we want to hide the system complexity from the client facade design pattern is used.
 
       - Facade class is not mandatory to use. We should not force client to use facade to interact with sub classes.
-      - While using facade design pattern all the complexity will go to facade interface.
+      - While using facade design pattern all the complexity will go to facade class.
+      - There can be multiple faced classes possible which interact with client or with each other.
 
    6) Flyweight Design Pattern
       - The flyweight design pattern is a structural pattern that minimizes memory usage by sharing data between multiple objects.
