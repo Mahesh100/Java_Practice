@@ -157,7 +157,7 @@
   7) Proxy Design Pattern.
 
    1) Adapter Design Pattern :
-
+      - Adapter Design Patter act as a bridge between two incompitable interfaces
    5) Facade Design Pattern
       - The Facade design pattern in Java is a structural design pattern that provides a simplified, unified interface to a set of interfaces in a complex subsystem.
         It acts as a single entry point, hiding the complexities of the underlying implementation/system and making the system easier to use for clients.
