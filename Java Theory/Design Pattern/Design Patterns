@@ -146,6 +146,8 @@
 2] Structural Design Pattern
    - Structural Design Pattern focuses on how classes and objects composed together to form larger, more flexible and efficient structure.
 
+
+
    5) Facade Design Pattern
       - The Facade design pattern in Java is a structural design pattern that provides a simplified, unified interface to a set of interfaces in a complex subsystem.
         It acts as a single entry point, hiding the complexities of the underlying implementation/system and making the system easier to use for clients.
@@ -178,3 +180,5 @@
     -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Difference between Facade and Adapter
