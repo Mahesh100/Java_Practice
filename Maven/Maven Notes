@@ -7,7 +7,7 @@
 
  - Maven uses POM (Project Object Model)
  - When 'maven' command is run it looks for pom.xml in the current dictionary and get needed configuration
-    like : maven install, maven deploy
+   like : maven install, maven deploy
  - Maven is highly dependent on pom.xml
 
  - Before Maven we have 'Ant' build tool
