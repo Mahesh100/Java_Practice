@@ -1,8 +1,10 @@
-
+# Stream API Questions
 
 1) Find the maximum number from the list
 2) Convert the list of String to uppercase and lowerCase
 3) Sort the list of string in ascending or descending order
+4) Find the duplicates from array list
+5) Remove the duplicate from array list with and without using distinct() method
 
 1) Group the employee by age
 
