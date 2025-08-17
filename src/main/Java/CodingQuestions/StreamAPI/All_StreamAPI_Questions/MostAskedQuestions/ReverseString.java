@@ -1,6 +1,13 @@
-package CodingQuestions.StreamAPI.All_StreamAPI_Questions.MostAskedQuestions.StreamAPI;
+package CodingQuestions.StreamAPI.All_StreamAPI_Questions.MostAskedQuestions;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+/*
+ Steps :
+ 1) Define string which is to be reversed
+ 2) Define method reverseString which accepts string as parameter and return the String
+ 3) Convert the String to Stream of objects
+ */
 
 public class ReverseString {
 
@@ -19,10 +26,3 @@ public class ReverseString {
         return result;
     }
 }
-
-/*
- Steps :
- 1) Define string which is to be reversed
- 2) Define method reverseString which accepts string as parameter and return the String
- 3) Convert the String to Stream of objects
- */

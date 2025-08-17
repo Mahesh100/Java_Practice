@@ -1,4 +1,4 @@
-package CodingQuestions.StreamAPI.All_StreamAPI_Questions.MostAskedQuestions.StreamAPI;
+package CodingQuestions.StreamAPI.All_StreamAPI_Questions.MostAskedQuestions;
 
 import java.util.Arrays;
 import java.util.HashSet;
