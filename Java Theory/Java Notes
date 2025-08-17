@@ -611,19 +611,7 @@ interface InterfaceName {
 
 1) Any unwanted or unexpected event which disturbs the normal flow and execution of program is called Exception.
 
-    -At compile time exception never occurs, all the exception occurs at the runtime.
-
- # Exception :
--Exception occurs because of program
--Exceptions are recoverable / We can handle the exception.
--Exception are of two types :
-   i)  Compile time exception (Checked exception )      //Remember both starts with C
-   ii) Runtime exception     (Unchecked exception)
-
- # Error
--Error occurs because of lack of resources.(System ram)
--Errors are not recoverable / Errors can not be handled
--Error is only of single type -Runtime exception (Unchecked exception)
+    - At compile time exception never occurs, all the exception occurs at the runtime.
 
 2) Difference between Checked exception and Unchecked exception
 
@@ -644,6 +632,22 @@ interface InterfaceName {
        - Examples:
             -ArrayIndexOutOfBoundException
             -NullPointerException
+
+
+# Difference between exception and error
+
+
+ # Exception :
+-Exception occurs because of program
+-Exceptions are recoverable / We can handle the exception.
+-Exception are of two types :
+   i)  Compile time exception (Checked exception )      //Remember both starts with C
+   ii) Runtime exception     (Unchecked exception)
+
+ # Error
+-Error occurs because of lack of resources.(System ram)
+-Errors are not recoverable / Errors can not be handled
+-Error is only of single type -Runtime exception (Unchecked exception)
 
 
 
