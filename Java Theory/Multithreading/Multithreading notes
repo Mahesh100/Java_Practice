@@ -82,10 +82,10 @@
  - Process takes more time for context switching                                        - Thread takes less time for context switching
  - Process takes more time for inter process communication.                             - Thread takes less time for inter thread communication
  - Each process has different address space                                             - Thread share same address space.
- - Process are not dependent on each other                                              - Threads are dependent on each other
- - Process does not require synchronization                                             - Threads may require synchronization
+ - Process are not dependent on each other                                              - MultiThreading are dependent on each other
+ - Process does not require synchronization                                             - MultiThreading may require synchronization
  - Process consume more resources                                                       - Thread Consumes less resources
- - Process require more time for creation                                               - Threads takes less time for creation
+ - Process require more time for creation                                               - MultiThreading takes less time for creation
  - Process takes more time for termination                                              - Thread takes less time for termination
 
 
@@ -128,7 +128,7 @@
     - What is Data Segment
       - Contains the GLOBAL and Static variables
       - All the process within the same process share the same data segment
-      - Threads can read and modify teh same data
+      - MultiThreading can read and modify teh same data
       - Synchronization is required between multiple threads
 
     Heap :
@@ -173,7 +173,7 @@
        Now once the process is created then the JVM instance get allocated and JVM instance have
        heap memory and lets say we have allocated heap memory as -Xms<size> of 1GB
        So JVM instance has Code Segment, Data Segment etc
-       -Currently this process don't have Threads
+       -Currently this process don't have MultiThreading
        Now, JIT which is inside JVM will start compiling the code and converting it to ByteCode to Machine Code
        While it is converting byte code to machine code it will create respective threads for Progress (lets say 3)
        - So for each thread a Register , Stack and counter will be assign by the JVM.
@@ -328,7 +328,7 @@
 
  # Daemon Thread in java
 
- - Threads which run in background of another thread
+ - MultiThreading which run in background of another thread
  - Use: Daemon thread provides service to current thread
 
  Example:

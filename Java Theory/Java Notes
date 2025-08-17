@@ -746,7 +746,7 @@ interface InterfaceName {
 
  - In Java, a Process represents an executing program or application.
 
- Threads can be created by using two mechanism :
+ MultiThreading can be created by using two mechanism :
 
   1) By extending thread class (Thread class present in java.lang package)
   2) By implementing runnable interface.
@@ -789,7 +789,7 @@ interface InterfaceName {
 -> We can not start thread twice
 - This will throw illegalThreadStateException
 
- - Threads will use methods such as wait(), notify() and notifyAll() to communicate with each other
+ - MultiThreading will use methods such as wait(), notify() and notifyAll() to communicate with each other
 
  # Dead Lock In Java
 
