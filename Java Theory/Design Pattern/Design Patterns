@@ -1,4 +1,3 @@
-
 # Design Pattern in java
 
  - Design pattern are nothing but the tried test and well documented solutions to the commonly occurring problem
@@ -20,11 +19,11 @@
     - Creational design patterns focuses on object creation mechanism.
     - This pattern is used to define and control how objects are created during class instantiation.
 
-    1) Singleton design pattern  **
-    2) Factory method design pattern  **
-    3) Abstract Factory method design pattern **
-    4) Builder design pattern **
-    5) Prototype design pattern **
+    1) Singleton design patter
+    2) Factory method design pattern
+    3) Abstract Factory method design pattern
+    4) Builder design pattern
+    5) Prototype design pattern
 
 
  1) Singleton design pattern:
@@ -66,35 +65,19 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-   2) Structural Design pattern :-> How to structure the code
-
-      1) Adapter Design pattern   # IMP **
-      2) Bridge Design pattern          **
-      3) Composite Design pattern # IMP  **
-      4) Decorator Design pattern # IMP  **
-      5) Facade Design pattern    # IMP  **
-      6) Flyweight Design pattern # IMP  **
-      7) Proxy Design pattern     # IMP  **
-
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
    3) Behavioral Design pattern :-> Focuses on object interaction more
 
-      1) Chain of Responsibility   **
-      2) Command **
-      3) Iterator**
-      4) Mediator**
-      5) Memento **
-      6) Observer **
-      7) State  **
-      8) Strategy **
-      9) Template method **
-      10) Visitor**
-      11) Interpreter **
+      1) Chain of Responsibility
+      2) Command
+      3) Iterator
+      4) Mediator
+      5) Memento
+      6) Observer
+      7) State
+      8) Strategy
+      9) Template method
+      10) Visitor
+      11) Interpreter
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -131,8 +114,7 @@
     Solution :
 
 
-   2) Factory Design Pattern     (Part of Creational Design Pattern)
-
+   2) Factory Design Pattern
    - When there is super class and multiple child classes and we have to create objects of
      child class based on certain input/requirement
 
