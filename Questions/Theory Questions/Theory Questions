@@ -1,23 +1,10 @@
 
-1)  What are microservices?
-2)  What is advantages of microservices?
-3)  If you have monoliths application what would be your approach to convert it to microservice application?
-4)  Difference between
-    - Eureka discovery service
-    - Eureka discovery client
-    - Eureka server
 
-5)  Steps to connect spring boot application to database
-6)  Can we connect more than one database to single spring boot application
-7)  What are important hibernate configuration need to do while configuring data base in application.properties file
-8)  Difference between application.yml and application.properties file in spring boot
-9)  What are all dependencies you added in Eureka server - Only one
-10) What is default eureka port?
-
-11) What is @RequestMapping annotation in spring boot?
-12) What is ResponseEntity in spring boot?
-13) What are all annotations you have used using Lambook?
-
-14) what is @EnableZuulProxy and @EnableZuulServer ?
-15) While doing fault tolerance which design pattern you have used?
-16)
+1) What is use of default and static method in java?
+2) What are all OOPS principles? Explain each with example.
+3) Explain use of sorted() with Comparable interface and comparator interface
+4) Why string is immutable in java? What is use of string immutability?
+5) How can we make own immutable class?
+6) What is string constant pool?
+7) What is permgen?
+8) What are different memory areas present in java?
