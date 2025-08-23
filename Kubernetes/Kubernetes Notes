@@ -13,7 +13,6 @@
 - K
 # Kubernetes Architecture
 
-
 # Pod
   - Pod is smallest entity in kubernetes
 
