@@ -3,7 +3,6 @@
 - By default JVM will provide name to thread automatically.
 - We can set name to any thread using Thread.currentThread().setName("Mahesh");   //Mahesh is name of thread here
 
-
 # Multitasking
 - Performing multiple task at single time is called multitasking
 - Multitasking increases the performance of CPU
