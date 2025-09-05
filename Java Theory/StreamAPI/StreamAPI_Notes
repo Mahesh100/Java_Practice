@@ -10,7 +10,6 @@
   threads from the ForkJoinPool and combine the result.
 - This is helpful only when operations are independent of each other and can be executed concurrently.
 
-
 # sequentialStream() vs parallelStream()
 
 - sequentialStream() process elements in sequential manner, one element at a time
