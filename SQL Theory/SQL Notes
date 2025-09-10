@@ -1,6 +1,4 @@
-
-
- # Primary key in sql
+# Primary key in sql
 
  - Primary key is column in sql table which uniquely identify the each record in table
  - A table can have only one primary key
