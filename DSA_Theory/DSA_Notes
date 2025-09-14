@@ -1,6 +1,7 @@
 -Array is collection of homogenous data types
 
     - Index position of array is starts from 0 always.
+
     - In java array is consider as object as we have used 'new' keyword
 
     - If array is object then it must have the class (As every object is associated with class)
