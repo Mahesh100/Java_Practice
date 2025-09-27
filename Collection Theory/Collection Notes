@@ -6,7 +6,6 @@
   -If we are defining array globally then size is 10^7 (Out side main method) [max size]
 
     int arr[10^7]
-
   - First index in array is always 0
   - Last index in array us always n-1
   - Array indexing is always from 0 to n-1.
