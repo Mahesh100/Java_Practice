@@ -13,8 +13,7 @@
  - Before Maven we have 'Ant' build tool
  - In Ant build tool we have to tell Ant that 'What to do?' & 'How to do?'
  - In maven we have to tell maven 'What to do?' and maven will take care of 'How to do'
- -
-
+ 
   # Inside the pom.xml
    -<project> </project>  : Used to define XML structure or rules of pom.xml file
 
