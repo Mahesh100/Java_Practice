@@ -17,6 +17,7 @@
     - The elements in an array are stored in consecutive memory locations.
 
     -Arrays are used to implement data structures like
+
        Linked List
        Stacks
        Queues
