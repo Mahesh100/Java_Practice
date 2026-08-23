@@ -109,15 +109,15 @@
 
                                      Map (Interface)
                                       |
-                                      |
+                                      |(Implements)
              --------------------------------------------------------------------------------------------------------
-             |                                                      |                                               |
-             |  (Implements)                                        |                                               |
+             |  (Implements)                                         | (Implements)                                  | (Implements)
+             |                                                       |                                               |
           HashMap class                                          SortedMap  (Interface)                          HashTable
              |                                                      |
-             |    (Inherit)                               Navigable Map (Interface)
+             |    (Inherit/extends)                           Navigable Map (Interface)
        LinkedHashMap class                                          |
-                                                                    |  (Inherit)
+                                                                    |  (Inherit/extends)
                                                                  TreeMap class
 
 

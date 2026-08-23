@@ -19,7 +19,7 @@
     - Creational design patterns focuses on object creation mechanism.
     - This pattern is used to define and control how objects are created during class instantiation.
 
-    1) Singleton design patter
+    1) Singleton design pattern
     2) Factory method design pattern
     3) Abstract Factory method design pattern
     4) Builder design pattern
@@ -27,8 +27,7 @@
 
 
  1) Singleton design pattern:
-    -Singleton design pattern is a design pattern which restrict the instantiation of the class and ensure that the
-     only one instance/object is present in java virtual machine.
+    -Singleton design pattern is a design pattern which restrict the instantiation of the class and ensure that the only one instance/object is present in java virtual machine.
 
     -Singleton pattern is often used is logging, caching and configuration.
 
@@ -47,12 +46,10 @@
             outside of the class.
 
  2) Factory Method Design Pattern
-    -The Factory Method design pattern in Java is a creational design pattern that provides an interface for creating objects in a superclass,
-     but allows subclasses to alter the type of objects that will be created.
+    -The Factory Method design pattern in Java is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
  3) Abstract Factory Method Design Pattern
-    -The Abstract Factory design pattern is a creational design pattern in Java that provides an interface for creating
-     families of related or dependent objects without specifying their concrete classes.
+    -The Abstract Factory design pattern is a creational design pattern in Java that provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
  4) Builder Design Pattern
     -Builder Design Pattern in java is creational design pattern used to build complex objects step by step.
@@ -62,8 +59,8 @@
     known as the prototype.
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
    3) Behavioral Design pattern :-> Focuses on object interaction more
 
@@ -80,8 +77,8 @@
       11) Interpreter
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 1] Creational Design Pattern :---------------------->
@@ -122,8 +119,8 @@
      Advantages :
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 2] Structural Design Pattern
    - Structural Design Pattern focuses on how classes and objects composed together to form larger, more flexible and efficient structure.
@@ -155,10 +152,11 @@
       - The flyweight design pattern is a structural pattern that minimizes memory usage by sharing data between multiple objects.
         It does this by separating the intrinsic (shared) state from the extrinsic (unique) state of an object.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
 3] Behavioral Design Pattern :
-    - Behavioral Design patter guides how objets communicate with each other effectively and distribute task
+    - Behavioral Design pattern guides how objets communicate with each other effectively and distribute task
       efficiently making software system more flexible and easy to maintain.
 
     1) Chain of responsibility design pattern
@@ -171,7 +169,7 @@
       these classes implements strategy interface which provides specific implementation for different algorithms.
     - Strategy design pattern defines different different strategies.
     -
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Difference between Facade and Adapter
