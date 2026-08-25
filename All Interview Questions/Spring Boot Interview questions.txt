@@ -48,4 +48,13 @@
  
  --------------------------------------------------------------------------------
  
- 12)
+ 12) How do we resole circual dependency in springboot?
+ 13) 
+
+
+ # Annotation based questions
+ 1) What is @RestController
+ 2) What is @service
+ 3) What is @Advice
+ 4) What is @Aspect
+ 5)
