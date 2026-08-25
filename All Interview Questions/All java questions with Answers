@@ -45,13 +45,13 @@
 
 1)  What are new features added in java 8?
 2)  What are the advantages of Java 11 as compared to java 8? 
-3)  What is purpose of  getter and setters in model class? 
+3)  What is purpose of getter and setters in model class? 
 4)  what is reflection API in java?
 5)  What are wrapper classes in java?
 6)  What are all changes come in date and time feature of java 8?
 
 
-#Garabge Collection
+# Garabage Collection
 1)  What is garbage collection in java?
 2)  Can we foreced to collect a object via garbage collection
 3)  What do System.gc() and Runtime.gc() methods do?
@@ -161,15 +161,15 @@
 14)  What is thread sechdular in java? (A part of jvm which determined which thread will run)
 15)  What are the parmeters you have passed to thread pool? (Core pool size,Maximum Pool sixe, Work queue, Keep Alive time) 
 16)  What exactly you have used multithreading as part of your application?
-17)  What is Reace condition in mutlithreading?
-18)  What is multithreding in java?
+17)  What is race condition in mutlithreading?
+18)  What is multithreading in java?
 19)  When we should go for Join() method in threads? (Prepare on example)
 20)  How can you ensure that N threads can access N resources without deadlock?
 21)  Write a progam to give deadlock?
 22)  Will finally block execute if you put System.exit () in catch or try block?
 23)  If we write the statement at end of the method and finally block just above that? What will happen? 
 24)  what is future object? 
-25)  If we increase thread count will performance increase?   (about parall stream)
+25)  If we increase thread count will performance increase?   (about parallel stream)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -283,7 +283,7 @@ managing and creating threads manually we used to submit task to executorservice
 7)  What is flattening?
 8)  Suppose you have to process lot of data using a stream ? how do you do that?
        -Using a speed of the executiion
-9)  If we increase thread count will performance increase?   (about parall stream)
+9)  If we increase thread count will performance increase?   (about parallel stream)
 10) When to use flatMap and When to use Map in java ?
 
 
