@@ -1,0 +1,51 @@
+
+ #Spring Boot Interview questions and answers
+ 
+ 1) Why you will choose springboot over spring framework?
+ 
+ 2) What all spring boot starter you have used or what all modules  you have worked on?
+ 
+ 3) How you will run your springboot application?  mvn spring-boot:run
+ 
+ 4) What is purpose of @SpringBootApplication annotation?
+ 
+ 5) Can we diectly use this three @EnableAutoConfiguration @CoponentScan and @Configuration annotions insted of @SpringBootApplication annotation?
+ 
+ 6) What is AutoConfiguration in Springboot?
+ 
+ 7) How can you disable a specific autoconfiguration class in Spring boot?
+ 
+ 8) How can you customize the default configuration in spring-boot?
+ 
+ 9)  How to customize the Port in spring-boot?
+ 
+ 10) How spring boot run method works internally?
+ 
+ 11) What is command line runner in spring boot?
+
+ 12) What is spring boot auto configuration ? How it works behind the scene?
+     - Spring boot auto configuration is the way where spring boot automtically configure your application where you dont have to do 
+       everything manually
+     - 1) First Application Starts up and then it scans this @SpringBootApplicatin annotation this tells spring to start looking for 
+ 	  configuration, component in your project
+       2) Then it eables @EnableAutoConfiguration it start setting ub database, web server and everyting that your application needs
+       3) Since auto configuration begins it needs a settings to configure database and all so it start looking and load   		  application.properties file
+       4) Then it register all the beans that your appliction need. For example your services, controller
+       5) Once everything is set your application is ready to handle request without you writing the configuration code.
+
+                                                Application Start up
+                                                          |
+                                                        Scan
+                                                 @SpringBootApplication
+                                                          |
+                                                 EnableAutoConfiguration
+                                                          |
+						 Load application.properties
+                                                          |
+                                                   Register Beans
+	                                                  |
+                                                 Application Ready
+ 
+ --------------------------------------------------------------------------------
+ 
+ 12)
