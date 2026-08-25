@@ -1,9 +1,10 @@
 Executor Service :
-- Executor servcie is an interface which we used to create and manage a pool of threads.
+- Executor service is an interface which we used to create and manage a pool of threads.
+- Executor service is most common interface which is used to manage the thread pool in executor framework.
 
 public class Main{
     public static void main(String [] args){
-        ExecutorServcie executorServcie = Executors.newFixedThreadPool(3);    //Number of threads wants to create inside pool.
+        ExecutorService executorService = Executors.newFixedThreadPool(3);    //Number of threads wants to create inside pool.
     }
 }
 
@@ -15,7 +16,7 @@ submit() methods takes runnable as paramter and it returns a future interface.
         (Both are overloaded methods)
 submit() method takes callable as paramter and it returns a future interface.
 
-executorServcie.shutdown() it stops the running process at the end.
+executorService.shutdown() it stops the running process at the end.
 
 
 
