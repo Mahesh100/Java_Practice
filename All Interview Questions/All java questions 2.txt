@@ -1,127 +1,122 @@
-# Java -------------------------------------------------------------------------------------------------------------------->
+# Java ---------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 # Basic Questions
 
-1)    Difference b/w JDK JRE AND JVM
-2)    Can java application run without installing JRE?   No
-3)    Can we install JDK without installing JRE?  Yes
-4)    What are tools available there in JRE?    ( Java Virtual Machine (JVM), standard class libraries, and a class loader)
-5)    What are the memory space available there in JVM?  (Heap Memory and Non-heap memory)
-6)    Old generation and young generation memory ?
-
-7)    Explain the different modifiers in java
-8)    What is use of Super keyword in java?   
-9)    How can we make copy of a java object?     //shallow copy, deep copy and clone() method from the object class
-10)  What will be the initial value for an object reference which is define as a instance variable in java? // initial value is null
-11)  Define package in java                                                                                                                         // A java package    is a group of similar types of classes, interfaces and sub-packages.
-12)  What is use of this keyword in java? 
-
-13)  Explain oops concept with real time example?  **
-
-14)  What is final keyword in java?  In which scenario you have used a final keyword? 
-15)  How to prevent a class from being sub classed in java?                         // make it final
+1)   Difference b/w JDK JRE AND JVM
+2)   Can java application run without installing JRE?  (Yes)
+3)   Can we install JDK without installing JRE? (Yes)
+4)   What are tools available there in JRE?     ( Java Virtual Machine (JVM), standard class libraries, and a class loader) 
+5)   What are the memory space available there in JVM?  (Stack , MetaSpace and Cache)
+6)   Old generation and young generation memory ?  (IMP) 
+7)   Explain the different modifiers in java  (Public, Private, Protected, Default)
+8)   What is use of Super keyword in java?
+9)   How can we make copy of a java object? //shallow copy, deep copy and clone() method from the object class
+10)  What will be the  initial value for an object reference which is define as a instance variable in java?
+11)  Define package in java
+12)  What is use of this keyword in java?
+13)  Explain oops concept with real time example?
+14)  What is final keyword in java?  In which scenerio you have used a final keyword? 
+15)  How to prevent a class from being sub classed in java?
 16)  Can we access private method in java ? (Yes in same class)
-
-17)  Which one will take more memory ? int data type or Integer wrapper class?     //Integer will take more memory as its object and     	int is primitive data type
-
+17)  Which one will take more memory ? int data type or Integer wrapper class?
 18)  What is aggregation in java?
-
-19)  What is JDBC? // JDBC is an application programming interface that allows java-application to interact with databases
-
+19)  What is JDBC?
 20)  What is Enumeration ? why java introduces Enum in java?
 21)  What is use of Volatile keyword?
-
 22)  What is class loader in java?
-
 23)  What is super and this keyword in java?
 24)  what is break and continue in java?
-
-25)  How we can stop execution of for loop abruptly?               // Using break statement                     
-
-26)  you say in for loop we have initialization, condition and increment , the same thing how to achieve using while loop?        //we have to define explicitly in case of while loop
-
-27)  what kind  of variable we can define inside method?     //Local variables
-
-28)  why we use instance variable?    
-29)  can we define instance variable inside method?        //No
+25)  How we can stop execution of for loop abruptly?  // Using break statement  break;
+26)  you say in for loop we have initialization, condition and increment , the same thing how to achieve using while loop?
+27)  what kind  of variable we can define inside method? //Local variables
+28)  why we use instance variable?
+29)  can we define instance variable inside method?  //No
 30)  What is instance variable?
 31)  what is protected and private? 
-
-32)  What is Aritcaure of JVM, Which variable is store in Which area?  **
-
+32)  What is Aritcaure of JVM, Which variable is store in Which area?
 33)  What id diff b/w call by value and call by reference?
-
 34)  What are ACID properties?
+35)  Pass by value and pass by reference in java ?
+36)  What is properties class in java?
+
+
 
 # Java 8  Questions
 
 1)  What are new features added in java 8?
-2)  What are the advantages of Java 11 as compared to java 8?  and difference b/w java8 and java17
+2)  What are the advantages of Java 11 as compared to java 8? 
 3)  What is purpose of  getter and setters in model class? 
-4)  what is reflection API in java?  **
-5)  What are wrapper classes in java? **
-6)  What are all changes come in date and time features of java 8?
+4)  what is reflection API in java?
+5)  What are wrapper classes in java?
+6)  What are all changes come in date and time feature of java 8?
 
 
 #Garabge Collection
 1)  What is garbage collection in java?
-2)  Can we forced to collect a object via garbage collection
+2)  Can we foreced to collect a object via garbage collection
 3)  What do System.gc() and Runtime.gc() methods do?
 
 
 # Main Method
 
-1)  Can we print on console without main method?
-2)  Can we overload main method in java?  Yes
-3)  Does main method in java return any data?
-4)  Can we compile java class without a main method?
+1)  Can we print on console without main method? No
+2)  Can we overlaod main method in java?  Yes
+3)  Does main method in java return any data? No (as void)
+4)  Can we compile java class without a main method?  (Yes, we can compile java class without main method)
+
 
 #Constructor Questions
 
 1)   What is super in java?
-2)   Can we make constructor final?
-3)   Can we overload the constructor?
-4)   What are types of constructor?
-5)   why to crate constructor in Model class ?
-6)   How do you call one constructor from another constructor?
+2)   Can we make constructor final?  [No, we can not]
+3)   Can we overlaod the constructor ?  [Yes, we can overload constructor]
+4)   What are types of constructor?     [Default, Parametrize, Copy Constructor]
+5)   Why to crate constructor in Model class ?  [To intilise the values, object ]
+6)   How do you call one constructor from another constructor? [Using this() keyword]
 7)   Differentiate b/w methods and constructor in java?
-8 )  Does constructor return any value? No   (If you want to return a value from a constructor, you can use a factory method instead. )
-9)   What is return type of constructor?
-10)  Why constructor don't have return type ?
-11)  Can we create constructor in abstract class? 
+8 )  Does constuctor return any value?                         [No   (If you want to return a value from a constructor, you can use a factory method instead. )]
+9)   What is return type of constructor?                        [Constructor dont have return type, it is as same as class type]
+10)  Why constructor dont allow return type ?               [Constructors do not have a return type because they do not return anything. Instead, they return the object that they are initializing.]
+11)  Can we create constructor in abstract class?           [Yes]
 12 ) What is used of constructor in java? Why we used constructor?
 13)  Can object be sterilize if object does not contains default constructor?
-14)  How do you call one constructor from another constructor?
+
 15)  It it possible to use this() and super() both in a constructor in java?
 16)  Does a class inherit constructor of its superclass in java?
 17)  What is copy constructor in java?
 18)  What is order of call of constructor in heritance?
+
 
 # Inheritance
 
 1)  What is inheritance in java?
 2)  Why java does not supports multiple inheritance
 3)  What is diamond problem in multiple inheritance?
-4)  How can we restrict inheritance for a class so that  no class can be inherited from it?
+4)  How can we restrict inheritance for a class so that  no class can be inherited from it?  [Make it Final]
+
 
 # Abstraction
-1)  What if we use more than one abstract method?  
+1)  What if we use more than one abstract method?   (Tricky)
+
 
 # Encapsulation
 1)  What is use of encapsulated class?
+
 
 # Polymorphism
 
 1)  Why do you think we override hash code and equals method?
 2)  @override annotation ? what is use of @override annotation ? what if not use?  
-3)  What is method overloading and method overriding in java?
-4)  What is real use of polymorphism ? can you give any example of from your project?
+3)  What is method overloding and method overriding in java?
+4)  What is real use of polymorpism ? can you give any example of from your project?
+5)  What if don't overide hashcode method in hashmap?
+
 
 # Exception
 
 1)   What is Exception in java?
 2)   What is Error in java
-3)   Difference b/w checked exception and Unchecked exception?
+3)   Difference b/w checked exception and Unchechekced exception?
 4)   Common exception you have faced in your project?
 5)   How you will handle exception in your project?
 6)   Difference between ClassNotFoundException and NoClassDefoundError?
@@ -130,16 +125,15 @@
 9)   How can we handle exception in java?
 10)  How to write Custom Exception in java ?
 11)  Can I extend the runtime exception ?
-12)  What is compile time and Run time Exception ? 
-13)  Exception and Error definition ?
+12)  What is complile time and Run time Exception ? 
+13)  Exception and Error Defination ?
 14)  What are types of Exceptions?
 15)  What is Super class of exception?
 16)  How we create user define RO exception?
 17)  How to Create your own exception?
-18)  Suppose is method throws fileNotFound in super class so can we over ride this method using io exception?  Yes
+18)  Suppose is method throws filenotfound expection in super class so can we overridre this method using io exception?  Yes
 19)  Suppose you are trying to catch throwable instance in catch block , will it catch all the instances?
        What will happen ? Will JVM allows its exceptions?
-
 20)  Have you heard about global exception handling?
 21)  While using exception, I am using finally block , in the finally block I am returning the value,
        can we keep some statements after that finally block ? will statement will execute or not?
@@ -149,17 +143,17 @@
 24)  What is paraent class of errors ? Will it catch errors also? 
 
 
-# Multi Threading
+# Multi-Threading
 
-1)    What is thread in java?
-2)    What is process in java?
-3)    Can we start thread twice?
-4)    What is thread local?
-5)    Ways to create thread in java? What are ways to create a thread? and which one is better?
-6)    What is meaning of thread safe?
-7)    What methods threads use to communicate with each other?
-8)    What is difference between process and threads?
-9)    Difference b/w wait and  sleep method in thread?
+1)   What is thread in java?
+2)   What is process in java?
+3)   Can we start thread twice?
+4)   What is thread local?
+5)   Ways to create thread in java? What are ways to create a thread? and which one is better?
+6)   What is meaning of thread safe?
+7)   What methods threads use to communicate with each other?
+8)   What is difference between process and threads?
+9)   Difference b/w wait and  sleep method in thread?
 10)  Explain the thread lifecyle in java?
 11)  What is Join method in thread?
 12)  Any other way to create thread ? Using thread pool , using callable interface you can call a thread.
@@ -168,18 +162,22 @@
 15)  What are the parmeters you have passed to thread pool? (Core pool size,Maximum Pool sixe, Work queue, Keep Alive time) 
 16)  What exactly you have used multithreading as part of your application?
 17)  What is Reace condition in mutlithreading?
-18)   What is multithreding in java?
+18)  What is multithreding in java?
 19)  When we should go for Join() method in threads? (Prepare on example)
 20)  How can you ensure that N threads can access N resources without deadlock?
 21)  Write a progam to give deadlock?
-22)  Will finally block execute if you put System.exit() in catch or try block?
+22)  Will finally block execute if you put System.exit () in catch or try block?
 23)  If we write the statement at end of the method and finally block just above that? What will happen? 
 24)  what is future object? 
 25)  If we increase thread count will performance increase?   (about parall stream)
 
+
+# Executor-Framework
+1) What is executor framework?
+
  # String Questions
  
-1)   How to debug the string ?  (Strings are stateless)
+1)   How to debug the string ?  (Strings are statless)
 2)   What is String joiner?
 3)   What are the tools used for handle dead locks? 
 4)   String s = new String("abc"); how many objects get created here?
@@ -188,8 +186,8 @@
 7)   which is more efficient StringBuffer or StringBuilder?
 8)   What is purpose of hashcode and equals method?
 9)   What is equals method in java ?
-10) What is immutable class?
-11) What is benfit of immutable class?
+10)  What is immutable class?
+11)  What is benfit of immutable class?
 12)  What is SCP  explain?
 13)  Have you worked on literals? what are literls in java?
 14)  What is final variable?
@@ -197,7 +195,8 @@
 14)  Explain about comperator chaining? (Write a code) 
 15)  What is use of Method reference?
 16)  What is use of Volatile keyword?
- 17) What is aggrigeration in java
+17)  What is aggrigeration in java
+
 
 # Singleton Questions
 1)   Create a Singleton class ? All the ways on how to break it and how to solve it?   (Reflection API and clonable interface)
@@ -215,14 +214,14 @@
 2)  What’s the difference between fail-fast and fail-safe?
 3)  Difference between throw and throws in Java
 4)  Difference b/w function and predicate?
-5)  Difference b/w String-Buffer and StringBuilder
+5)  Difference b/w StringBuffer and StringBuilder
 6)  Difference b/w runnable and callable?
-7)  What is Difference b/w stream api and Collection API?
+7)  What is Difference b/w stram api and Collection API?
 8)  What is difference between equals method and double equal operator?
 9)  Two types of memories in java. What is difference between stack and heap memory in java?
-10)  What is difference between global session and singleton
-11)  What is difference b/w interface and abstract class ?
-12)  What is difference b/w comparable and comparator method?
+10)  What is difference between global session and singlton
+11)  What is difference b/w interface and abstrct class ?
+12)  What is difference b/w complerable and comperator method?
 13)  What is difference b/w parallel stream and Sequential Stream ?
 14)  Difference b/w while loop and do-while loop?
 15)  what is  the difference between declaring variable inside the method and outside the method?
@@ -230,7 +229,7 @@
 17)  Difference between singleton class and singleton bean scope?
 18)  What is difference b/w normal interface and functional interface?
 19)  What is difference b/w stack and heap in java?
-20)  Difference b/w checked exception and unchecked exception?
+20)  Difference b/w checked exception and Unchechekced exception?
 21)  Difference between loose coupling and Tight coupling in java?
 22)  Difference between ClassNotFoundException and NoClassDefoundError?
 23)  Difference between Constructor and Method?
@@ -239,7 +238,8 @@
 26)  What is difference b/w this() and super() keyword in java?
 27)  What is difference between process and threads?
 28)  Difference b/w wait and  sleep method in thread?
-29)  Difference between Sysncronize and ASysncronize keyword
+29)   Diffence betwen Syncornize and Asyncronise keyword
+
 
 
 # Static methods
@@ -253,28 +253,31 @@
 7)   Let say I have static method in a class ? can we access non-static variable inside it?
 8)   What is static block in java?
 9)   What if static is remove from main method?
-10) What happens if we declare method as static in java?
+10)  What happens if we declare method as static in java?
+
 
 # Lambada Expression
 
-1)  What is functional interface ? 	What is advantages of Functional Interface ? Relation between functional interface and Lambada expression?
+1)  What is functional interface ? 	What is advanatages of Functional Interface ? Relation between functional interface and Lambada expression?
 2)  What is Lambada Expression in java?
-3)  Write a example of lambda expression
-4)  How to call lambda expression?
+3)  Write a example of lambad expression
+4)  How to call lambad expression?
+
 
 # Stream API
 
 1)  What is purpose of stream API in java 8?
 2)  What are the advantages of stream API?
-3)  What are the Streams you have been used ? While iterating list
+3)  What are the Streams you have been used ? While itreating list
 4)  How stream operations are executes and if we remove terminal operations?
 5)  What all methods in stream api?
-6)  In teams of Stream API there is Method called flat Map ? What is use of Flat Map in stream API?
+6)  In tearms of Stream API there is Method called flatMap ? What is use of FlatMap in stream API?
 7)  What is flattening?
 8)  Suppose you have to process lot of data using a stream ? how do you do that?
-       -Using a speed of the execution
+       -Using a speed of the executiion
 9)  If we increase thread count will performance increase?   (about parall stream)
 10) When to use flatMap and When to use Map in java ?
+
 
 
 # Interface and Functional interface
@@ -292,72 +295,71 @@
 11) In java What is use of Callable interface?
 12) What is consumer interface?
 13) can you tell me about serlisble interface? suppose I have parent  class that implement serilsable
-       and I have child class ? will the child class automatically serialize that or not?
+       and I have child class ? will the child class automatically serlise that or not?
 14) In a class implementing an interface, can we change the value of any variable defined
         in the interface?
 15)  What is  practical use of Default method in java 8?
 16)  What is Predicate?
 17)  What is use of Optional?
-18)  What is by function in java 8?
+18)  What is byfunction in java 8?
 
 
-# serialization Questions
 
-1)  What is serialization? What is its use?
-2)  In serialization suppose we don't want to serialize some of the property? so how we can acieve it?
-3)  What is serialization and deserialization in java?
-4)  How to exclude variable in serialization?  use transient  keyword
-5)  What is serial version UID which we normally use in serialization? What is serial version UID?
+# seralization Questions
+
+1)  What is seralization? What is its use?
+2)  In seralization suppose we don't want to serialize some of the property? so how we can acieve it?
+3)  What is seralization and desearalization in java?
+4)  How to exclude variable in seralization?  use transient  keyword
+5)  What is serial version UID which we normally use in serialsation? What is serial version UID?
 6)  What is instance level locking ? and class level locking? (Synchronize method)
 7)  what is transient ?  transient is not used with entire child object
 8)  Suppose I have parent class and I have child class ?  and in parent class I have 
-       address filed ,  and child address having a city, street and state , suppose I don't want
+       address filed ,  and child address having a city, street and state , suppose I dont want
       to serialize only city and i want to serialize the other field?  
+
 
 #Project Questions
 1)  Explain your project architecture
-2)  Why we need generics and why you used generics in your project?
+2)  Why we need generics and why we need generics in your project?
 3)  Have you applied object cloning in the project? 
-4)  What is real use of polymorphism ? can you give any example of from your project?
-5)  Have you ever used inner class as part of you application? scenario based
-6)  I have senecio for SQL query , what collection to be used here ? whenever my end user trying to fetch data from the 
+4)  What is real use of polymorpism ? can you give any example of from your project?
+5)  Have you ever used inner class as part of you application? Scenerio based
+6)  I have senecio for SQL query,what collection to be used here ? whenever my end user trying to fetch data from the 
     table we should fetch all the....  ANS---> Map Sub Class 
 7)  What is Single sorting and Multiple sorting?
 
 
+   Total = 229  Java Questions
 
-1) 
-2)
-3)
-4)
-5)
-6)
-7)
-8)
-9)
-10)
-11)
-12)
-13)
-14)
-15)
-16)
-17)
-18)
-19)
-20)
-21)
-22)
-23)
-24)
-25)
-26)
-27)
-28)
-29)
-30)
-31)
-32)
-33)
-34)
-35)
+# Additional Questions from `All java questions 2.txt`
+
+## Unique / Additional Questions
+
+1. What are the advantages of Java 17 as compared to Java 8?
+2. What is the difference between Java 8 and Java 17?
+3. What are the tools available in JRE? (Java Virtual Machine (JVM), standard class libraries, and a class loader)
+4. What are the memory spaces available in JVM? (Heap Memory and Non-heap memory)
+5. What is the purpose of a final keyword in Java? In which scenario have you used a final keyword?
+6. Can we access a private method in Java? (Yes, within the same class)
+7. What is JDBC? (JDBC is an application programming interface that allows a Java application to interact with databases.)
+8. What is the use of a volatile keyword?
+9. What is the architecture of JVM? Which variable is stored in which area?
+10. What are ACID properties?
+11. What is the difference between call by value and call by reference?
+12. What is the difference between stack and heap memory in Java?
+13. What is the difference between a singleton class and singleton bean scope?
+14. What is the difference between a normal interface and a functional interface?
+15. What is the difference between checked exception and unchecked exception?
+16. What is the difference between loose coupling and tight coupling in Java?
+17. What is the difference between Constructor and Method?
+18. What is the difference between Array and ArrayList in Java?
+19. What is the difference between synchronized and asynchronous execution?
+20. What is the difference between this() and super() keyword in Java?
+21. What is the difference between process and threads?
+22. What is the difference between wait() and sleep() method in thread?
+23. What is the use of Optional?
+24. What is the use of Predicate?
+25. What is the use of Consumer interface?
+26. What is the use of Callable interface?
+27. What is the practical use of default method in Java 8?
