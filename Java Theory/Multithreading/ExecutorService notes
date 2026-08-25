@@ -1,3 +1,21 @@
-Executor Service 
+Executor Service :
+- Executor servcie is an interface which we used to create and manage a pool of threads.
 
-submit() methods returns a future interface.
+public class Main{
+    public static void main(String [] args){
+        ExecutorServcie executorServcie = Executors.newFixedThreadPool(3);    //Number of threads wants to create inside pool.
+    }
+}
+
+
+# Methods in executor service
+execute() method takes runnable as parameter and its return type is void();
+
+submit() methods takes runnable as paramter and it returns a future interface.
+        (Both are overloaded methods)
+submit() method takes callable as paramter and it returns a future interface.
+
+executorServcie.shutdown() it stops the running process at the end.
+
+
+
