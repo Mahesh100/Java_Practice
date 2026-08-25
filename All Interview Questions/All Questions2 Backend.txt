@@ -1,0 +1,448 @@
+
+#REST : 
+1) What is @RESTcontroller annotations?
+2) what are some of the common practices while returning different http status code?
+3) what will be status code for delete api after successful delete?
+4) using rest controller can we return some custom format other than JSON and XML? HOW do we write cutom format?
+5) What are embedded server available?
+6) How do spring boot decides which server to use when multiple servers are available?
+7) Explain advanced configuration for one of these servers (Tomcat and Jetty)
+8) How can we optimize performance of spring boot embedded server?
+9) What is advantages of RESTful web over SOAP based web services?
+10) Which one is more secure REST or SOAP?
+11) Difference between Put and Patch method
+12) What is idempotent method according to  HTTP Specifications?
+13)  Explain about Spring Security ?
+
+14)   How do you call API in your application and Validate it ?
+
+15)  How do you handle DB error in your application ?
+
+27)   How do you call DB query in your application ?
+28)   What are Actuators ? 
+
+29)   What are most used annotations and its explanation ?
+
+30)   What are Microservices ?
+31)   Can we wirte all HTTP methods inside class having @Component annotation ? what is necessity of @Controller annotation then ? 
+
+32)  Difference between @Controller and @Component ?
+
+33) What is @RequestBody @ResponseEntity ? @ResponseBody? Difference 
+
+34)   When to use @Requestparam?  in which scenario?
+
+35)  What is @Pathparam ?  @PathVaraiable?
+
+36)  What is request pararm in spring boot ?   @RequestParam 
+
+37)  How could you write API contract?
+
+38)  What is service discovery ? Load Balancing ?
+
+39)  You mention that HTTP communoctaion with REST Client is tighty coupled , how it it thigtlu coupled ?
+    (So we make it loosly coupled?)
+40) How to consume the web service ?
+
+41)  What is purpose of URL in REST ful Web Services ?
+
+42)   What is stateless ness in Web Services ?
+
+43) SOAP and REST Web Service difference?
+
+44) Difference b/w Web API and REST API ?
+45)  What are different ways of passing paramentrs in REST API?
+46) How to pass object in REST API ?
+47)  What is diff b/w Spring Restful web service vs jersey web services?
+48) How do you convert XML to JSON response?
+49)  How you will send status code 404 if you are getting some Exception?
+50) Have you worked in RESTful ? What are Best practices to while creating REST? What are naming convention ? to follow
+51) Have you worked in enabling security of RESTful web service ? What are mechanism used?
+52) Difference between Http Put and Http POST methods?
+
+53)How you are handling, Exception handling in REST api?
+54)Suppose I am writing an API for Employee.Trying to design or build a RESTful webservice>
+     I want to create an entry for an API  which wil make an entry of new API.
+     What would be the structure of the REST api?
+55) What is difference b/w @RESTController and @Controller
+
+56)What are the basic requirements or properties required while dealing with RESTful web services?
+      -If you are going to design  RESTful web services, what are the elements that are the 
+       basic things in our every REST api call?
+       REST api implementations?
+
+57)  What this service layer contains?
+
+58) You mention that in your project you are using some Transactions,right?
+       So, how you are handling the transactions? Like deal with the transactions?
+       If you are doing any transaction and in between any kind of exception occur?
+       so how you dealing with it?
+       Suppose, in one of your transaction you have  2 - 3 steps? In that  you need to deal
+        with database and you are updating some database table, but in mid if any of the
+         step / transaction break? Then how we can handle it?
+         Because transaction should be done in one full step, if it is success comes.
+         In that case how you handle it? or you are handing in your current project?
+59) @RESTController what is signifiance of this @RESTController?
+
+60) Which one more secure REST or SOAP secure ?
+
+61) What are the advantage of RESTful web Services over SOAP Web Services?
+
+62) What was your approach to design a REST API?
+63) What is return type of API?
+#Hibernate
+
+1) What is swagger? why it is used?
+2) can we customize specfic auto configuration?
+3) how would you design transaction method that involves calling multiple databases in message quue? (Is it similar to distributed design pattern?)
+4) Have you worked on hibernate? jpa?
+5) what is n+1 select problem?
+6) Do you know json seralizarion and deseralization ? can we customize it?
+7) What is webflux? explain?
+ 8) What do you mean by dilect?
+8)  Expalin Caching mechanism in hibernate framework?
+9)  When did cache expire?   
+10) What is advantage of ORM framework?
+11)  What is lasyloading in hibernate?
+12)  What is cascade attribute?
+
+13) Supose you have Employee table and Depeartment table in DB , how you can create relationship in Employee in springboot?   //use hibernate annotations
+14) What is Object life cycle ? Or State of Object or Instance state ?
+15)  What is difference b/w object and merge method ?
+16)  Can you explain me the association of Hibernate ?
+17)  Can you explain me the many to many relationship ?
+18)  What is difference b/w mock and Inject Mock ?  Mock and Power mock ?
+19)    How you test the services in JPA ? 
+20)   In which scenerio you are using power map?
+21)  What are the disadvantage of Hibernate?
+22)How you handel pegination ?
+
+23)   How you will address pagination with hibernate??
+24)   What is Dialect in hibernat??
+25) Tranaction Management in Hibernate?
+
+26) What is @Tranaction annotations?
+
+27)    When does the cache experied? first level and Second level cache?
+
+
+28)  What is ORM framwork?
+
+29)Have you ever used hibernate related configuration?
+30)How to configure driver manager and Session factory?
+31)What are the differnet way of resolution happen while creating a 
+32)  How the value get store in session method?
+33) What is difference between save() and persist() method ?
+34) JPA Transaction 
+
+Set is used to return data
+
+Map - Redis cache is used
+
+35)
+36)
+37)
+38)
+39)
+40)
+41)
+42)
+43)
+44)
+45)
+46)
+47)
+48)
+49)
+50)
+
+# SQL -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+1)  Best way to read 1 million records and insert into DB  (Batch process)
+2)   What is order of execution of sql query
+3)    Find the lowest salary from the Employee table
+4)    Which will execute first lmit and order by
+5)   Join query in sql
+6)  What is Unique constraints in database?
+
+7) Have you written any Query in DB ? 
+8) How to create table in DB ?
+9) )Write a query for the Nth Highest salary in a table?Which show all the employee details?
+10) Difference between where and Having clause?
+11) What is Triggers ?  How to implement triggers?
+
+12) what are differnet types of joins ?
+
+13) What is indexing ?
+14) Have you written stored procedure in DB ?
+15) WRQ for printing all the duplicate names and Count of Duplicate Names ?
+16) Find the salry of each departement  with two diff table?
+
+17) How to execute such type of Query in hibernate and JPA?
+
+18) You want to configure spring data JPA ? what are the configurations you have to do from beginning?
+19)    Difference between sql and nosequal db ?
+
+20) For specific requirement how you will choose sql and nosq
+21) Difference b/w primary key and unique key in sql?
+
+22)Difference b/w right join, left join and inner join?
+
+23)How you can detect memory leak in your application?
+
+24) In MySQL there are prepared statements and Statements , what is benfit of using prepared statements over statemets?
+25) Write a Sql query to Join three tables
+
+26) Which query is select ?
+27)
+
+30)
+
+28) 
+29)
+30)
+31)
+32)
+33)
+34)
+35)
+36)
+37)
+38)
+39)
+40)
+41)
+42)
+43)
+44)
+45)
+46)
+47)
+48)
+49)
+50)
+
+
+# SOLID and Design Pattern
+
+1) Explain about design principls ( SOLID Principles)
+2) Expalin a scenerio where you have used Liskov principls in your application?
+3) What kind of design pattern you have used? why we have to use design pattern?
+4) What are SOLID Principles?
+5) What is difference between global session and singlton ?
+6) What is diff b/w  Singleton and request?
+7) What is diff b/w prototype and request?
+8)  Difference b/w SingleTon and Session prototype? -Spring Question 
+9)  Have you use used executer frame work ?
+
+10) Can you explain me diff b/w abstract and Factory design pattern ?
+11) What is difference between structural and Behaveriral design pattern ?
+12) How we can create Singleton class ? What are all methods to create ?
+  -Without using abtrct method is there is any way?
+  
+13) From Resume - You have also Written about HLD (High level Document) and LLD (Low level Documents) ?
+        What is this?
+14) What is Swagger ? 
+ 
+15)  Have you used JSON ? or JSON response? 
+
+16) Can you please explain adapter design pattern ?
+
+17) What is differnce betwenn abstrct factory and Factory?
+18) Have you used factory design pattern ?
+
+19) What is advantage of design pattern ?
+
+20) What are design patterns in java ,  what is advanatge of prototype design pattern?
+21) What is circit breaker and How to resolve it?
+22) What is difference between structural and Behavioral design pattern ?
+23)What design patterns you have used in your project
+24) How do you implement singleton desgin pattern in your project?
+25)  What care you should take to implement singleton class?
+26)  What should be access modifier of singleton class?
+27)  How you would be make sure that only one object get created?
+28)  You mentioned that constructor shoudld be private constructor, then how you will create single object and pass that 
+   perticular object everytime?
+29)
+30)
+
+
+
+
+
+01)
+02) how you implement microservice artichature in spring boot?
+03)How do you achive the loose coupling between two microservices? or two applictions?
+04) Have you heard about circuit breaker pattern in microservices?
+05)  On microserivce part , have you heard about hystrix?
+06) What was the most difficult thing you face while working with microservices?
+         What are disadavtage of microservice?
+
+05)  So  you are just authenticating those request ? or you are just authenticating the 
+       third party request?
+               -API gateway is deldevops
+			   
+06) How do you manage the jwt Token ?  It expires after some time , so the refresh things works?
+05) Which point of time you are using spring security part and what mechanism are you using for that?
+          -JWT Token 
+		  
+06)  How can we establish communication between microservices?
+
+07)You have used Microservices? Do you have any idea on core component of Microservices? What are main components required to run microservices?
+
+08) How to load balance microseservice?
+
+09) What are API gateway?  what are advanatage of it?
+
+10) What is differnce b/w monolithic and Microsersrvice articature?
+
+11) What are the 12 app factors of Microservices ? 
+
+12)Can you explain the articature of MicroServices ?
+13)What is Microservice architchature? Do you know difference between Microservice Arichature and Monthlith Arichature?
+14)  In how many ways can communication can happen in Microservices ?
+
+15)  What other things do you know about microservices ? Do you know about fault taularnce in microserivece?
+
+16) Can you tell me about code quality ? How you maintain code quality in your current project?
+17) Suppose I have the existing applications and Which has three modules and Each module is dependent on another module and 
+      I want to convert that application into microservice ? 
+18) What we need to use ? We used any server ? Or how you handle naming server ?
+
+19) Suppose I have three modules and there are ports and IP address are there then how you are goin to handle ?
+20)  Have you implemented swagger in ?
+21)   How you validate the microservice end points ? 
+22)   How you authnticte that the request is valid request or not ?
+23) Suppose I have service and I am consuming third party service and I got exception from services 
+     How do you handle it ? and what are the annotations you have used?
+24) Suppose I have to consume the web service what is your approach? How you are designing REST API ?
+ 25)  How you are consuming and Procucing web services ? are there any annotations used ?
+      Suppose I want to produce JSON what are annotations I need to produce?
+
+26)  Suppose I want to connect two database how do you do that in code?? 
+
+# Coding Questions
+
+1) input = [1,1,2,3,3,4,4,8,8];
+By iterating only once, find the non-duplicate number
+
+2) String s = "aaabbccfddccb";
+Find the number of characters (Using hashmap)
+
+# Puzzle
+3) 3,3,3,3,3 = 31  (Apply anything +,-,* etc the end result should be 31
+
+4) Program to sort even and odd numbers inside an array (even should appear first,then odd) without using extra space.
+
+5) Find the sum of even numbers using Java stream
+
+6) write a recursive function for calculating height of BST
+
+7) Java top ten questions Permutations of a string.
+
+8)program using streams to print salary less than 20000
+
+9) program using streams to print sum of integers in array reduced <= 10
+
+10) Count the most occuring characters in string
+
+11) Find the occurrence of an Element in an Array using Java stream api
+
+12) Two sum problem of leetcode
+
+13) Program to identify number of slices an array can be divided into so that the on merging arrays will result in sorted array.
+
+14) given a string convert all vowels to '_' in the string.
+
+15) Given an array that contains only 1 and 0 , task is to shift 0 to left side and 1 to right side 
+16) Given an sorted array, remove the duplicate elements from array and modify the array and return the array
+17) Given an array which contains numbers from 0 to any number , task is to shift 0 to right side and 1 to left side 
+
+18)  Write a progam using stream API where we have Employee object working in sales departmaent we have to get employees whose salary > 50000
+
+19) Write a java program to reverse a string without using any predfine methods?
+2. String and array problem - for it you will have to solve first 20 problems of leet code because interview questions are more related to those problems.
+
+20) Coding problem to find the last word in String
+
+21) Coding question using java 8 String joiner
+
+22)  Write a program to find a heghest occurence in Integer array?
+
+23) find duplicate record from table and count of that in DB ?
+24) Group Anagram string and What is Time Complexity 
+
+25)  Find list of name from the employee List and those names start A using stream api
+26)Suppose I have list of employee objects  and I want to sort those based on employee age, 
+        so how to do that using streams?
+27) Given a list of Employees having name id, return the even number of employee id using java8 stream API
+28) You have scenerio, where you have an arraylist  and from arraylist you need to find values
+       which are greater than 100, how do you do that using java 8?
+    
+     -Use stream API and Lambda expression 
+29) Java method that checks if a given string contains digits or not and returns a string 
+30) Coding ask to create a class having multiple properties and sort the object 
+  of the class 
+
+31)  DS- Quick sort and approch 
+
+32) To find the uncommon elements in arrays (Union )(Ignore the common elements from the array)
+   (Two array provided and find the common element from the two arrays)
+   
+33)   Coding question using java 8 String joiner
+
+34) Write a program to print Sum of all the elements in an array using stream api 
+
+35) 
+
+
+----------------------------------------------------------------------------------------------------------
+For Spring Security using JWT
+
+https://www.youtube.com/watch?v=p_sDlCyzUFU&t=69s   (JWT)
+
+https://www.youtube.com/watch?v=MWvnmyLRUik
+
+----------------------------------------------------------------------------------------------------------
+
+
+For Stream API 
+
+https://www.youtube.com/watch?v=8yyHwQtnOj4
+
+#Kafka 
+
+1)  What are msg qube in kafka and rabbit
+2)  What is Elastic Stack? Elastic search
+3)  Messaging system, question on previous projects
+
+
+ Jenkins Questions__________________________________________________________________________________
+
+  19) Have you worked on CI CD Jenkins ? 
+  
+  20) How to create pipeline in Jenkins ?
+
+  21) Have you worked on Docker Kubernates or Mockito or Junits ?
+  
+ 
+ # AWS 
+ 
+ -How to connect aws to core?
+ Why you are using EC2?
+ What is VPC ?
+Have you used cloud ??
+If there is any memory leak how do you handle?
+
+So guys are using Docker ? How do you scale your application using Docker?
+        we have usually Docker compose file and in that we provide the all the images etc?
+        so do you scal your application  in case of docker?
+Have you worked on Scaling up services and any of the environment?
+
+-How do you deploy using application, if you are using horizontal scaling?
+-Do you know vertical scaling and Horizontal scaling?
+
+Tell me something else you get chance to explore? Like cloud storage
+
+Mostly, what are the functionality and feature you are working on?   
+     Like in current application what are the functionality or feature you are working on?
