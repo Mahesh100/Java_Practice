@@ -5,4 +5,4 @@ managing and creating threads manually we used to submit task to executorservice
 
 - Executor framework improves thread management because threads can be reused and we can control how many tasks execute concurrently.
 
-- Most commonly interface used in executor framework is ExecutorServcie.
+- Most commonly interface used in executor framework is ExecutorService.
