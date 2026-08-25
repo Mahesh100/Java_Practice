@@ -1,4 +1,4 @@
-package CodingQuestions.StreamAPI.All_StreamAPI_Questions.MostAskedQuestions.StreamAPI;
+package CodingQuestions.StreamAPI.All_StreamAPI_Questions.MostAskedQuestions;
 
 // Find sum of all elements in a list using Stream API
 
