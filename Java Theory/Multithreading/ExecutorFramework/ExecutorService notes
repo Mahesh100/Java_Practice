@@ -12,9 +12,9 @@ public class Main{
 # Methods in executor service
 execute() method takes runnable as parameter and its return type is void();
 
-submit() methods takes runnable as paramter and it returns a future interface.
+submit() methods takes runnable as parameter and it returns a future interface.
         (Both are overloaded methods)
-submit() method takes callable as paramter and it returns a future interface.
+submit() method takes callable as parameter and it returns a future interface.
 
 executorService.shutdown() it stops the running process at the end.
 
