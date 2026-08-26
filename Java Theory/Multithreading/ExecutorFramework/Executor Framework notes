@@ -1,7 +1,6 @@
 Executor Framework:
 
-- Executor framework in java which is used to manage and execute task using pool of threads, instead of
-managing and creating threads manually we used to submit task to executorservice which create and manage threads for us.
+- Executor framework in java is used to manage and execute task using pool of threads, instead of managing and creating threads manually we used to submit task to executorservice which create and manage threads for us.
 
 - Executor framework improves thread management because threads can be reused and we can control how many tasks execute concurrently.
 
