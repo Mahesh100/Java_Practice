@@ -3,3 +3,4 @@
 - Docker is containerize platform
 - Containers are ephemeral in nature (Short life)
 - Docker does not support autoscaling
+
