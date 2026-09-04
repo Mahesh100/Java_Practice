@@ -1,0 +1,5 @@
+AOP: Aspect Oriented Programming
+- It is way to add a extra behavior to your code without touching the actual business logic.
+- Spring AOP works by creating a proxy around your bean, when we call a method a call first goes to the proxy.
+  The proxy decides an aspect should run after the method, before the method or only when exception happens then it continues and call the actual method
+- Using AOP we can keep our code clean and all cross cutting concerns are handed in one place.
