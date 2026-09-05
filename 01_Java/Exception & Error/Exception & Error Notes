@@ -1,70 +1,80 @@
-# Exception in java
+# Exception in Java
 
-1) Any unwanted or unexpected event which disturbs the normal flow and execution of program is called Exception.
+**1) Any unwanted or unexpected event that disturbs the normal flow and execution of a program is called an Exception.**
 
-    - At compile time exception never occurs, all the exception occurs at the runtime.
+- Exceptions occur at runtime.
+- At compile time exception never occurs, all the exception occurs at the runtime.
+- At compile time, the compiler checks for certain exceptions (Checked Exceptions), but the actual exception occurs at runtime.
 
-2) Difference between Checked exception and Unchecked exception
+**2) Difference between Checked Exception and Unchecked Exception**
 
-   i)  Checked Exception : (Compile time exception)
-       - Checked exception are the exception which are checked and handle at the compile time.
-       - Checked exception must be caught or declared using throws keyword
-       - Checked exception handle using try-catch block or throws keyword.
-       - When checked exception occurs, program flow is interrupted and transfer to catch block.
-       - Examples :
-           -ClassNotFoundException
-           -IoException
+**i) Checked Exception : (Compile-time exception)**
+
+- Checked exception are the exception which are checked and handle at the compile time.
+- Checked exceptions must be either caught using try-catch or declared using the `throws` keyword.
+- Checked exceptions can be handled using a try-catch block or propagated using the `throws` keyword.
+- When a checked exception occurs at runtime, the normal program flow is interrupted and control is transferred to the appropriate catch block, if it is handled.
+
+- Examples:
+  - ClassNotFoundException
+  - IOException
+
+**ii) Unchecked Exception : (Runtime exception)**
+
+- Unchecked exceptions are the exceptions which are not checked by the compiler at compile time.
+- Unchecked exceptions do not need to be handled or declared explicitly.
+- When an unchecked exception occurs and it is not handled, the program terminates and an error message/stack trace is displayed.
+- Examples:
+  - ArrayIndexOutOfBoundsException
+  - NullPointerException
 
 
-   ii) Unchecked Exception : (Runtime exception)
-       - Unchecked exception are the exception which are not handle at compile time.
-       - Unchecked exception do need to required handle explicitly.
-       - When unchecked exception occurs program flow is halted with an error message.
-       - Examples:
-            -ArrayIndexOutOfBoundException
-            -NullPointerException
+# Difference between Exception and Error
+
+**# Exception :**
+
+- Exception usually occurs because of problems in the program or unexpected conditions during program execution.
+- Exceptions can generally be handled using try-catch or propagated using throws.
+- Exceptions are mainly of two types:
+  - i) Checked Exception (Checked exception )      //Remember both starts with C
+  - ii) Unchecked Exception (RuntimeException)
 
 
-# Difference between exception and error
-
-
- # Exception :
--Exception occurs because of program
--Exceptions are recoverable / We can handle the exception.
--Exception are of two types :
-   i)  Compile time exception (Checked exception )      //Remember both starts with C
-   ii) Runtime exception     (Unchecked exception)
-
- # Error
+**# Error**
 -Error occurs because of lack of resources.(System ram)
--Errors are not recoverable / Errors can not be handled
+- Error generally occurs because of serious problems related to the JVM or system resources.
+- Errors are generally not expected to be handled by the application.
 -Error is only of single type -Runtime exception (Unchecked exception)
+- Error is a separate branch under Throwable.
+- Examples:
+  - OutOfMemoryError
+  - StackOverflowError
+  - NoClassDefFoundError
+
+
+# Exception Hierarchy
+
+```text
+                              Object (Object is parent class of all classes in java)
+                                 |
+                                 |
+                              Throwable
+                                 |
+                   ---------------------------
+                   |                         |
+                   |                         |
+              Exception                   Error
+          (Because of program)      (Because of program resources)
+                   |                         |
+          -------------------          Serious JVM/System
+          |                 |              problems
+          |                 |
+   Checked Exception       Unchecked Exception
+(Compile Time exception)   (RuntimeException)
 
 
 
-2) Exception hierarchy
-
-                                                                Object  (Object is parent class of all classes in java)
-                                                                  |
-                                                                  |
-                                                              Throwable
-                                                                  |
-                                                                  |
-                                              -------------------------------------------------------
-                                              |                                                     |
-                                              |                                                     |
-                                          Exception                                               Error
-                                      (Because of program)                                 (Because of System Resources)
-                                             |                                                      |
-                                             |                                                  Unchecked exception (Runtime exception)
-                      -------------------------------------------------------
-                      |                                                     |
-                      |                                                     |
-                Checked Exception                                   Unchecked Exception
-                (Compile Time exception)                            (Runtime Exception)
 
 
-
-
--  A subclass can only throw the same exception or a narrower (more specific) exception than the one declared in the parent class method.
--  This is to ensure that the caller of the method is not surprised by a broader exception than they were expecting.
+ -  A subclass can only throw the same exception or a narrower (more specific) exception than the one declared in the parent class method.
+-  This is to ensure that the caller of the method is not surprised by a broader exception than they were expecting.                       
