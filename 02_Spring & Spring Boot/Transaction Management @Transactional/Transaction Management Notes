@@ -1,0 +1,31 @@
+
+# Transaction Managers
+- Transaction Manager is core component in transaction, it is responsible for managing the transactions.
+  it is responsible for getting transaction, commiting a transaction and rolling back a transaction
+- All the transaction operations transaction manager handle inside spring boot.
+- Transaction Managers are the interface.
+
+- public interface TransactionManager{            //This is just a parent interface.
+
+}
+
+- public interface PlatformTransactionManager extends TransactionManager{
+    public void getTransaction();
+    public void commit();
+    public void rollback();
+}
+
+- now Abstract class AbstractPlatformTransactionManager provides the implementation of 
+  getTransaction(), commit(), and rollback() methods.
+
+- now this abstract class is used by different transaction managers(which are concrete classes) such as
+
+- DataSource TransactionManager
+- Hibernate TransactionManager
+- JPA TransactionManager
+- JTA TransactionManager
+- JDBC TransactionManager
+
+- So spring will choose one between them, most commen it chooes JPA TransactionManager at runtime.
+
+

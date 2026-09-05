@@ -9,7 +9,7 @@
  
  4) What is purpose of @SpringBootApplication annotation?
  
- 5) Can we diectly use this three @EnableAutoConfiguration @CoponentScan and @Configuration annotions insted of @SpringBootApplication annotation?
+ 5) Can we directly use this three @EnableAutoConfiguration @CoponentScan and @Configuration annotions insted of @SpringBootApplication annotation?
  
  6) What is AutoConfiguration in Springboot?
  
@@ -48,7 +48,7 @@
  
  --------------------------------------------------------------------------------
  
- 12) How do we resole circual dependency in springboot?
+ 12) How do we resolve circual dependency in springboot?
  13) 
 
 
@@ -64,4 +64,9 @@
 
  # AOP (Aspect Oriented Programming)
  1) What is AOP?
+
+
+ # Transaction Management In Spring Boot
+
+ 1) What are Transaction Managers in Spring boot?
  

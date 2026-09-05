@@ -20,3 +20,5 @@
  9) What is Starter dependency in Spring boot?
 
  10) How do you connect SpringBoot application to your database?
+
+ 11) How Spring boot autoconfiguration works internally/behind the scenes?
