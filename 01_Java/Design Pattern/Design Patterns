@@ -60,7 +60,6 @@
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------
 
    3) Behavioral Design pattern :-> Focuses on object interaction more
 
@@ -77,7 +76,6 @@
       11) Interpreter
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -120,7 +118,6 @@
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 2] Structural Design Pattern
    - Structural Design Pattern focuses on how classes and objects composed together to form larger, more flexible and efficient structure.
@@ -145,7 +142,7 @@
       - When we want to hide the system complexity from the client facade design pattern is used.
 
       - Facade class is not mandatory to use. We should not force client to use facade to interact with sub classes.
-      - While using facade design pattern all the complexity will go to facade class.
+      - While using facade design pattern, all the complexity will go to facade class.
       - There can be multiple faced classes possible which interact with client or with each other.
 
    6) Flyweight Design Pattern
@@ -153,10 +150,9 @@
         It does this by separating the intrinsic (shared) state from the extrinsic (unique) state of an object.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 3] Behavioral Design Pattern :
-    - Behavioral Design pattern guides how objets communicate with each other effectively and distribute task
+    - Behavioral Design pattern guides how objects communicate with each other effectively and distribute task
       efficiently making software system more flexible and easy to maintain.
 
     1) Chain of responsibility design pattern
@@ -169,7 +165,6 @@
       these classes implements strategy interface which provides specific implementation for different algorithms.
     - Strategy design pattern defines different different strategies.
     -
-----------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Difference between Facade and Adapter

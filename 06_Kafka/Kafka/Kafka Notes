@@ -1,6 +1,5 @@
 
- # Apache Kafka : Apache Kafka is publish-subscribe model which is based on durable messaging system which is used
-                  for exchanging the data between process, applications and servers.
+ # Apache Kafka : Apache Kafka is publish-subscribe model which is based on durable messaging system which is used for exchanging the data between process, applications and servers.
 
  - Apache Kafka is publish-subscribe model which is based on durable messaging system
  - So basically when we have to do some asynchronous communication between two applications then in kafka

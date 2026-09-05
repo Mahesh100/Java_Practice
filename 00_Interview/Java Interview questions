@@ -116,7 +116,7 @@
 
  # Functional interface
    1) What is functional interface in java?
-      - Interface which have only one abstract method
+      - Interface which have only one abstract method is called functional interface in java.
 
  # Garbage collection in java
 

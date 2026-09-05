@@ -4,7 +4,6 @@
 
 OOPS : Object Oriented Programming System.
 
-
 ## Object class is the parent class of all the classes in java.
 
 # Primitive variable like int a =10;  String s ="abc" doesn't hold any reference it just store value itself.  //Being variables in java
@@ -56,7 +55,6 @@ OOPS : Object Oriented Programming System.
 
 - Every time we try to print the object of the class then by default it calls toString() method.
 
--
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Wrapper classes in java:
@@ -113,17 +111,13 @@ In java, instance variable are used for several reasons
    3) Protected
    4) Default
 
-  1) Public access modifiers mean that the class, method, or variable can be accessed from
-     anywhere in the program.
+  1) Public access modifiers mean that the class, method, or variable can be accessed from anywhere in the program.
 
-  2) Private access modifiers mean that the class, method, or variable can only be
-     accessed from within the same class.
+  2) Private access modifiers mean that the class, method, or variable can only be accessed from within the same class.
 
-  3) Protected access modifiers mean that the class, method, or variable can be
-     accessed from within the same package and by subclasses of the class.
+  3) Protected access modifiers mean that the class, method, or variable can be accessed from within the same package and by subclasses of the class.
 
-  4) Default access modifiers mean that the class, method, or variable can
-     be accessed from within the same package.
+  4) Default access modifiers mean that the class, method, or variable can be accessed from within the same package.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -132,8 +126,8 @@ Static methods:
 -  They are invoked/called using class name followed by method name.
    ClassName.methodName()
 -  They are called using without creating instance/object of the class.
--   Access only static members:
-    They can only access static variables and other static methods of the class directly. They cannot directly access instance variables or instance methods.
+-  Access only static members:
+   They can only access static variables and other static methods of the class directly. They cannot directly access instance variables or instance methods.
 
 
 Instance Methods:
@@ -141,6 +135,7 @@ Instance Methods:
 -  Instance methods called/invoked using object reference followed by method name.
    objectName.methodName()
 -  Instance methods can access both instance variables and static variables of the class.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -178,7 +173,7 @@ Instance Methods:
 
   Class TypeOfVariables{
 
-       Static int c =30;
+       static int c = 30;
 
        int a = 10; //instance variable
 
@@ -304,7 +299,6 @@ Instance Methods:
  - this keyword is used to initialize the class variables or instance variables
  - this can be used to refer current class method
  - this can be used to invoke current class constructor
- -
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -314,7 +308,7 @@ Instance Methods:
 - Super keyword is used when we want to call the variable,method,constructor from super class using the sub class object
 
 - When to use :
-  -Super keyword is used only when the variable, method and constructor of sub class and super clas are same.
+  -Super keyword is used only when the variable, method and constructor of sub class and super class are same.
   -To avoid the confusion between super class and sub class variables and methods that have same name we should use super keyword
 
 - Every constructor in sub class have the super() method by default.
@@ -441,8 +435,7 @@ class B extends A  // sub class
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4] Encapsulation In Java
 
- - Encapsulation in java is mechanism by which we can wrap/bind data members and member function together in single class
-   is called Encapsulation.
+ - Encapsulation in java is mechanism by which we can wrap/bind data members and member function together in single class is called Encapsulation.
 
  - In order to achieve Encapsulation
      -data members/fields should be private
@@ -528,7 +521,7 @@ interface InterfaceName {
 
  1) Abstract class can have Abstract and non abstract methods.
  2) Abstract class doesn't support multiple inheritance.
- 3) Abstract class can have final, non-final , static and non-static variables.
+ 3) Abstract class can have final, non-final,static and non-static variables.
  4) Abstract class can provide implementation of interface.
  5) Abstract class can be declared using 'Abstract' keyword.
  6) Abstract class can be extended using 'extend' keyword.
@@ -603,80 +596,6 @@ interface InterfaceName {
 
   - In Java, a serialVersionUID is a unique identifier for each Serializable class that is used to verify
    that the saved object and the loaded class are compatible.
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Exception in java
-
-1) Any unwanted or unexpected event which disturbs the normal flow and execution of program is called Exception.
-
-    - At compile time exception never occurs, all the exception occurs at the runtime.
-
-2) Difference between Checked exception and Unchecked exception
-
-   i)  Checked Exception : (Compile time exception)
-       - Checked exception are the exception which are checked and handle at the compile time.
-       - Checked exception must be caught or declared using throws keyword
-       - Checked exception handle using try-catch block or throws keyword.
-       - When checked exception occurs, program flow is interrupted and transfer to catch block.
-       - Examples :
-           -ClassNotFoundException
-           -IoException
-
-
-   ii) Unchecked Exception : (Runtime exception)
-       - Unchecked exception are the exception which are not handle at compile time.
-       - Unchecked exception do need to required handle explicitly.
-       - When unchecked exception occurs program flow is halted with an error message.
-       - Examples:
-            -ArrayIndexOutOfBoundException
-            -NullPointerException
-
-
-# Difference between exception and error
-
-
- # Exception :
--Exception occurs because of program
--Exceptions are recoverable / We can handle the exception.
--Exception are of two types :
-   i)  Compile time exception (Checked exception )      //Remember both starts with C
-   ii) Runtime exception     (Unchecked exception)
-
- # Error
--Error occurs because of lack of resources.(System ram)
--Errors are not recoverable / Errors can not be handled
--Error is only of single type -Runtime exception (Unchecked exception)
-
-
-
-2) Exception hierarchy
-
-                                                                Object  (Object is parent class of all classes in java)
-                                                                  |
-                                                                  |
-                                                              Throwable
-                                                                  |
-                                                                  |
-                                              -------------------------------------------------------
-                                              |                                                     |
-                                              |                                                     |
-                                          Exception                                               Error
-                                      (Because of program)                                 (Because of System Resources)
-                                             |                                                      |
-                                             |                                                  Unchecked exception (Runtime exception)
-                      -------------------------------------------------------
-                      |                                                     |
-                      |                                                     |
-                Checked Exception                                   Unchecked Exception
-                (Compile Time exception)                            (Runtime Exception)
-
-
-
-
--  A subclass can only throw the same exception or a narrower (more specific) exception than the one declared in the parent class method.
--  This is to ensure that the caller of the method is not surprised by a broader exception than they were expecting.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -853,8 +772,6 @@ interface InterfaceName {
 
 
 
-
-
 -The Synchronized block can be used to perform synchronization on any specific resource of the method.
  Only one thread at a time can execute on a particular resource, and all other threads
  which attempt to enter the synchronized block are blocked.
@@ -965,7 +882,6 @@ For Example (Scenario)
  - Enum is special type of data type in java that can be used to represent the group of constants
  - Enum are useful when we have fixed set of values that are known at compile time
  - Enums make your code more readable and maintainable.
-
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
