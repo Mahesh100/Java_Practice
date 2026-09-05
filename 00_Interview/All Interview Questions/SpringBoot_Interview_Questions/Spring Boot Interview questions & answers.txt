@@ -121,6 +121,29 @@ public class StartupRunner implements CommandLineRunner {
 -------------------------------------------------------------------------------------------------------------------------------------
 12. What is Spring Boot Auto-Configuration? How does it work behind the scenes?
 
+What is spring boot auto configuration ? How it works behind the scene?
+     - Spring boot auto configuration is the way where spring boot automtically configure your application where you dont have to do 
+       everything manually
+     - 1) First Application Starts up and then it scans this @SpringBootApplicatin annotation this tells spring to start looking for 
+ 	  configuration, component in your project
+       2) Then it eables @EnableAutoConfiguration it start setting ub database, web server and everyting that your application needs
+       3) Since auto configuration begins it needs a settings to configure database and all so it start looking and load   		  application.properties file
+       4) Then it register all the beans that your appliction need. For example your services, controller
+       5) Once everything is set your application is ready to handle request without you writing the configuration code.
+
+                                                Application Start up
+                                                          |
+                                                        Scan
+                                                 @SpringBootApplication
+                                                          |
+                                                 EnableAutoConfiguration
+                                                          |
+						 Load application.properties
+                                                          |
+                                                   Register Beans
+	                                                  |
+                                                 Application Ready
+
 Short answer:
 Spring Boot examines the application's classpath, configuration and conditional requirements and then applies suitable auto-configuration.
 

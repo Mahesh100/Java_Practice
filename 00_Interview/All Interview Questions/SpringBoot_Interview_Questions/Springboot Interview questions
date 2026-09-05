@@ -1,24 +1,73 @@
+# Spring Boot Interview Questions
 
-# Spring Boot Interview questions
+## 1. Spring Boot Basics
 
- 1) Why you will choose the Spring boot over spring framework?
+1. Why will you choose Spring Boot over Spring Framework?
 
- 2) What all spring boot starter you have used ? what all module you have worked on?
+2. How will you run your Spring Boot application?
 
- 3) What is purpose of @SpringBootApplication annotation ?
+3. What are Spring Boot Starter dependencies?
 
- 4) What us Autoconfiguration in Spring Boot?
+4. What all Spring Boot starters have you used? What all modules have you worked on?
 
- 5) How can you disable specific autoconfiguration class in spring boot?
+5. What is the purpose of the `@SpringBootApplication` annotation?
 
- 6) How can you customize default configuration in spring boot?  (server.port = 9090 )
+6. Can we directly use these three annotations instead of `@SpringBootApplication`?
 
- 7) How spring boot run() method works internally?
+    @EnableAutoConfiguration
+    @ComponentScan
+    @Configuration
 
- 8) What is command line runner in spring boot?
+7. What is CommandLineRunner in Spring Boot?
 
- 9) What is Starter dependency in Spring boot?
 
- 10) How do you connect SpringBoot application to your database?
+## 2. Spring Boot Configuration
 
- 11) How Spring boot autoconfiguration works internally/behind the scenes?
+8. How can you customize the default configuration in Spring Boot?
+
+9. How can you customize the port in Spring Boot?
+
+
+## 3. Spring Boot Auto-Configuration
+
+10. What is Auto-Configuration in Spring Boot?
+
+11. How does Spring Boot Auto-Configuration work internally / behind the scenes?
+
+12. How can you disable a specific Auto-Configuration class in Spring Boot?
+
+
+## 4. Spring Boot Application Startup
+
+13. How does the Spring Boot `run()` method work internally?
+
+
+## 5. Spring Boot Annotations
+
+14. What is `@RestController`?
+
+15. What is `@Service`?
+
+16. What is `@Advice`?
+
+17. What is `@Aspect`?
+
+
+## 6. Dependency Management
+
+18. How do we resolve circular dependency in Spring Boot?
+
+
+## 7. Database Integration
+
+19. How do you connect a Spring Boot application to a database?
+
+
+## 8. AOP (Aspect-Oriented Programming)
+
+20. What is AOP (Aspect-Oriented Programming)?
+
+
+## 9. Transaction Management
+
+21. What are Transaction Managers in Spring Boot?

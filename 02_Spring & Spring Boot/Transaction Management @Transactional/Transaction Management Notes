@@ -29,3 +29,22 @@
 - So spring will choose one between them, most commen it chooes JPA TransactionManager at runtime.
 
 
+# Types of TransactionManagers
+
+1) Declarative TransactionManager
+2) Programmatic TransactionManager
+
+1) Declarative TransactionManager: 
+ - Declarative means declear a annoation and job is done.
+ - Transaction Management happens through Annotations
+ - @Transactional
+ - Spring boot will choose appropriate transaction manager.
+ - We can create explicit transaction manager and tell spring to choose that.
+Example:
+ @Transactionl(transactionManager = "transactionManager")
+
+ 2) Programmatic TransactionManager
+ - Handle Transaction progamtically/manually through code
+ - Flexible but difficult to maintain
+ - There are two approches for Programmatic TransactionManager
+
