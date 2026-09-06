@@ -1,11 +1,11 @@
 
 # Transaction Managers
 - Transaction Manager is core component in transaction, it is responsible for managing the transactions.
-  it is responsible for getting transaction, commiting a transaction and rolling back a transaction
-- All the transaction operations transaction manager handle inside spring boot.
-- Transaction Managers are the interface.
+  it is responsible for getting transaction, committing a transaction and rolling back a transaction.
+- In Spring Boot, All the transaction operations are handled by transaction manager.
+- Transaction Managers is an interface.
 
-- public interface TransactionManager{            //This is just a parent interface.
+- public interface TransactionManager{            //This is just a parent interface, also it is marker interface
 
 }
 
@@ -26,7 +26,7 @@
 - JTA TransactionManager
 - JDBC TransactionManager
 
-- So spring will choose one between them, most commen it chooes JPA TransactionManager at runtime.
+- So spring will choose one of between concrete classes, most common it choose JPA TransactionManager at runtime.
 
 
 # Types of TransactionManagers
@@ -35,16 +35,16 @@
 2) Programmatic TransactionManager
 
 1) Declarative TransactionManager: 
- - Declarative means declear a annoation and job is done.
+ - Declarative means declare a annotation and job is done.
  - Transaction Management happens through Annotations
  - @Transactional
  - Spring boot will choose appropriate transaction manager.
  - We can create explicit transaction manager and tell spring to choose that.
 Example:
- @Transactionl(transactionManager = "transactionManager")
+ @Transactional(transactionManager = "transactionManager")
 
  2) Programmatic TransactionManager
- - Handle Transaction progamtically/manually through code
+ - Handle Transaction progamatically/manually through code
  - Flexible but difficult to maintain
- - There are two approches for Programmatic TransactionManager
+ - There are two approaches for Programmatic TransactionManager
 

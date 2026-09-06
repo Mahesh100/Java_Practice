@@ -1,8 +1,12 @@
-Executor Service :
+# Executor Service:
 
 - Executor service is an interface which we used to create and manage a pool of threads.
 - Executor service is most common interface which is used to manage the thread pool in executor framework.
 
+//importing the required packages
+// import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 public class Main{
     public static void main(String [] args){
         ExecutorService executorService = Executors.newFixedThreadPool(3);    //Number of threads wants to create inside pool.
