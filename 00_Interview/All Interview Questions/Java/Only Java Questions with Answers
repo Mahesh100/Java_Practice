@@ -1,0 +1,20 @@
+#OOPS CONCEPTS
+
+1) What is composition in java?
+- Composition is the strongest form of association or sub type of aggregration         Association
+- In Composition life cycle of one object is depend on the another object                  |
+  For Example:                                                                           Aggregation
+  We have Priminister class and Cabinate class                                             |
+  class PrimeMinister {                                                                 Composition
+    private Cabinate cabinet
+  }    
+  
+  public class Cabinate{
+
+  }       
+
+2) Difference between composition and inheritance?
+2) What is difference between Abstraction and Interface ?
+3) What is difference between Exception and Error?
+
+# Multithreading

@@ -26,7 +26,7 @@
 
 
  11) Can you pass the List<String> to a method which accept List<Object>  ?
-    -No you can not pass the Lis<String> to a method which accept List<Object> ?
+    -No you can not pass the List<String> to a method which accept List<Object> ?
 
  12) What is Generics in java?
 
@@ -42,7 +42,7 @@
 
  18) Difference between Runnable and callable interface in java?
 
- 19)
+ 19) What is composition in java?
 
  --------------------------------------------------------------------------------------------------------------------
  # General java questions

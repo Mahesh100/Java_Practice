@@ -1,0 +1,19 @@
+# OOPS CONCEPTS
+
+1) What is composition in java?
+2) What is difference between Abstraction and Interface ?
+3) What is difference between Exception and Error?
+4) Why strings are immutable in java?
+5) What are the wrapper classes in java?
+6) What is autoboxing and Unboxing in java?
+7)  Can we declare class as final? Can we extend the final class? What will happen if we extend the    final class? any error?
+
+
+# Functional Programming (Functional Interface, Stream API, Java 8 features)
+1) What are pre-defined functional interfaces in java?
+
+# Collections
+1)  Difference b/w failFast and failsafe iterator?
+
+
+# Multithreading
