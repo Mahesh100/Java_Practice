@@ -61,12 +61,17 @@ Example:
 
 - There are 7 propagation Types
 
- 1) REQUIRED :
+ 1) REQUIRED :  (Joins the exisitng transaction from calling method)
  -  REQUIRED is default propagation type
  -  When propagation type is REQUIRED that means this particualr method requires a transaction.
  -  If transaction is already active it will join the same transaction
  -  And if do not have transaction in calling method then REQUIRED will starts its own transaction
+ -  When to use REQUIRED : When we need anything with in the transaction
+
  2) REQUIRES_NEW
+ -  When we want to isolate particualr transaction from other surrounding transactions
+ -  REQUIRES_NEW suppends the existing transaction from calling method and starts a new transaction
+    Example: Sending a notification, Sending E-mail, logging
 
  3) SUPPORTS:
  - The particular method (on which @Transactional marked) supports a transaction if the calling method have transaction
