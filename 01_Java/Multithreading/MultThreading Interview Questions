@@ -1,0 +1,8 @@
+
+-What is Future In Java?
+- In Java, a Future is an interface from the java.util.concurrent package that represents the pending result of an asynchronous computation
+
+-What is CompletableFuture in java?
+- CompletableFuture in java is introduced in java 8 for asynchronous and non-blocking programming.
+- CompletableFuture allows a task to run in separate thread.
+- CompletableFuture implements both Future and CompletionStage interfaces which allows chaining multiple asynchronous tasks using methods like thenApply() and thenAccept().

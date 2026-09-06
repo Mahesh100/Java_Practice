@@ -1,0 +1,31 @@
+
+
+# Future In Java:
+
+- In Java, a Future is an interface from the java.util.concurrent package that represents the pending result of an asynchronous computation
+
+# CompletableFuture:
+- CompletableFuture in java is introduced in java 8 for asynchronous and non-blocking programming.
+- CompletableFuture allows a task to run in separate thread.
+- CompletableFuture implements both Future and CompletionStage interfaces which allows chaining multiple asynchronous tasks using methods like thenApply() and thenAccept().
+
+- A standard Future (introduced in Java 5) can only act as a placeholder for a result. To get that result, you must call .get(), which completely blocks the thread until the task finishes. You also cannot chain multiple Future tasks together
+- CompletableFuture solves this by offering callback capabilities. It lets you say: "Run this task, and as soon as it is done, automatically pass the result to this next task, all without making the main thread wait." 
+
+# We can trigger background task using one of two static methods:
+
+1) supplyAsync() : Used when the background task returns a result
+
+2) runAsync() : Used when the background task simply execute an action returns nothing (void)
+
+- Note
+  By default, these tasks run inside the global ForkJoinPool.commonPool() thread pool.
+
+
+  # Chaining Tasks (Callbacks)Once an asynchronous task completes, you can immediately pass its output to dependent steps using transformation or consumption methods:
+  
+  1) thenApply(): Accepts a Function. It transforms the result of the previous step and returns a new value.
+  
+  2) thenAccept(): Accepts a Consumer. It uses the result of the previous step but does not return a value.
+  
+  3) thenRun(): Accepts a Runnable. It executes an action after the previous step completes, but it neither reads the result nor returns a value.
