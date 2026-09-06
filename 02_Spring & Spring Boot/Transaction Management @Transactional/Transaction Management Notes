@@ -54,27 +54,42 @@ Example:
 
 # Transaction Propagations and Different Types of Transaction Propagations  (IMP)
 
-- Transaction Propagation refers to how a transactions behaves/happens when a method annotated with @Transactional is called by another method 
+- Transaction Propagation refers to how a transactions happens when a method annotated with @Transactional is called by another method 
   that may or may not have active transaction.
 
 - Default propagation type is REQUIRED
 
-- There are propagation Types
+- There are 7 propagation Types
 
- 1) REQUIRED
+ 1) REQUIRED :
+ -  REQUIRED is default propagation type
+ -  When propagation type is REQUIRED that means this particualr method requires a transaction.
+ -  If transaction is already active it will join the same transaction
+ -  And if do not have transaction in calling method then REQUIRED will starts its own transaction
  2) REQUIRES_NEW
 
- 3) MANDATORY : 
+ 3) SUPPORTS:
+ - The particular method (on which @Transactional marked) supports a transaction if the calling method have transaction
+ 
+ 4) NOT_SUPPORTED : 
+ - If the calling method have existing transaction then transaction for the particular method is suspended and after this method
+   the transaction will be resumed again.
+
+ 5) MANDATORY :
    - There should be active transaction in calling method. If active transaction is not present in calling method then call method will
      throw an exception that there should be active transaction present.
    - MANDATORY propagation type is useful when we have to enforce that there should not be any new transaction created rather things
      should works inside existing transaction and there must be a existing transaction present while calling a method.
 
-  - NESTED :
+ 6) NESTED :
   - Whenever we mark a method with propagation type as NESTED, that means if calling method have the existing transaction then this method
     will run in same transaction in nested way ( and if calling method do not have any transaction then it behaves like default propagation type
     as REQUIRED)
   - The calling method will create a "Save Point" and the calling method will  run ahead of that "Save Point", and if in this method some exception
     occurring then only that particualr transaction after that Save Point will be rollback AND the existing transaction before that save point will continue.
   - NESTED is useful when we have to do partial rollback and we do not want to rollback entire transaction
+
+  7) NEVER:
+  - The particular method (on which @Transactional marked) should not run in transaction, if the calling method have transaction then
+    the particualr method will throw an exception as already on going transaction
 
