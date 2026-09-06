@@ -74,4 +74,9 @@
 
 21. What are Transaction Managers in Spring Boot?
 
-1) Why DTO are used ?
+22) Why DTO are used?
+
+23) What is @Query annotation?   ✅
+
+24) How do spring boot decides which server to use when multiple servers are available?
+25) Explain about Spring Security ?

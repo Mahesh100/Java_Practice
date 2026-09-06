@@ -122,10 +122,10 @@ public class StartupRunner implements CommandLineRunner {
 12. What is Spring Boot Auto-Configuration? How does it work behind the scenes?
 
 What is spring boot auto configuration ? How it works behind the scene?
-     - Spring boot auto configuration is the way where spring boot automtically configure your application where you dont have to do 
-       everything manually
+     - Spring boot auto configuration is the way where spring boot automtically configure your application where you dont have to do everything manually
      - 1) First Application Starts up and then it scans this @SpringBootApplicatin annotation this tells spring to start looking for 
  	  configuration, component in your project
+
        2) Then it eables @EnableAutoConfiguration it start setting ub database, web server and everyting that your application needs
        3) Since auto configuration begins it needs a settings to configure database and all so it start looking and load   		  application.properties file
        4) Then it register all the beans that your appliction need. For example your services, controller
@@ -146,34 +146,6 @@ What is spring boot auto configuration ? How it works behind the scene?
 
 Short answer:
 Spring Boot examines the application's classpath, configuration and conditional requirements and then applies suitable auto-configuration.
-
-Simplified flow:
-
-Application starts
-       |
-SpringApplication.run()
-       |
-Create ApplicationContext
-       |
-Read configuration/environment
-       |
-@EnableAutoConfiguration
-       |
-Discover auto-configuration candidates
-       |
-Evaluate conditions
-       |
-Register applicable beans/configuration
-       |
-Create and initialize beans
-       |
-Start embedded server
-       |
-Application ready
-
-Important:
-Auto-configuration does not simply read application.properties and register every required bean. It uses auto-configuration classes and 
-conditional rules based on classpath dependencies, existing beans, properties and other conditions.
 
 -------------------------------------------------------------------------------------------------------------------------------------
 13. How do we resolve circular dependency in Spring Boot?
@@ -212,21 +184,12 @@ generally be treated as a workaround rather than the preferred design.
 
 It is commonly used for REST APIs. Return values from controller methods are written directly to the HTTP response body, usually as JSON.
 
-2. What is @Service?
-
-@Service is a stereotype annotation used to identify a Spring-managed component that normally contains business/service logic.
-
-3. What is @Advice?
 
 For Spring MVC global exception handling, the commonly used annotations are:
 - @ControllerAdvice
 - @RestControllerAdvice
 
-There is not a standard Spring MVC annotation simply called @Advice for this purpose.
-
 4. What is @ControllerAdvice?
-
-@ControllerAdvice allows us to define cross-cutting controller behavior in one place.
 
 A common use is global exception handling.
 

@@ -1,5 +1,5 @@
 # Multi threading in java
-
+- Multithreading in Java is a process that allows a program to execute multiple threads concurrently
 - By default JVM will provide name to thread automatically.
 - We can set name to any thread using Thread.currentThread().setName("Mahesh");   //Mahesh is name of thread here
 

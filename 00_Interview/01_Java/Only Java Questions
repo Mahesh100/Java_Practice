@@ -12,8 +12,8 @@
 12) What is the name of method which performs garbage collection in java?
 
 # Functional Programming (Functional Interface, Stream API, Java 8 features)
-1) What are pre-defined functional interfaces in java?
-2)  What is advantages of Stream API?
+1) What are pre-defined functional interfaces in java? ✅
+2) What is advantages of Stream API?
 3) What is functional interface in java?
 
 # Collections
@@ -21,15 +21,15 @@
 
 
 # Multithreading
-1) What is Multi-threading in java?
-2) Can we start Thread twice?
+1) What is Multi-threading in java? ✅
+2) Can we start Thread twice? - No ✅
 3) How threads will communicate with each other?
 4) What are ways to implement multithreading in java?
 - What is CompletableFuture in java?
 - What is Future in java?
 
 # REST API 
-1) What is idempotent method according to HTTP specification?     //GET is the idempotent method
+1) What is idempotent method according to HTTP specification?  ✅   //GET,Put,Delete,Head is the idempotent method
 2)  How to call REST api from your spring boot application?
 
 # All Difference between Questions
@@ -39,4 +39,6 @@
 4) Difference b/w failFast and failsafe iterator?
 5) Difference between Final ,Finally and Finalize in java
 6) Difference between Runnable and callable interface in java?
+7) Difference between Set and ArrayList ✅
+8) Difference between Process and Thread ✅
 

@@ -1,0 +1,91 @@
+#REST : 
+1) What is @RESTcontroller annotations?  ✅
+2) what are some of the common practices while returning different http status code?  ✅
+3) what will be status code for delete api after successful delete?  // 204 No content ✅
+4) using rest controller can we return some custom format other than JSON and XML? HOW do we write cutom format?
+5) What are embedded server available?
+6)
+7) Explain advanced configuration for one of these servers (Tomcat and Jetty)
+8) How can we optimize performance of spring boot embedded server?
+9) What is advantages of RESTful web over SOAP based web services?
+10) Which one is more secure REST or SOAP?
+11) Difference between Put and Patch method  ✅
+12) What is idempotent method according to  HTTP Specifications?  ✅
+13)  
+
+14)   How do you call API in your application and Validate it ?
+
+15)  How do you handle DB error in your application ?
+
+27)   How do you call DB query in your application ?
+28)   What are Actuators ? 
+
+29)   What are most used annotations and its explanation ?
+
+30)   What are Microservices ?
+31)   Can we wirte all HTTP methods inside class having @Component annotation ? what is necessity of @Controller annotation then ? 
+
+32)  Difference between @Controller and @Component ?
+
+33) What is @RequestBody @ResponseEntity ? @ResponseBody? Difference 
+
+34)   When to use @Requestparam?  in which scenario?
+
+35)  What is @Pathparam ?  @PathVaraiable?
+
+36)  What is request pararm in spring boot ?   @RequestParam 
+
+37)  How could you write API contract?
+
+38)  What is service discovery ? Load Balancing ?
+
+39)  You mention that HTTP communoctaion with REST Client is tighty coupled , how it it thigtlu coupled ?
+    (So we make it loosly coupled?)
+40) How to consume the web service ?
+
+41)  What is purpose of URL in REST ful Web Services ?
+
+42)   What is stateless ness in Web Services ?
+
+43) SOAP and REST Web Service difference?
+
+44) Difference b/w Web API and REST API ?
+45)  What are different ways of passing paramentrs in REST API?
+46) How to pass object in REST API ?
+47)  What is diff b/w Spring Restful web service vs jersey web services?
+48) How do you convert XML to JSON response?
+49)  How you will send status code 404 if you are getting some Exception?
+50) Have you worked in RESTful ? What are Best practices to while creating REST? What are naming convention ? to follow
+51) Have you worked in enabling security of RESTful web service ? What are mechanism used?
+52) Difference between Http Put and Http POST methods?
+
+53)How you are handling, Exception handling in REST api?
+54)Suppose I am writing an API for Employee.Trying to design or build a RESTful webservice>
+     I want to create an entry for an API  which wil make an entry of new API.
+     What would be the structure of the REST api?
+55) What is difference b/w @RESTController and @Controller
+
+56)What are the basic requirements or properties required while dealing with RESTful web services?
+      -If you are going to design  RESTful web services, what are the elements that are the 
+       basic things in our every REST api call?
+       REST api implementations?
+
+57)  What this service layer contains?
+
+58) You mention that in your project you are using some Transactions,right?
+       So, how you are handling the transactions? Like deal with the transactions?
+       If you are doing any transaction and in between any kind of exception occur?
+       so how you dealing with it?
+       Suppose, in one of your transaction you have  2 - 3 steps? In that  you need to deal
+        with database and you are updating some database table, but in mid if any of the
+         step / transaction break? Then how we can handle it?
+         Because transaction should be done in one full step, if it is success comes.
+         In that case how you handle it? or you are handing in your current project?
+59) @RESTController what is signifiance of this @RESTController?
+
+60) Which one more secure REST or SOAP secure ?
+
+61) What are the advantage of RESTful web Services over SOAP Web Services?
+
+62) What was your approach to design a REST API?
+63) What is return type of API?

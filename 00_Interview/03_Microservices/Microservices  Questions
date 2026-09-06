@@ -1,0 +1,2 @@
+1) If one of the microservice goes down and other depend on other how would you handle it?
+2) What is Bulkhead Resilance pattern in microservice?

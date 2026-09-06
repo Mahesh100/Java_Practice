@@ -1,0 +1,67 @@
+#Hibernate
+
+1) What is swagger? why it is used?
+2) can we customize specfic auto configuration?
+3) how would you design transaction method that involves calling multiple databases in message quue? (Is it similar to distributed design pattern?)
+4) Have you worked on hibernate? jpa?
+5) what is n+1 select problem?
+6) Do you know json seralizarion and deseralization ? can we customize it?
+7) What is webflux? explain?
+ 8) What do you mean by dilect?
+8)  Expalin Caching mechanism in hibernate framework?
+9)  When did cache expire?   
+10) What is advantage of ORM framework?
+11)  What is lasyloading in hibernate?
+12)  What is cascade attribute?
+
+13) Supose you have Employee table and Depeartment table in DB , how you can create relationship in Employee in springboot?   //use hibernate annotations
+14) What is Object life cycle ? Or State of Object or Instance state ?
+15)  What is difference b/w object and merge method ?
+16)  Can you explain me the association of Hibernate ?
+17)  Can you explain me the many to many relationship ?
+18)  What is difference b/w mock and Inject Mock ?  Mock and Power mock ?
+19)    How you test the services in JPA ? 
+20)   In which scenerio you are using power map?
+21)  What are the disadvantage of Hibernate?
+22)How you handel pegination ?
+
+23)   How you will address pagination with hibernate??
+24)   What is Dialect in hibernat??
+25) Tranaction Management in Hibernate?
+
+26) What is @Tranaction annotations?
+
+27)    When does the cache experied? first level and Second level cache?
+
+
+28)  What is ORM framwork?
+
+29)Have you ever used hibernate related configuration?
+30)How to configure driver manager and Session factory?
+31)What are the differnet way of resolution happen while creating a 
+32)  How the value get store in session method?
+33) What is difference between save() and persist() method ?
+34) JPA Transaction 
+
+Set is used to return data
+
+Map - Redis cache is used
+
+35)
+36)
+37)
+38)
+39)
+40)
+41)
+42)
+43)
+44)
+45)
+46)
+47)
+48)
+49)
+50)
+
+1) What is nativeQuery and where it is used?
