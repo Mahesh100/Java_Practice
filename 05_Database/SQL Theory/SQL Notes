@@ -35,7 +35,7 @@
   - A join which return all the records that have matching values in both the table is called inner join.
 
   3) Left join
-  - A left join keyword returns all the records from left table(Table 1) and matching record from right table(Table 2)
+  - A left join returns all the records from left table(Table 1) and matching record from right table(Table 2)
 
   4) Right join
   - A join which returns all the record from the right table and matched record from the left table is called right join.
@@ -87,11 +87,9 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Stored Procedure : A stored procedure is prepared sql code that can be save so the
-  code can be reused again and again.
+# Stored Procedure : A stored procedure is prepared sql code that can be save so the code can be reused again and again.
 
- - So suppose we have sql query that we want to write again and again then just save it as
-   stored procedure and call it to execute whenever needed.
+ - So suppose we have sql query that we want to write again and again then just save it as stored procedure and call it to execute whenever needed.
 
 
   # syntax

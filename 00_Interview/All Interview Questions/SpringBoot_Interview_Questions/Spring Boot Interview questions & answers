@@ -192,11 +192,21 @@ generally be treated as a workaround rather than the preferred design.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
+
+14. How component scanning works in spring boot?
+- Whenever the spring boot application starts it needs to find all your service, repository and component classes and register them as bean
+  and the way it finds those classes is called as ComponentScan, every class it finds it register as bean in application context and in main class
+  of spring boot we have @SpringBootApplication which is combination of three annotations as @SpringBootConfiguation, @EnableAutoConfiguration and 
+  @ComponentScan and by defult @ComponentScan scans the package of your main class and all the sub packages under it. 
+  This is how component scanning works in spring boot.
+  
+-------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 ## Annotation-Based Questions
 
 1. What is @RestController?
 
-@RestController is a convenience annotation that combines:
+@RestController is annotation that combines:
 @Controller
 @ResponseBody
 

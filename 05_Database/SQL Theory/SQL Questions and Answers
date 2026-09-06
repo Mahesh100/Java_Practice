@@ -9,7 +9,10 @@
 # General questions
 
 - What are  joins in sql?
+
 - Difference between truncate and delete command?
+- DELETE removes specific rows based on a condition and is slower, while TRUNCATE instantly wipes out all data from a table 
+
 - What are sub queries?
 - What are views in sql?
 - What is indexing in sql?
