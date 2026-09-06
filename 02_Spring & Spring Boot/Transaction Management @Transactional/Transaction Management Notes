@@ -48,3 +48,33 @@ Example:
  - Flexible but difficult to maintain
  - There are two approaches for Programmatic TransactionManager
 
+   i)  Using boilerPlate code by different transaction methods
+   ii) Transaction Templates
+
+
+# Transaction Propagations and Different Types of Transaction Propagations  (IMP)
+
+- Transaction Propagation refers to how a transactions behaves/happens when a method annotated with @Transactional is called by another method 
+  that may or may not have active transaction.
+
+- Default propagation type is REQUIRED
+
+- There are propagation Types
+
+ 1) REQUIRED
+ 2) REQUIRES_NEW
+
+ 3) MANDATORY : 
+   - There should be active transaction in calling method. If active transaction is not present in calling method then call method will
+     throw an exception that there should be active transaction present.
+   - MANDATORY propagation type is useful when we have to enforce that there should not be any new transaction created rather things
+     should works inside existing transaction and there must be a existing transaction present while calling a method.
+
+  - NESTED :
+  - Whenever we mark a method with propagation type as NESTED, that means if calling method have the existing transaction then this method
+    will run in same transaction in nested way ( and if calling method do not have any transaction then it behaves like default propagation type
+    as REQUIRED)
+  - The calling method will create a "Save Point" and the calling method will  run ahead of that "Save Point", and if in this method some exception
+    occurring then only that particualr transaction after that Save Point will be rollback AND the existing transaction before that save point will continue.
+  - NESTED is useful when we have to do partial rollback and we do not want to rollback entire transaction
+
