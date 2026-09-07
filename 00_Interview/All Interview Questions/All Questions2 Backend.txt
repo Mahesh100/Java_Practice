@@ -97,7 +97,7 @@
 
 19) What is advantage of design pattern ?
 
-20) What are design patterns in java ,  what is advanatge of prototype design pattern?
+20) What are design patterns in java ,what is advanatge of prototype design pattern?
 21) What is circit breaker and How to resolve it?
 22) What is difference between structural and Behavioral design pattern ?
 23)What design patterns you have used in your project
@@ -106,9 +106,7 @@
 26)  What should be access modifier of singleton class?
 27)  How you would be make sure that only one object get created?
 28)  You mentioned that constructor shoudld be private constructor, then how you will create single object and pass that 
-   perticular object everytime?
-29)
-30)
+   particular object every time?
 
 
 
