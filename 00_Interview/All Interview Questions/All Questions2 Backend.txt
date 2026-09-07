@@ -105,17 +105,15 @@
 25)  What care you should take to implement singleton class?
 26)  What should be access modifier of singleton class?
 27)  How you would be make sure that only one object get created?
-28)  You mentioned that constructor shoudld be private constructor, then how you will create single object and pass that 
+28)  You mentioned that constructor should be private constructor, then how you will create single object and pass that 
    particular object every time?
 
 
 
 
 
-01)
-02) how you implement microservice artichature in spring boot?
-03)How do you achive the loose coupling between two microservices? or two applictions?
-04) Have you heard about circuit breaker pattern in microservices?
+
+
 05)  On microserivce part , have you heard about hystrix?
 06) What was the most difficult thing you face while working with microservices?
          What are disadavtage of microservice?
@@ -132,7 +130,7 @@
 
 07)You have used Microservices? Do you have any idea on core component of Microservices? What are main components required to run microservices?
 
-08) How to load balance microseservice?
+
 
 09) What are API gateway?  what are advanatage of it?
 
@@ -142,9 +140,6 @@
 
 12)Can you explain the articature of MicroServices ?
 13)What is Microservice architchature? Do you know difference between Microservice Arichature and Monthlith Arichature?
-14)  In how many ways can communication can happen in Microservices ?
-
-15)  What other things do you know about microservices ? Do you know about fault taularnce in microserivece?
 
 16) Can you tell me about code quality ? How you maintain code quality in your current project?
 17) Suppose I have the existing applications and Which has three modules and Each module is dependent on another module and 
@@ -162,6 +157,16 @@
       Suppose I want to produce JSON what are annotations I need to produce?
 
 26)  Suppose I want to connect two database how do you do that in code?? 
+
+
+
+
+
+
+
+
+
+
 
 # Coding Questions
 
@@ -254,7 +259,7 @@ https://www.youtube.com/watch?v=8yyHwQtnOj4
 
 #Kafka 
 
-1)  What are msg qube in kafka and rabbit
+1)  What are msg queues in kafka and rabbit
 2)  What is Elastic Stack? Elastic search
 3)  Messaging system, question on previous projects
 

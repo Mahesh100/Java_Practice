@@ -1,0 +1,8 @@
+1) What is fault tolarnce in Microservices?
+2) In how many ways can communication can happen in Microservices ?
+3) What is load balancer in microseservice?
+4) What is circuit breaker pattern in microservices?
+5) What is SAGA Design pattern in microservics?
+6) How you implement microservice artichature in spring boot?
+7) How do you achive the loose coupling between two microservices? or two applictions?
+8) What is hystrix in Microservices?
