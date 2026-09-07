@@ -1,8 +1,26 @@
 AOP: Aspect Oriented Programming
 - It is way to add a extra behavior to your code without touching the actual business logic.
 
-- Spring AOP works by creating a proxy around your bean, when we call a method a call first goes to the proxy.
+- Spring AOP works by creating a proxy around a bean, when we call a method a call first goes to the proxy.
   
   The proxy decides whether the aspect should run after the method, before the method or only when exception happens then it continues and call the actual method.
 
 - Using AOP we can keep our code clean and all cross cutting concerns are handled in one place.
+
+
+# 
+-Aspect: Aspect is a class in which PointCuts and Advices are defined
+-Advice: The methods which are implemented inside the Aspect class are called advices.
+         Adivices represents methods that executed at JoinPoint,
+         Advices can be executed Before,After or Around the JoinPoint
+
+-PointCut: A a pointcut is an expression applied on the advices 
+@Before(value=  "execution(* com.example.package.EmployeeController.*(..))")
+
+-JoinPoint: JoinPoint is point in an execution flow of method where Aspect can be plugged in.
+
+Types of advices:
+@Before
+@After
+@Around
+@AfterReturning
