@@ -98,3 +98,17 @@ Example:
   - The particular method (on which @Transactional marked) should not run in transaction, if the calling method have transaction then
     the particualr method will throw an exception as already on going transaction
 
+--------------------------------------------------------------------------------------------
+
+# Isolation Levels in Spring Boot
+
+Isolation :
+- Suppose multiple transaction running in paralle in multithreaded env
+  Now how Transaction A is isolated from Transaction B and what is impact they on each other, how
+  seperate Transaction A from Transaction B that is define using isolation level
+  (Dirty Reads, non-repeatable reads and pahntom reads can happen)
+1) DEFAULT
+2) READ_COMMITTED
+3) READ_UNCOMMITTED
+4) REPEATABLE_READ
+5) SERIALIZABLE
