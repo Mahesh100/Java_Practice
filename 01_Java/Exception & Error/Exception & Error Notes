@@ -1,5 +1,6 @@
 # Exception in Java
 
+
 **1) Any unwanted or unexpected event that disturbs the normal flow and execution of a program is called an Exception.**
 
 - Exceptions occur at runtime.
